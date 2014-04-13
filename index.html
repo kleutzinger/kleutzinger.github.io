@@ -15,23 +15,30 @@ window.onresize = function() {
 
 <style>
 a{
-    text-decoration:none;
-    text-color:white;
+    text-decoration: none;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family:monospace;
+    font-size:150%;
 }
-div{
-    width:10%;
+.centerbox{
+    width:270px;
+    height:150px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-75px 0 0 -135px;
     text-align: center;
-    padding: 1px;
-    margin: 1px;
-    color: black;
-    background-color:lightgrey;
+ 
 }
 </style>
 
-<div>
-    Welcome to KevinLeutzinger.com
-    <a href="/game">game 1</a>
+<div class="centerbox">
+    <a>Welcome to KevinLeutzinger.com</a>
     <br>
-    <a href="/game2">game 2</a>
+    <br>
+    <a href="./game/index.html">Game 1</a>
+    <br>
+    <a href="./game2/index.html">Game 2</a>
 </div>
 </body>
