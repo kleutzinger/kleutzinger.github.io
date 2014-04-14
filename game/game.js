@@ -24,7 +24,7 @@ hensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensl
 var numberOfSprites = 9
 var deathmessages = ["Daniel ninja kicked you",
 "Spencer outslept you",
-"Ishmael kameamehad you",
+"Ishmael kamehamehad you",
 "Oscar spirit bombed you",
 "PJ licked you",
 "Ray killed you with rhetoric",
