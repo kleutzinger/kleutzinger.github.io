@@ -18,6 +18,7 @@ evilHensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/h
 var hensley = new Image()
 var dollymode = false;
 var bigmessage = "";
+var deadpic = new Image()
 if(location.hash == "#dollymode")
     dollymode = true;
 hensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley2.png";
@@ -25,7 +26,8 @@ var numberOfSprites = 9
 
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
-"ran into", "sat on", "spooned", "punched", "out-debated",];
+"ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed",
+"outscored", "outsmarted", "ate", "loved", "told you, and had to kill", "slept on", "misinterpreted", "kissed",];
 
 var names =["Sara Aboobakar",
 "Sarah Abusaa",
@@ -134,7 +136,7 @@ var names =["Sara Aboobakar",
 "Aidan Go",
 "Lillian Goldberg",
 "Trixie Gomez",
-"Julia Grifﬁn",
+"Julia Griffin",
 "Courtney Groh",
 "Tyler Guitroz",
 "Nicole Gunara",
@@ -495,6 +497,7 @@ Game.draw = function() {
   Game.context.font = "bold 40px Arial";
   Game.context.fillText(bigmessage, 10, Game.height/2);
   Game.context.font = "bold 12px Arial";
+  Game.context.drawImage(deadpic, 100,100, 100, 100);
     };
   Game.player.draw(Game.context);
 };
@@ -516,6 +519,7 @@ Game.update = function() {
       hit = true;
       died = true;
         action = Math.floor(Math.random()*actions.length)
+        deadpic.src = "./pictures/" +Game.enemies[i].randPic+".jpg"
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
         if(names[Game.enemies[i].randPic] == "Kevin Leutzinger"){bigmessage = "Kevin Leutzinger made this game"};
       Game.enemies = []
@@ -531,7 +535,10 @@ Game.update = function() {
 //};
   cTime = soundEfx.currentTime
   if(cTime >= 155) win = true;
-  if(cTime > 3){bigmessage = ""};
+  if(cTime > 3){
+      bigmessage = "";
+      deadpic.src = "";
+      };
   if(document.getElementById("MM_checkbox").checked){
     maxEnemy = 100;
   }
