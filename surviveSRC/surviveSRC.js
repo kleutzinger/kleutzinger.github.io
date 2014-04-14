@@ -27,7 +27,10 @@ var numberOfSprites = 9
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
 "ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed",
-"outscored", "outsmarted", "ate", "loved", "told you, and had to kill", "slept on", "misinterpreted", "kissed",];
+"outscored", "outsmarted", "ate", "loved", "told you, and had to kill", "slept on", "misinterpreted", "kissed",
+"undid", "outdid", "ended", "buried", "ran over", "forked", "karate chopped", "surprised", "sneaked up on", "didn't want this to happen to",
+"farted on", "touched","rolled onto","jumped onto", "shamed","sniped", "got caught with","dropped",
+"flicked", "out-macroed","overestimated",];
 
 var names =["Sara Aboobakar",
 "Sarah Abusaa",
@@ -255,7 +258,7 @@ var names =["Sara Aboobakar",
 "Megan Patoskie",
 "Ashley Pavesio",
 "Lucy Peterson",
-"Neil Pﬁzenmaier",
+"Neil Pfizenmaier",
 "Queen-Ama Phillips",
 "Georges Pichard",
 "Vijay Pillai",
@@ -372,6 +375,20 @@ var deathmessages = ["Daniel ninja kicked you",
 console.log("length of sprites == length of deathmessages")
 console.log(numberOfSprites == deathmessages.length)
 
+var focused = true;
+$(window).blur(function() {
+    focused = false;
+    document.getElementById('soundEfx').pause()
+    Game.enemies = []
+    document.getElementById('soundEfx').currentTime = 0;
+});
+
+$(window).focus(function() {
+    focused= true;
+    
+    document.getElementById('soundEfx').currentTime = 0;
+    document.getElementById('soundEfx').play();
+});
 
 var Key = {
   _pressed: {},
@@ -617,7 +634,7 @@ function Enemy() {
             //context.drawImage(this., this.x,this.y, this.width, this.height)
   this.x = 1500;
   this.sinMag = 20 + (Math.random() * 50)
-  this.yOffset = this.y = Math.floor(Math.random() * 480);
+  this.yOffset = this.y = Math.floor(Math.random() * (Game.height + 100) - 50);
   
   if(document.getElementById("BE_checkbox").checked){
     this.size = Math.random() * 200 + 60;

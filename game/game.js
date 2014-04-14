@@ -36,6 +36,21 @@ console.log("length of sprites == length of deathmessages")
 console.log(numberOfSprites == deathmessages.length)
 
 
+var focused = true;
+$(window).blur(function() {
+    focused = false;
+    document.getElementById('soundEfx').pause()
+    Game.enemies = []
+    document.getElementById('soundEfx').currentTime = 0;
+});
+
+$(window).focus(function() {
+    focused= true;
+    
+    document.getElementById('soundEfx').currentTime = 0;
+    document.getElementById('soundEfx').play();
+});
+
 var Key = {
   _pressed: {},
   LEFT: 37,
@@ -282,7 +297,7 @@ else{
             //context.drawImage(this., this.x,this.y, this.width, this.height)
   this.x = 1500;
   this.sinMag = 20 + (Math.random() * 50)
-  this.yOffset = this.y = Math.floor(Math.random() * 480);
+  this.yOffset = this.y = Math.floor(Math.random() * (Game.height + 100) - 50);
   
   if(document.getElementById("BE_checkbox").checked){
     this.size = Math.random() * 200 + 60;
