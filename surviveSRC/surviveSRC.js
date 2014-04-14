@@ -25,7 +25,7 @@ var numberOfSprites = 9
 
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
-"ran into", "sat on", "spooned"];
+"ran into", "sat on", "spooned", "punched", "out-debated",];
 
 var names =["Sara Aboobakar",
 "Sarah Abusaa",
