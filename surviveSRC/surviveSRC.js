@@ -19,6 +19,8 @@ var hensley = new Image()
 var dollymode = false;
 var bigmessage = "";
 var deadpic = new Image()
+deadpic.src = "./pictures/nothing.png"
+
 if(location.hash == "#dollymode")
     dollymode = true;
 hensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley2.png";
@@ -30,7 +32,7 @@ var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted"
 "outscored", "outsmarted", "ate", "loved", "told you, and had to kill", "slept on", "misinterpreted", "kissed",
 "undid", "outdid", "ended", "buried", "ran over", "forked", "karate chopped", "surprised", "sneaked up on", "didn't want this to happen to",
 "farted on", "touched","rolled onto","jumped onto", "shamed","sniped", "got caught with","dropped",
-"flicked", "out-macroed","overestimated",];
+"flicked", "out-macroed","overestimated", "banged", "tickled",];
 
 var names =["Sara Aboobakar",
 "Sarah Abusaa",
@@ -204,7 +206,7 @@ var names =["Sara Aboobakar",
 "Elliot Luttrell-Williams",
 "Ross MacFadyen",
 "Theo MacPhail",
-"1Luke Malskis",
+"Luke Malskis",
 "Juliette Mandal",
 "Cary Mandell",
 "Audrey Mannuel",
@@ -550,11 +552,11 @@ Game.update = function() {
   //Game.enemies = Game.enemies.filter(isBigEnough);
   //lastFilter =  0;
 //};
-  cTime = soundEfx.currentTime
+  cTime = soundEfx.currentTime;
   if(cTime >= 155) win = true;
   if(cTime > 3){
       bigmessage = "";
-      deadpic.src = "";
+      deadpic.src = "./pictures/nothing.png";
       };
   if(document.getElementById("MM_checkbox").checked){
     maxEnemy = 100;
