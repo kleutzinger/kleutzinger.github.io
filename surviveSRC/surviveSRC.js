@@ -54,6 +54,7 @@ $(window).blur(function() {
     if(!win){
     document.getElementById('soundEfx').pause()
     Game.enemies = []
+    maxEnemy=0;
     document.getElementById('soundEfx').currentTime = 0;
     }
 });
@@ -62,6 +63,8 @@ $(window).focus(function() {
     
     focused= true;
     if(!win){
+    Game.enemies = []
+    maxEnemy=0;
     document.getElementById('soundEfx').currentTime = 0;
     document.getElementById('soundEfx').play();
 }
