@@ -17,9 +17,25 @@ var lastFilter = 0;
 evilHensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley3.png" 
 var hensley = new Image()
 var dollymode = false;
+var bigmessage = "";
 if(location.hash == "#dollymode")
     dollymode = true;
 hensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley2.png";
+var numberOfSprites = 9
+var deathmessages = ["Daniel ninja kicked you",
+"Spencer outslept you",
+"Ishmael kameamehad you",
+"Oscar spirit bombed you",
+"PJ licked you",
+"Ray killed you with rhetoric",
+"Reed deedled you",
+"Solomon fed their carry",
+"Muir 'not even close, baby'ed you",
+];
+console.log("length of sprites == length of deathmessages")
+console.log(numberOfSprites == deathmessages.length)
+
+
 var Key = {
   _pressed: {},
   LEFT: 37,
@@ -141,6 +157,9 @@ Game.draw = function() {
     Game.context.fillStyle = 'black';
     Game.context.fillText(soundEfx.currentTime, 5, 10);
   Game.context.fillText('hi:'+hiScore, 5, 20);
+  Game.context.font = "bold 40px Arial";
+  Game.context.fillText(bigmessage, 10, Game.height/2);
+  Game.context.font = "bold 12px Arial";
     };
   Game.player.draw(Game.context);
 };
@@ -161,6 +180,12 @@ Game.update = function() {
       console.log("HIT!!");
       hit = true;
       died = true;
+      if(dollymode){
+      bigmessage = deathmessages[Game.enemies[i].randPic];
+  }
+    else{
+        bigmessage = "Hensley Got ya";
+    };
       Game.enemies = []
       maxEnemy = 0;
       //Game.context.fillStyle = "purple";
@@ -174,6 +199,7 @@ Game.update = function() {
 //};
   cTime = soundEfx.currentTime
   if(cTime >= 155) win = true;
+  if(cTime > 3){bigmessage = ""};
   if(document.getElementById("MM_checkbox").checked){
     maxEnemy = 100;
   }
@@ -244,7 +270,7 @@ function hitPlayer(e){
 
 function Enemy() {
   this.img = new Image();
-  this.randPic = Math.floor(Math.random() * 8)
+  this.randPic = Math.floor(Math.random() * numberOfSprites)
   if(dollymode){
       console.log("dollymode");
     this.img.src = "./enemySprites/" +this.randPic+".png";
@@ -302,3 +328,4 @@ Enemy.prototype.update = function() {
 };
   //this.bind();
 };
+
