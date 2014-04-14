@@ -1,16 +1,25 @@
-
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="https://dl.dropboxusercontent.com/u/1703360/js/trianglify.min.js"></script>
 <script type="text/javascript">
-var t = new Trianglify({noiseIntensity:0,});
-var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
-window.onresize = function() {
-    pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-    document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
-
-        };
+window.onload = function(){
+    var t = new Trianglify({noiseIntensity:0,});
+    var lb = document.getElementById("lb");
+    var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+    drawBackground();
+    function drawBackground(){
+        pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+        document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
+    };
+    window.onresize = function() {
+        drawBackground();
+    };
+    lb.onclick = function(){
+        t = new Trianglify({noiseIntensity:0,});
+        drawBackground();
+        return false;
+    };
+};
 </script>
 
 <style>
@@ -40,5 +49,7 @@ a{
     <a href="./game/index.html">Game 1</a>
     <br>
     <a href="./game2/index.html">Game 2</a>
+    <br>
+    <a id="lb", href="#">New Background</a> 
 </div>
 </body>
