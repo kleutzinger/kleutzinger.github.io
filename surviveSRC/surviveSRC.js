@@ -32,7 +32,7 @@ var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted"
 "outscored", "outsmarted", "ate", "loved", "told you, and had to kill", "slept on", "misinterpreted", "kissed",
 "undid", "outdid", "ended", "buried", "ran over", "forked", "karate chopped", "surprised", "sneaked up on", "didn't want this to happen to",
 "farted on", "touched","rolled onto","jumped onto", "shamed","sniped", "got caught with","dropped",
-"flicked", "out-macroed","overestimated", "banged", "tickled",];
+"flicked", "out-macroed","overestimated", "banged", "tickled", "went to prom with", "uppercut",];
 
 var names =["Sara Aboobakar",
 "Sarah Abusaa",
@@ -491,7 +491,7 @@ Game.draw = function() {
   Game.enemies = [];
   Game.context.clearRect(0,0, Game.width, Game.height);
   Game.context.fillStyle = 'black';
-    Game.context.fillText("YOU WIN! Tell kevin now!", Game.width/2, Game.height/2);
+    Game.context.fillText("You win! Also I fixed the glitches now, so it's legit. Tell Kevin.", Game.width/2, Game.height/2);
     winSong.play();  
   };
 /*  else{

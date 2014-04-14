@@ -150,7 +150,7 @@ Game.draw = function() {
   Game.enemies = [];
   Game.context.clearRect(0,0, Game.width, Game.height);
   Game.context.fillStyle = 'black';
-    Game.context.fillText("YOU WIN! Tell kevin now!", Game.width/2, Game.height/2);
+    Game.context.fillText("You win! Also I fixed the glitches now, so it's legit. Tell Kevin.", Game.width/2, Game.height/2);
     winSong.play();  
   };
 /*  else{
