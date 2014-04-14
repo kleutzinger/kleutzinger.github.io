@@ -126,7 +126,6 @@ Game.start = function() {
   winSong = document.getElementById("winSong");
   soundEfx = document.getElementById("soundEfx");
   soundEfx.play();
-  document.getElementById('soundEfx').currentTime = 157
   //setTimeout(function() {function();},1250);
   Game.canvas = document.createElement("canvas");
   Game.canvas.width = Game.width;
