@@ -497,7 +497,7 @@ Game.draw = function() {
   Game.context.font = "bold 40px Arial";
   Game.context.fillText(bigmessage, 10, Game.height/2);
   Game.context.font = "bold 12px Arial";
-  Game.context.drawImage(deadpic, 100,100, 100, 100);
+  Game.context.drawImage(deadpic, 100,100, 100*.88, 100);
     };
   Game.player.draw(Game.context);
 };
@@ -628,7 +628,7 @@ function Enemy() {
   //this.height = 40;
   //this.width = 40;
   this.height = this.size;
-  this.width = this.size;
+  this.width = this.size*.88;
   if(document.getElementById("SS_checkbox").checked){
     this.xVel = -1 - (Math.random()*20);
   }
