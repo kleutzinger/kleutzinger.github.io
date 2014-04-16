@@ -1,5 +1,9 @@
 //http://code.createjs.com/soundjs-0.5.0.min.js
 // WIN AT > 157
+var thisURL = 'http://kevinleutzinger.com/surviveSRC'
+var lastScore = -1;
+var deathPost = '';
+var deathPic = '';
 var rotation = false;
 var cTime;
 var startTime = Date.now();
@@ -30,7 +34,7 @@ var numberOfSprites = 9
 
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
-"ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed",
+"ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed", "rekt", "tried to look nonchalant to",
 "outscored", "outsmarted", "ate", "loved", "told you, and had to kill", "slept on", "misinterpreted", "kissed",
 "undid", "outdid", "ended", "buried", "ran over", "forked", "karate chopped", "surprised", "sneaked up on", "didn't want this to happen to",
 "farted on", "touched","rolled onto","jumped onto", "shamed","sniped", "got caught with","dropped",
@@ -53,7 +57,7 @@ var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted"
 "ding dong ditched","sexiled","reminded","showed no mercy toward","played this song to","blocked this website for",
 "told Kevin about","betrayed","backstabbed","taught","outplayed","corrupted","too many verbs","coughed on",
 "digitized","dated","learned about","1080 backflipped","acted normal around","lent a Shriner's car to",
-"no contact ordered","investigated","snacked on","noticed","zapped","shanked","imprisoned","incarcerated",];
+"no contact ordered","investigated","snacked on","noticed","zapped","shanked","imprisoned","incarcerated","helped","cha-cha slided"];
 
 var names  = ["Sara","Sarah","Ethan","Eliana","Courtney","Tony","Tessa","Kathleen","Zara","Daniel","Ishmael","Jin","Edward","Makaela","Alexandra","Meredith","Natalie","Klodian","Garland","Paul","Brianna","Sarah","Guthrie","Adam","Elijah","Alexandra","Maritza","Jackson","Ceilidh","Hanna","Kaelyn","Cayle","Kori","Hannah","Alexis","Sahra","David","Jack","Cat","Sabrina","Chi","Will","Gina","Simay","Joyce","Khin","Michael","Nina","Quille","Lulu","Yueming","Katherine","Grifﬁn","Naomi","Kolya","Rebecca","Mina","Mikaela","Alexander","Alef","Elibba","Kate","Anna","Rose","Michael","Demitria","Natalie","Olivia","Haley","Freya","House","Cian","Leo","Rachel","Jenny","Martha","Anton","Shahreen","Winter","Becka","Najwa","Colin","Delaney","Hannah","Greig","Isabel","Michael","Avonlea","Stephanie","Ligaya","Oliver","Theodor","Rhiannon","Harry","Marcel","Julian","Courtney-Marie","Victoria","Paige","Gemma","Bethany","Ella","Robert","Rohan","Aidan","Lillian","Trixie","Julia","Courtney","Tyler","Nicole","Ishan","Naomi","Samuel","Lee","Hazemach","Jasmine","Izaak","Lorelei","Oscar","Ian","Patrick","Niah","Sophie","London","Zoe","Chloe","Regan","Sahal","Shannon","Greg","Lucy","Jacob","Nishant","Malcolm","Sarah","Bianca","Jan","Elliot","Julian","Youjeen","Feston","Spencer","Emma","Jacob","Reed","Maksim","Madeleine","Andrew","Ei","Ray","Ben","James","Dakotah","Jake","Amara","Eldred","Isabella","Connor","Hannah","Kevin","Jonathan","Wanying","Zhaoran","Hannah","Jordan","Cary","Jazmine","Christina","Elliot","Ross","Theo","Luke","Juliette","Cary","Audrey","Kulu","Alicia","Marianna","Sarena","David","Avery","Wyatt","Rachel","Sophie","Mia","Molly","Kirsiah","Chelsea","Heather","Matthew","Jade","Matthew","David","Sophie","Kendra","Drew","Meghan","Aung","Meredith","Elise","Jenifer","Cassandra","Kayleigh","Chazlee","Jaeeun","Kai","Mika","Vinzie","Evan","Huw","Jake","Michael","Isabel","Jeheli","Bradley","Max","Serina","Alana","Benjamin","Sam","Bryce","Grant","Megan","Ashley","Lucy","Neil","Queen-Ama","Georges","Vijay","Alexander","Naomi","Konrad","Ingrid","Solomon","Taylor","Jaeme","Brianna","Phil","Simon","Anna","Dante","Joelle","Cameron","Maria","Mallie","Philip","Diego","Dominica","Camille","Vasu","Soﬁa","Payal","Katharine","Laurens","AJ","Virginia","Seth","Maya","Grace","Abi","Kahlia","Nathan","Emma","Andre","Daniel","Thomas","Andrea","Johanna","Samm","Hayden","Patricia","Linsen","Irene","Michael","Melissa","Daneil","Leandra","Nate","Ihor","Simon","Mercy","Sebastian","Elle","Ian","Cori","Ali","Luke","Moses","Chelsea","Koshu","Bazl","Danya","Tara","Uzoamaka","Nichol","Zev","Samantha","Yuxing","George","Sierra","Pearl","Aaron","Jared","Naida","Erin","Kiyomi","Jonathan","Samantha","Amy","June","Nancy","Samantha","Sophie","Minji","Gavin","James","Maisha","Spencer","Mengtian","Alwaleed","Amber","Molly","Sally","Gabe","Dawson","Andy","Julian",]
 var deathmessages = ["Daniel ninja kicked you",
@@ -235,28 +239,56 @@ function isBigEnough(element) {
   return element.x > -element.size;
 }
 
+function shareLastDeath() {
+  if(lastScore > 0)
+  {
+    FB.ui(
+      {
+       method: 'feed',
+       caption: 'I lasted ' + lastScore + ' seconds in Survive SRC!',
+       name: deathPost,
+       description: (
+          'Can you survive the onslaught of SRC students?'
+       ),
+       link: thisURL,
+       picture: deathPic
+      },
+      function(response) {
+        if (response && response.post_id) {
+          alert('Post was published.');
+        } else {
+          alert('Post was not published.');
+        }
+      }
+    );
+  }
+}
+
 Game.update = function() {
     score += 1;
   for (var i = 0; i < Game.enemies.length; i++) {
     Game.enemies[i].update()
     if (hitPlayer(Game.enemies[i])){
-    if(document.getElementById('soundEfx').currentTime > hiScore)
-    hiScore = document.getElementById('soundEfx').currentTime;
-    console.log(hiScore);
+      lastScore = document.getElementById('soundEfx').currentTime;
       document.getElementById('soundEfx').currentTime = 0;
-      console.log("HIT!!");
-      hit = true;
-      died = true;
-        action = Math.floor(Math.random()*actions.length)
-        deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg"
+      if(document.getElementById('soundEfx').currentTime > hiScore)
+        hiScore = document.getElementById('soundEfx').currentTime;
+      console.log(hiScore);
+        console.log("HIT!!");
+        hit = true;
+        died = true;
+        action = Math.floor(Math.random()*actions.length);
+        deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg";
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
         lastDeathMessage = bigmessage;
         if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
+        deathPost = names[Game.enemies[i].randPic] +" "+actions[action]+" me.";
+        deathPic = deadpic.src;
       Game.enemies = []
       maxEnemy = 0;
       //Game.context.fillStyle = "purple";
       Game.context.clearRect(0, 0, Game.width, Game.height);
-     }
+    }
   }
   Game.enemies = Game.enemies.filter(isBigEnough);
  // if(lastFilter > 30){
@@ -435,6 +467,6 @@ function saveImage(){
     var c=Game.canvas
     var d=c.toDataURL("image/png");
     var w=window.open('about:blank','image from canvas');
-    w.document.write("<body bgcolor=#D2D2D2> <img src='"+d+"' alt='from canvas'/><br> Save by dragging or right clicking the image");
+    w.document.write("<body bgcolor=#D2D2D2> <img src='"+d+"' alt='from canvas'/><br> Save by dragging image or with ctrl+s / cmd+s");
 };
 
