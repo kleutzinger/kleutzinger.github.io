@@ -82,9 +82,7 @@ for (var i = 0; i < names.length; i++){
      picNameLookup.push(customNames[i]);
      names.push(customNames[i])
  }
- console.log(picNameLookup);
-console.log("length of sprites == length of deathmessages")
-console.log(numberOfSprites == deathmessages.length)
+
 
 var focused = true;
 $(window).blur(function() {
@@ -160,7 +158,7 @@ Game._onEachFrame = (function() {
 })();
 
 Game.start = function() {
-  console.log(location.hash);
+  //console.log(location.hash);
   var startTime = Date.now();
   var soundEfx;
   var winSong;
