@@ -435,6 +435,6 @@ function saveImage(){
     var c=Game.canvas
     var d=c.toDataURL("image/png");
     var w=window.open('about:blank','image from canvas');
-    w.document.write("<body bgcolor=#D2D2D2> <img src='"+d+"' alt='from canvas'/><br> Save by dragging image or with ctrl+s / cmd+s");
+    w.document.write("<body bgcolor=#D2D2D2> <img src='"+d+"' alt='from canvas'/><br> Save by dragging or right clicking the image");
 };
 
