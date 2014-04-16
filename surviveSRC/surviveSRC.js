@@ -273,8 +273,7 @@ Game.update = function() {
       lastScore = document.getElementById('soundEfx').currentTime;
       if(lastScore > hiScore)
         hiScore = lastScore;
-      console.log(hiScore);
-        console.log("HIT!!");
+      
         hit = true;
         died = true;
         action = Math.floor(Math.random()*actions.length);
@@ -390,7 +389,6 @@ function hitPlayer(e){
 function Enemy() {
   this.img = new Image();
   this.randPic = Math.floor(Math.random() * names.length)
-  console.log("dollymode");     
   this.img.src = "./pictures/" +picNameLookup[this.randPic]+".jpg";
 
                 //if (this.xVel > -7)  
