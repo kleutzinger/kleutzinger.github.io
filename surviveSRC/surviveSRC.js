@@ -20,6 +20,7 @@ var hensley = new Image()
 var dollymode = false;
 var bigmessage = "";
 var deadpic = new Image()
+var lastDeathMessage = ""
 deadpic.src = "./pictures/nothing.png"
 
 if(location.hash == "#dollymode")
@@ -249,6 +250,7 @@ Game.update = function() {
         action = Math.floor(Math.random()*actions.length)
         deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg"
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
+        lastDeathMessage = bigmessage;
         if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
       Game.enemies = []
       maxEnemy = 0;
@@ -426,4 +428,13 @@ Enemy.prototype.update = function() {
   //this.bind();
 };
 
+
+
+
+function saveImage(){
+    var c=Game.canvas
+    var d=c.toDataURL("image/png");
+    var w=window.open('about:blank','image from canvas');
+    w.document.write("<img src='"+d+"' alt='from canvas'/>");
+};
 
