@@ -47,7 +47,7 @@ var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted"
 "snorted","suspended","froze","burned","slpashed","blasted","popped","got engaged to","married","divorced","impregnated",
 "infested","infected","incinerated","critical hit","knocked out","home runned","borked","snapped","scared","scarred",
 "fired","threw stones at","got stoned with","turnt","risked it with","slammed","sprayed","hole in oned","usurped","dethroned",
-"upset","ended the game for","fell in love with","showered with","advocated","mega moded","spiked","ran away with","pickled",
+"upset","ended the game for","fell in love with","showered with","advocated","mega moded","spiked","ran away with",
 "raced up and down the sidewalk with","dominated","didn't go to prom with","benched","disowned","regurgitated","turned down",
 "jacked","spat on","buttered","reported","broke vows with","countered","Vulcan nerve pinched", "disregarded","washed",
 "expelled","was done with","burst","deflated","finished","pounced on","bounced","got jiggy with","nerfed",
@@ -58,7 +58,10 @@ var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted"
 "ding dong ditched","sexiled","reminded","showed no mercy toward","played this song to","blocked this website for",
 "told Kevin about","betrayed","backstabbed","taught","outplayed","corrupted","too many verbs","coughed on",
 "digitized","dated","learned about","1080 backflipped","acted normal around","lent a Shriner's car to",
-"no contact ordered","investigated","snacked on","noticed","zapped","shanked","imprisoned","incarcerated","helped","cha-cha slided"];
+"no contact ordered","investigated","snacked on","noticed","zapped","shanked","imprisoned","incarcerated","helped","cha-cha slided",
+"was inside", "was","creamed","sweat on", "punked","punted","outlasted","pickled", "rap battled", "lightning bolted",
+"fertilized","abducted","kidnapped","abstracted","aggroed","beat the daylights out of","oneshot","instakilled",
+"blackmailed",];
 
 var names  = ["Sara","Sarah","Ethan","Eliana","Courtney","Tony","Tessa","Kathleen","Zara","Daniel","Ishmael","Jin","Edward","Makaela","Alexandra","Meredith","Natalie","Klodian","Garland","Paul","Brianna","Sarah","Guthrie","Adam","Elijah","Alexandra","Maritza","Jackson","Ceilidh","Hanna","Kaelyn","Cayle","Kori","Hannah","Alexis","Sahra","David","Jack","Cat","Sabrina","Chi","Will","Gina","Simay","Joyce","Khin","Michael","Nina","Quille","Lulu","Yueming","Katherine","Grifﬁn","Naomi","Kolya","Rebecca","Mina","Mikaela","Alexander","Alef","Elibba","Kate","Anna","Rose","Michael","Demitria","Natalie","Olivia","Haley","Freya","House","Cian","Leo","Rachel","Jenny","Martha","Anton","Shahreen","Winter","Becka","Najwa","Colin","Delaney","Hannah","Greig","Isabel","Michael","Avonlea","Stephanie","Ligaya","Oliver","Theodor","Rhiannon","Harry","Marcel","Julian","Courtney-Marie","Victoria","Paige","Gemma","Bethany","Ella","Robert","Rohan","Aidan","Lillian","Trixie","Julia","Courtney","Tyler","Nicole","Ishan","Naomi","Samuel","Lee","Hazemach","Jasmine","Izaak","Lorelei","Oscar","Ian","Patrick","Niah","Sophie","London","Zoe","Chloe","Regan","Sahal","Shannon","Greg","Lucy","Jacob","Nishant","Malcolm","Sarah","Bianca","Jan","Elliot","Julian","Youjeen","Feston","Spencer","Emma","Jacob","Reed","Maksim","Madeleine","Andrew","Ei","Ray","Ben","James","Dakotah","Jake","Amara","Eldred","Isabella","Connor","Hannah","Kevin","Jonathan","Wanying","Zhaoran","Hannah","Jordan","Cary","Jazmine","Christina","Elliot","Ross","Theo","Luke","Juliette","Cary","Audrey","Kulu","Alicia","Marianna","Sarena","David","Avery","Wyatt","Rachel","Sophie","Mia","Molly","Kirsiah","Chelsea","Heather","Matthew","Jade","Matthew","David","Sophie","Kendra","Drew","Meghan","Aung","Meredith","Elise","Jenifer","Cassandra","Kayleigh","Chazlee","Jaeeun","Kai","Mika","Vinzie","Evan","Huw","Jake","Michael","Isabel","Jeheli","Bradley","Max","Serina","Alana","Benjamin","Sam","Bryce","Grant","Megan","Ashley","Lucy","Neil","Queen-Ama","Georges","Vijay","Alexander","Naomi","Konrad","Ingrid","Solomon","Taylor","Jaeme","Brianna","Phil","Simon","Anna","Dante","Joelle","Cameron","Maria","Mallie","Philip","Diego","Dominica","Camille","Vasu","Soﬁa","Payal","Katharine","Laurens","AJ","Virginia","Seth","Maya","Grace","Abi","Kahlia","Nathan","Emma","Andre","Daniel","Thomas","Andrea","Johanna","Sam","Hayden","Patricia","Linsen","Irene","Michael","Melissa","Daneil","Leandra","Nate","Ihor","Simon","Mercy","Sebastian","Elle","Ian","Cori","Ali","Luke","Moses","Chelsea","Koshu","Bazl","Danya","Tara","Uzoamaka","Nichol","Zev","Samantha","Yuxing","George","Sierra","Pearl","Aaron","Jared","Naida","Erin","Kiyomi","Jonathan","Samantha","Amy","June","Nancy","Samantha","Sophie","Minji","Gavin","James","Maisha","Spencer","Mengtian","Alwaleed","Amber","Molly","Sally","Gabe","Dawson","Andy","Julian",]
 var deathmessages = ["Daniel ninja kicked you",
@@ -279,8 +282,8 @@ Game.update = function() {
         sharePic.src = "http://www.kevinleutzinger.com/surviveSRC/pictures/"+picNameLookup[Game.enemies[i].randPic]+".jpg";
         //http://www.kevinleutzinger.com/surviveSRC/pictures/Edan.jpg
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
-        lastDeathMessage = bigmessage;
         if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
+        lastDeathMessage = bigmessage;
         deathPost = names[Game.enemies[i].randPic] +" "+actions[action]+" me.";
         deathPic = deadpic.src;
       Game.enemies = []
