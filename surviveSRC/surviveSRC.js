@@ -11,6 +11,7 @@ var dG = 1;
 var hiScore = 0;
 var win = false;
 var score =0;
+var rotMode = false;
 var wavy= true;
 var evilHensley = new Image()
 var lastFilter = 0;
@@ -248,6 +249,8 @@ Game.update = function() {
   //Game.enemies = Game.enemies.filter(isBigEnough);
   //lastFilter =  0;
 //};
+  rotMode = document.getElementById("ROT_checkbox").checked
+  
   cTime = soundEfx.currentTime;
   if(cTime >= 155) win = true;
   if(cTime > 3){
@@ -277,13 +280,26 @@ function Player() {
   this.width = 32;
   this.xVel = 0;
   this.yVel = 0;
+  this.rot = 0;
 }
 
 Player.prototype.draw = function(context) {
+
   if(hit) Game.context.fillStyle = 'black';
   else Game.context.fillStyle = 'rgb(255,'+playerG+',0)';
   hit = false;
-  context.fillRect(this.x, this.y, this.height, this.width);
+  if(rotMode){
+  context.save()  
+  this.rot+=.1;
+  context.translate(this.x, this.y)
+  context.translate(this.width/2, this.height/2)
+  context.rotate(this.rot);
+  context.fillRect(-this.width/2, -this.height/2, this.height, this.width);
+
+  context.restore()}
+  else{
+        context.fillRect(this.x, this.y, this.height, this.width);
+  }
 };
 
 Player.prototype.moveLeft = function() {this.xVel = -5;};
@@ -352,11 +368,30 @@ function Enemy() {
   };
   
   this.yVel = -.5 - (Math.random()*8);
+  this.rot = 0;
+  this.rotDiff  = ((Math.random() * 4 ) - 2) /10;
 };
 
 Enemy.prototype.draw = function(context) {
   Game.context.fillStyle = 'red';
-  context.drawImage(this.img, this.x,this.y, this.width, this.height);
+  
+  if(rotMode){
+  context.save()
+  
+  
+  this.rot+=this.rotDiff;
+  context.translate(this.x, this.y)
+  context.translate(this.width/2, this.height/2)
+  context.rotate(this.rot);
+  context.drawImage(this.img, -this.width/2,-this.height/2, this.width, this.height);
+  context.restore()
+}
+else{
+    context.drawImage(this.img, this.x, this.y, this.width, this.height);
+    
+};
+
+
 };
 
 Enemy.prototype.bind = function() {
