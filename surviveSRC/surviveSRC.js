@@ -280,7 +280,7 @@ Game.update = function() {
         died = true;
         action = Math.floor(Math.random()*actions.length);
         deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg";
-        dbPic.src = "https://dl.dropboxusercontent.com/u/1703360/"+picNameLookup[Game.enemies[i].randPic]+".jpg"
+        dbPic.src = "https://dl.dropboxusercontent.com/u/1703360/pictures/"+picNameLookup[Game.enemies[i].randPic]+".jpg"
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
         lastDeathMessage = bigmessage;
         if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
