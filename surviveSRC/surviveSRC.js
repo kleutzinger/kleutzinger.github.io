@@ -253,7 +253,7 @@ function shareLastDeath() {
           'Can you survive the onslaught of SRC students?'
        ),
        link: thisURL,
-       picture: deathPic
+       picture: dbPic
       },
       function(response) {
         if (response && response.post_id) {
