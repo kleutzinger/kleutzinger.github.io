@@ -20,13 +20,12 @@ var wavy= true;
 var evilHensley = new Image()
 var lastFilter = 0;
 evilHensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley3.png" 
-var dbPic = new Image();
-dbPic.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley3.png";
 var hensley = new Image()
 var dollymode = false;
 var bigmessage = "";
 var deadpic = new Image()
 var lastDeathMessage = ""
+var sharePic =new Image()
 deadpic.src = "./pictures/nothing.png"
 
 if(location.hash == "#dollymode")
@@ -253,7 +252,7 @@ function shareLastDeath() {
           'Can you survive the onslaught of SRC students?'
        ),
        link: thisURL,
-       picture: dbPic
+       picture: sharePic,
       },
       function(response) {
         if (response && response.post_id) {
@@ -280,7 +279,8 @@ Game.update = function() {
         died = true;
         action = Math.floor(Math.random()*actions.length);
         deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg";
-        dbPic.src = "https://dl.dropboxusercontent.com/u/1703360/pictures/"+picNameLookup[Game.enemies[i].randPic]+".jpg"
+        sharePic.src = "http://www.kevinleutzinger.com/surviveSRC/pictures/"+picNameLookup[Game.enemies[i].randPic]+".jpg";
+        //http://www.kevinleutzinger.com/surviveSRC/pictures/Edan.jpg
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
         lastDeathMessage = bigmessage;
         if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};

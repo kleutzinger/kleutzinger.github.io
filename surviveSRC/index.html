@@ -12,7 +12,25 @@
   <body onload="Game.start()">
   <!-- Thanks to Aaron Santiago for FB sharing -->
   <div id="fb-root"></div>
-    <script>
+  <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '563827220401562',
+          status     : true,
+          xfbml      : true
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "http://connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+
+      // FB.login(function(){}, {scope: 'publish_actions'});
+    </script><script>
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '563827220401562',
@@ -31,7 +49,8 @@
 
       // FB.login(function(){}, {scope: 'publish_actions'});
     </script>
-    
+
+
     <audio id="soundEfx"
       src="https://dl.dropboxusercontent.com/u/1703360/c/11%20She%27s%20An%20Angel.ogg"
       style="display: none;">
