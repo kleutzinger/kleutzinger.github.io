@@ -20,6 +20,8 @@ var wavy= true;
 var evilHensley = new Image()
 var lastFilter = 0;
 evilHensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley3.png" 
+var dbPic = new Image();
+dbPic.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley3.png";
 var hensley = new Image()
 var dollymode = false;
 var bigmessage = "";
@@ -268,16 +270,17 @@ Game.update = function() {
     score += 1;
   for (var i = 0; i < Game.enemies.length; i++) {
     Game.enemies[i].update()
-    if (hitPlayer(Game.enemies[i])){
+    if (hitPlayer(Game.enemies[i])){ // ------ DEAD HERE -------------
       lastScore = document.getElementById('soundEfx').currentTime;
       if(lastScore > hiScore)
-        hiScore = lastScore
+        hiScore = lastScore;
       console.log(hiScore);
         console.log("HIT!!");
         hit = true;
         died = true;
         action = Math.floor(Math.random()*actions.length);
         deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg";
+        dbPic.src = "https://dl.dropboxusercontent.com/u/1703360/"+picNameLookup[Game.enemies[i].randPic]+".jpg"
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
         lastDeathMessage = bigmessage;
         if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
