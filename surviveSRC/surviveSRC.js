@@ -65,6 +65,18 @@ var deathmessages = ["Daniel ninja kicked you",
 "Solomon fed their carry",
 "Muir 'not even close, baby'ed you",
 ];
+
+var customNames = ["Aaron","David","Edan","Garrett","Harrison","Jeremy",
+"Jody","Josh","Matt","Max"]
+var picNameLookup = []
+for (var i = 0; i < names.length; i++){
+     picNameLookup.push(""+i);
+ }
+ for (var i = 0; i < customNames.length; i++){
+     picNameLookup.push(customNames[i]);
+     names.push(customNames[i])
+ }
+ console.log(picNameLookup);
 console.log("length of sprites == length of deathmessages")
 console.log(numberOfSprites == deathmessages.length)
 
@@ -235,9 +247,9 @@ Game.update = function() {
       hit = true;
       died = true;
         action = Math.floor(Math.random()*actions.length)
-        deadpic.src = "./pictures/" +Game.enemies[i].randPic+".jpg"
+        deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg"
         bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
-        if(names[Game.enemies[i].randPic] == "Kevin Leutzinger"){bigmessage = "Kevin Leutzinger made this game"};
+        if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
       Game.enemies = []
       maxEnemy = 0;
       //Game.context.fillStyle = "purple";
@@ -341,8 +353,8 @@ function hitPlayer(e){
 function Enemy() {
   this.img = new Image();
   this.randPic = Math.floor(Math.random() * names.length)
-  console.log("dollymode");
-  this.img.src = "./pictures/" +this.randPic+".jpg";
+  console.log("dollymode");     
+  this.img.src = "./pictures/" +picNameLookup[this.randPic]+".jpg";
 
                 //if (this.xVel > -7)  
             //context.drawImage(this., this.x,this.y, this.width, this.height)
