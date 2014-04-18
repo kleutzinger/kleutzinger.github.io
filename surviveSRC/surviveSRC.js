@@ -421,7 +421,7 @@ function Enemy() {
 
 Enemy.prototype.draw = function(context) {
   Game.context.fillStyle = 'red';
-  if(rotMode){
+  if(rotMode || happyMode){
   context.save()
   
   
