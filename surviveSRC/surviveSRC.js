@@ -27,7 +27,7 @@ var deadpic = new Image()
 var lastDeathMessage = ""
 var sharePic =new Image()
 deadpic.src = "./pictures/nothing.png"
-
+var pulseMode = false;
 if(location.hash == "#dollymode")
     dollymode = true;
 hensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley2.png";
@@ -35,7 +35,7 @@ var numberOfSprites = 9
 
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
-"ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed", "rekt", "tried to look nonchalant to",
+"ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed", "rekt", "tried to look nonchalant around",
 "outscored", "outsmarted", "ate", "loved", "told you, and had to kill", "slept on", "misinterpreted", "kissed",
 "undid", "outdid", "ended", "buried", "ran over", "forked", "karate chopped", "surprised", "sneaked up on", "didn't want this to happen to",
 "farted on", "touched","rolled onto","jumped onto", "shamed","sniped", "got caught with","dropped",
@@ -61,7 +61,7 @@ var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted"
 "no contact ordered","investigated","snacked on","noticed","zapped","shanked","imprisoned","incarcerated","helped","cha-cha slided",
 "was inside", "was","creamed","sweat on", "punked","punted","outlasted","pickled", "rap battled", "lightning bolted",
 "fertilized","abducted","kidnapped","abstracted","aggroed","beat the daylights out of","oneshot","instakilled",
-"blackmailed",];
+"blackmailed","blazed","pinched",];
 
 var names  = ["Sara","Sarah","Ethan","Eliana","Courtney","Tony","Tessa","Kathleen","Zara","Daniel","Ishmael","Jin","Edward","Makaela","Alexandra","Meredith","Natalie","Klodian","Garland","Paul","Brianna","Sarah","Guthrie","Adam","Elijah","Alexandra","Maritza","Jackson","Ceilidh","Hanna","Kaelyn","Cayle","Kori","Hannah","Alexis","Sahra","David","Jack","Cat","Sabrina","Chi","Will","Gina","Simay","Joyce","Khin","Michael","Nina","Quille","Lulu","Yueming","Katherine","Grifﬁn","Naomi","Kolya","Rebecca","Mina","Mikaela","Alexander","Alef","Elibba","Kate","Anna","Rose","Michael","Demitria","Natalie","Olivia","Haley","Freya","House","Cian","Leo","Rachel","Jenny","Martha","Anton","Shahreen","Winter","Becka","Najwa","Colin","Delaney","Hannah","Greig","Isabel","Michael","Avonlea","Stephanie","Ligaya","Oliver","Theodor","Rhiannon","Harry","Marcel","Julian","Courtney-Marie","Victoria","Paige","Gemma","Bethany","Ella","Robert","Rohan","Aidan","Lillian","Trixie","Julia","Courtney","Tyler","Nicole","Ishan","Naomi","Samuel","Lee","Hazemach","Jasmine","Izaak","Lorelei","Oscar","Ian","Patrick","Niah","Sophie","London","Zoe","Chloe","Regan","Sahal","Shannon","Greg","Lucy","Jacob","Nishant","Malcolm","Sarah","Bianca","Jan","Elliot","Julian","Youjeen","Feston","Spencer","Emma","Jacob","Reed","Maksim","Madeleine","Andrew","Ei","Ray","Ben","James","Dakotah","Jake","Amara","Eldred","Isabella","Connor","Hannah","Kevin","Jonathan","Wanying","Zhaoran","Hannah","Jordan","Cary","Jazmine","Christina","Elliot","Ross","Theo","Luke","Juliette","Cary","Audrey","Kulu","Alicia","Marianna","Sarena","David","Avery","Wyatt","Rachel","Sophie","Mia","Molly","Kirsiah","Chelsea","Heather","Matthew","Jade","Matthew","David","Sophie","Kendra","Drew","Meghan","Aung","Meredith","Elise","Jenifer","Cassandra","Kayleigh","Chazlee","Jaeeun","Kai","Mika","Vinzie","Evan","Huw","Jake","Michael","Isabel","Jeheli","Bradley","Max","Serina","Alana","Benjamin","Sam","Bryce","Grant","Megan","Ashley","Lucy","Neil","Queen-Ama","Georges","Vijay","Alexander","Naomi","Konrad","Ingrid","Solomon","Taylor","Jaeme","Brianna","Phil","Simon","Anna","Dante","Joelle","Cameron","Maria","Mallie","Philip","Diego","Dominica","Camille","Vasu","Soﬁa","Payal","Katharine","Laurens","AJ","Virginia","Seth","Maya","Grace","Abi","Kahlia","Nathan","Emma","Andre","Daniel","Thomas","Andrea","Johanna","Sam","Hayden","Patricia","Linsen","Irene","Michael","Melissa","Daneil","Leandra","Nate","Ihor","Simon","Mercy","Sebastian","Elle","Ian","Cori","Ali","Luke","Moses","Chelsea","Koshu","Bazl","Danya","Tara","Uzoamaka","Nichol","Zev","Samantha","Yuxing","George","Sierra","Pearl","Aaron","Jared","Naida","Erin","Kiyomi","Jonathan","Samantha","Amy","June","Nancy","Samantha","Sophie","Minji","Gavin","James","Maisha","Spencer","Mengtian","Alwaleed","Amber","Molly","Sally","Gabe","Dawson","Andy","Julian",]
 var deathmessages = ["Daniel ninja kicked you",
@@ -94,7 +94,6 @@ $(window).blur(function() {
     document.getElementById('soundEfx').pause()
     Game.enemies = []
     maxEnemy=0;
-    document.getElementById('soundEfx').currentTime = 0;
     }
 });
 
@@ -202,7 +201,6 @@ Game.draw = function() {
   Game.context.fillStyle = 'white'
   Game.context.fillRect(0, 0, Game.width, Game.height);
   }
-  if (soundEfx.currentTime >= 29) wavy=true;
   if(win){
   Game.enemies = [];
   Game.context.clearRect(0,0, Game.width, Game.height);
@@ -270,11 +268,11 @@ Game.update = function() {
     score += 1;
   for (var i = 0; i < Game.enemies.length; i++) {
     Game.enemies[i].update()
-    if (hitPlayer(Game.enemies[i])){ // ------ DEAD HERE -------------
+    if (hitPlayer(Game.enemies[i])){ // ------ DEAD HERE die dead kill -------------
       lastScore = document.getElementById('soundEfx').currentTime;
       if(lastScore > hiScore)
         hiScore = lastScore;
-      
+        pulseMode = false;
         hit = true;
         died = true;
         action = Math.floor(Math.random()*actions.length);
@@ -289,7 +287,7 @@ Game.update = function() {
       Game.enemies = []
       maxEnemy = 0;
       //Game.context.fillStyle = "purple";
-      document.getElementById('soundEfx').currentTime = 0;
+      document.getElementById('soundEfx').currentTime = 0;////////
       Game.context.clearRect(0, 0, Game.width, Game.height);
     }
   }
@@ -299,7 +297,9 @@ Game.update = function() {
   //lastFilter =  0;
 //};
   rotMode = document.getElementById("ROT_checkbox").checked
-  
+    if (cTime >= 29){ wavy=true;}
+    if (cTime >= 48.5){ pulseMode=true;}
+    if (cTime >= 71){ pulseMode=false;}
   cTime = soundEfx.currentTime;
   if(cTime >= 155) win = true;
   if(cTime > 5){
@@ -402,12 +402,10 @@ function Enemy() {
     this.size = Math.random() * 200 + 60;
   }
   else{
-    this.size = Math.random() * 20 + 30;
+    this.size = Math.random() * 20 + 40;
   };
   //this.height = 40;
   //this.width = 40;
-  this.height = this.size;
-  this.width = this.size*.88;
   if(document.getElementById("SS_checkbox").checked){
     this.xVel = -1 - (Math.random()*20);
   }
@@ -422,7 +420,6 @@ function Enemy() {
 
 Enemy.prototype.draw = function(context) {
   Game.context.fillStyle = 'red';
-  
   if(rotMode){
   context.save()
   
@@ -453,6 +450,14 @@ Enemy.prototype.bind = function() {
     this.yVel = -this.yVel;
   };
 Enemy.prototype.update = function() {
+  this.beatDistance = 1 - (((document.getElementById('soundEfx').currentTime - 15/83*2 + (60/83)) % (60/83*2))/(60/83*2))
+  this.beatDistance = this.beatDistance * 30
+  if(!pulseMode)
+  {
+    this.beatDistance = 0;
+  }
+  this.height = this.size + this.beatDistance;
+  this.width = (this.size + this.beatDistance)*.88;
   this.x += this.xVel;
   //this.y += this.yVel;
   if (wavy){
