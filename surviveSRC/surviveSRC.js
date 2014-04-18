@@ -32,7 +32,7 @@ if(location.hash == "#dollymode")
     dollymode = true;
 hensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley2.png";
 var numberOfSprites = 9
-
+var happyMode = false;
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
 "ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed", "rekt", "tried to look nonchalant around",
@@ -297,6 +297,7 @@ Game.update = function() {
   //lastFilter =  0;
 //};
   rotMode = document.getElementById("ROT_checkbox").checked
+  happyMode = document.getElementById("H_checkbox").checked
     if (cTime >= 29){ wavy=true;}
     if (cTime >= 48.5){ pulseMode=true;}
     if (cTime >= 71){ pulseMode=false;}
@@ -425,6 +426,7 @@ Enemy.prototype.draw = function(context) {
   
   
   this.rot+=this.rotDiff;
+  if(happyMode){this.rot = (this.y-this.yOffset)/100;};
   context.translate(this.x, this.y)
   context.translate(this.width/2, this.height/2)
   context.rotate(this.rot);
