@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>RK4 Planetary</title>
+    <style type="text/css" media="screen">
+      canvas { border: 3px solid; text:"did not work? try refreshing"}
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8 " src="game.js"> </script>
+  </head>
+  <p>By Kevin Leutzinger and Aaron Santiago</p>
+  <input id="reset" type="button" name="option6"value="Start" onclick="init()"</input>
+  <input type="number" id="stepSize">Step Size</input><br>
+  mass, x, y ,dx, dy
+  <br>moon
+  <input type="number" id="moonMass"></input>
+  <input type="number" id="moonX"></input>
+  <input type="number" id="moonY"></input>
+  <input type="number" id="moonDX"></input>
+  <input type="number" id="moonDY"></input>
+  <br>planet
+  <input type="number" id="planetMass"></input>
+  <input type="number" id="planetX"></input>
+  <input type="number" id="planetY"></input>
+  <input type="number" id="planetDX"></input>
+  <input type="number" id="planetDY"></input>
+  <br>sun__
+  <input type="number" id="sunMass"></input>
+  <input type="number" id="sunX"></input>
+  <input type="number" id="sunY"></input>
+  <input type="number" id="sunDX"></input>
+  <input type="number" id="sunDY"></input> 
+  
+  <canvas id="canvas" width="900" height="450"></canvas>
+  <script src="rk4.js"></script>
+  <script src="planet.js"></script>
+  <script src="game.js"></script>
+  <body onload="init()">
+  </body>
+</html>

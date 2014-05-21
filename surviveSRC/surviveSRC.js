@@ -33,6 +33,7 @@ if(location.hash == "#dollymode")
 hensley.src = "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley2.png";
 var numberOfSprites = 9
 var happyMode = false;
+var confusingMode  = false;
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
 "ran into", "sat on", "spooned", "punched", "out-debated", "out-danced", "stabbed", "rekt", "tried to look nonchalant around",
@@ -270,20 +271,20 @@ Game.update = function() {
     Game.enemies[i].update()
     if (hitPlayer(Game.enemies[i])){ // ------ DEAD HERE die dead kill -------------
       lastScore = document.getElementById('soundEfx').currentTime;
-      if(lastScore > hiScore)
-        hiScore = lastScore;
-        pulseMode = false;
-        hit = true;
-        died = true;
-        action = Math.floor(Math.random()*actions.length);
-        deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg";
-        sharePic.src = "http://www.kevinleutzinger.com/surviveSRC/pictures/"+picNameLookup[Game.enemies[i].randPic]+".jpg";
-        //http://www.kevinleutzinger.com/surviveSRC/pictures/Edan.jpg
-        bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
-        if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
-        lastDeathMessage = bigmessage;
-        deathPost = names[Game.enemies[i].randPic] +" "+actions[action]+" me.";
-        deathPic = deadpic.src;
+      if(lastScore > hiScore){hiScore = lastScore;};
+      pulseMode = false;
+      hit = true;
+      died = true;
+      action = Math.floor(Math.random()*actions.length);
+      deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg";
+      sharePic.src = "http://www.kevinleutzinger.com/surviveSRC/pictures/"+picNameLookup[Game.enemies[i].randPic]+".jpg";
+      bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
+      if (confusingMode){bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" "+Game.player.name;};
+      if(names[Game.enemies[i].randPic] == "Kevin"){bigmessage = "Kevin made this game"};
+      lastDeathMessage = bigmessage;
+      deathPost = names[Game.enemies[i].randPic] +" "+actions[action]+" me.";
+      deathPic = deadpic.src;
+      .img.src = "./pictures/" +picNameLookup[this.randPic]+".jpg";
       Game.enemies = []
       maxEnemy = 0;
       //Game.context.fillStyle = "purple";
@@ -298,6 +299,7 @@ Game.update = function() {
 //};
   rotMode = document.getElementById("ROT_checkbox").checked
   happyMode = document.getElementById("H_checkbox").checked
+  confusingMode = document.getElementById("Confusing_checkbox").checked
     if (cTime >= 29){ wavy=true;}
     if (cTime >= 48.5){ pulseMode=true;}
     if (cTime >= 71){ pulseMode=false;}
@@ -331,7 +333,11 @@ function Player() {
   this.xVel = 0;
   this.yVel = 0;
   this.rot = 0;
-}
+  this.img = new Image();
+  this.randPic = Math.floor(Math.random() * names.length)
+  this.img.src = "./pictures/" +picNameLookup[this.randPic]+".jpg";
+  this.name = names[this.randPic]
+};
 
 Player.prototype.draw = function(context) {
 
@@ -345,10 +351,11 @@ Player.prototype.draw = function(context) {
   context.translate(this.width/2, this.height/2)
   context.rotate(this.rot);
   context.fillRect(-this.width/2, -this.height/2, this.height, this.width);
-
+  if(confusingMode){context.drawImage(this.img, -this.width/2, -this.height/2, this.height, this.width)};
   context.restore()}
   else{
         context.fillRect(this.x, this.y, this.height, this.width);
+        if(confusingMode){context.drawImage(this.img, -this.width/2, -this.height/2, this.height, this.width)};
   }
 };
 

@@ -1,0 +1,68 @@
+var warn = false;
+var rate, capacity, leftmost, rightmost;
+
+var setDefault = function(){
+$('#rate').val(1);
+$('#capacity').val(10);
+$('#leftmost').val(15);
+$('#rightmost').val(15);
+};
+
+$("#ViewResult").on("click", function (evt) {
+              evt.preventDefault();
+        drawChart();
+});
+
+var getParams = function(){
+    rate = document.getElementById("rate").value;
+    capacity = document.getElementById("capacity").value;
+    leftmost = document.getElementById("leftmost").value;
+    rightmost = document.getElementById("rightmost").value;
+};
+
+
+var f = function(y){
+    if(typeof(r) !== 'number') {r = 0.1; warn = true};
+    if(typeof(c) !== 'number') {c = 0.1; warn = true};
+    return r*y * (1-(y/c));
+};
+
+var checkWarn = function(){
+    if (warn){
+      alert("r and c should be numbers!");  
+    };
+    warn = false;
+};
+
+
+var drawChart=function(){
+//checkWarn()
+getParams()
+var x = _.range(-leftmost, rightmost);
+var y = _.map(x,f)
+x.unshift('x')
+y.unshift('y')
+var chart = c3.generate({
+  bindto: '#chart',
+  data: {
+    x: 'x',
+    y: 'y',
+    columns: [
+      x,
+      y
+    ]
+  }
+});
+}
+
+setDefault();
+getParams();
+
+
+
+//def f(y,rate=1,capacity=100):
+//return rate*y * (1- (y/capacity))
+
+//x = [x for x in range(-10, 110)]
+//y = [f(i) for i in x]
+
