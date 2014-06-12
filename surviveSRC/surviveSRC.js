@@ -24,9 +24,11 @@ var hensley = new Image()
 var dollymode = false;
 var bigmessage = "";
 var deadpic = new Image()
+var deadpic2 = new Image()
 var lastDeathMessage = ""
 var sharePic =new Image()
 deadpic.src = "./pictures/nothing.png"
+deadpic2.src = "./pictures/nothing.png"
 var pulseMode = false;
 if(location.hash == "#dollymode")
     dollymode = true;
@@ -232,6 +234,7 @@ Game.draw = function() {
   Game.context.fillText(bigmessage, 10, Game.height/2);
   Game.context.font = "bold 12px Arial";
   Game.context.drawImage(deadpic, 100,100, 100*.88, 100);
+  if(confusingMode){Game.context.drawImage(deadpic2, 220,100, 100*.88, 100);}
     };
   Game.player.draw(Game.context);
 };
@@ -277,6 +280,7 @@ Game.update = function() {
       died = true;
       action = Math.floor(Math.random()*actions.length);
       deadpic.src = "./pictures/" +picNameLookup[Game.enemies[i].randPic]+".jpg";
+      deadpic2.src = Game.player.img.src;
       sharePic.src = "http://www.kevinleutzinger.com/surviveSRC/pictures/"+picNameLookup[Game.enemies[i].randPic]+".jpg";
       bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" you.";
       if (confusingMode){bigmessage = names[Game.enemies[i].randPic] +" "+actions[action]+" "+Game.player.name;};
@@ -285,8 +289,10 @@ Game.update = function() {
       deathPost = names[Game.enemies[i].randPic] +" "+actions[action]+" me.";
       deathPic = deadpic.src;
       temprand = Math.floor(Math.random() * names.length)
+      console.log(temprand)
+      console.log(picNameLookup[temprand])
       Game.player.img.src = "./pictures/" +picNameLookup[temprand]+".jpg";
-      Game.player.name = picNameLookup[temprand]
+      Game.player.name = names[temprand]
       Game.enemies = []
       maxEnemy = 0;
       //Game.context.fillStyle = "purple";
@@ -310,6 +316,7 @@ Game.update = function() {
   if(cTime > 5){
       bigmessage = "";
       deadpic.src = "./pictures/nothing.png";
+      deadpic2.src = "./pictures/nothing.png";
       };
   if(document.getElementById("MM_checkbox").checked){
     maxEnemy = 100;
