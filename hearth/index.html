@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Hearthstone Sounds Quiz</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body onload="randomize()">
+<body>
+<br>
+<img id='cardImage' src='' onclick='reveal()'></img>
+<br>
+<input id="play" class="bs" type="button" value="Play Sound" onclick="playSound()"</input>
+<input id="attack" class="bs" type="button"value="Attack Sound" onclick="attackSound()"</input>
+<input id="death" class="bs"type="button" value="Death Sound" onclick="deathSound()"</input>
+<br>
+<br>
+<br>
+<input id="random" class="bs" type="button" value="New Card" onclick="randomize()"</input>
+
+<audio id='aSound' src=''></audio>
+<audio id='pSound' src=''></audio>
+<audio id='dSound' src=''></audio>
+<script src='./game.js'></script>
+
+</body>

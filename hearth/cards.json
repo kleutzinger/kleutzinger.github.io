@@ -1,0 +1,1412 @@
+{
+    "Abomination": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_097_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_097_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_097.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_097_Play_01.ogg"
+    },
+    "Abusive Sergeant": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_188_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_188_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_188.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_188_Play_01.ogg"
+    },
+    "Acolyte of Pain": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_007_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_007_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_007.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_007_Play_01.ogg"
+    },
+    "Al'Akir the Windlord": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_010_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_010_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_010.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_010_Play_01.ogg"
+    },
+    "Alarm-o-Bot": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_006_AlarmOBot_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_006_AlarmOBot_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_006.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_006_AlarmOBot_EnterPlay1.ogg"
+    },
+    "Aldor Peacekeeper": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_382_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_382_Death_03-01.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_382.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_382_Play_01.ogg"
+    },
+    "Alexstrasza": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_561_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_561_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_561.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_561_Play_01.ogg"
+    },
+    "Amani Berserker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_393_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_393_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_393.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_393_Play_01.ogg"
+    },
+    "Ancient Brewmaster": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_057_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_057_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_057.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_057_Play_01.ogg"
+    },
+    "Ancient Mage": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_584_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_584_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_584.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_584_Play_01.ogg"
+    },
+    "Ancient Watcher": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_045_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_045_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_045.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_045_EnterPlay.ogg"
+    },
+    "Ancient of Lore": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_008_AncientOfLore_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_008_AncientOfLore_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_008.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_008_AncientOfLore_EnterPlay.ogg"
+    },
+    "Ancient of War": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_178_Ancient_Of_War_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_178_Ancient_Of_War_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_178.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_178_Ancient_Of_War_EnterPlay1.ogg"
+    },
+    "Angry Chicken": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_009_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_009_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_009.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_009_EnterPlay.ogg"
+    },
+    "Anub'ar Ambusher": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_026_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_026_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_026.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_026_EnterPlay.ogg"
+    },
+    "Arathi Weaponsmith": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_398_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_398_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_398.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_398_Play_01.ogg"
+    },
+    "Arcane Golem": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_089_Arcane_Golem_Attack5.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_089_Arcane_Golem_Death4.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_089.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_089_Arcane_Golem_EnterPlay2.ogg"
+    },
+    "Archmage": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_155_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_155_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_155.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_155_Play_01.ogg"
+    },
+    "Archmage Antonidas": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_559_Attack_03.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_559_Death_04.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_559.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_559_Play_01.ogg"
+    },
+    "Argent Commander": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_067_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_067_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_067.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_067_Play_01.ogg"
+    },
+    "Argent Protector": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_362_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_362_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_362.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_362_Play_01.ogg"
+    },
+    "Argent Squire": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_008_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_008_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_008.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_008_Play_01.ogg"
+    },
+    "Armorsmith": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_402_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_402_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_402.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_402_Play_01.ogg"
+    },
+    "Auchenai Soulpriest": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_591_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_591_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_591.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_591_Play_01.ogg"
+    },
+    "Azure Drake": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_284_AzureDrake_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_284_AzureDrake_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_284.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_284_AzureDrake_EnterPlay.ogg"
+    },
+    "Baron Geddon": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_249_Baron_Geddon_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_249_Baron_Geddon_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_249.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_249_Baron_Geddon_EnterPlay1.ogg"
+    },
+    "Big Game Hunter": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_005_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_005_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_005.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_005_Play_01.ogg"
+    },
+    "Blood Imp": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_059_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_059_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_059.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_059_Play_01.ogg"
+    },
+    "Blood Knight": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_590_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_590_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_590.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_590_Play_01.ogg"
+    },
+    "Bloodfen Raptor": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_172_StranglethornRaptor_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_172_StranglethornRaptor_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_172.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_172_StranglethornRaptor_EnterPlay.ogg"
+    },
+    "Bloodmage Thalnos": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_012_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_012_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_012.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_012_Play_01.ogg"
+    },
+    "Bloodsail Corsair": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_025_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_025_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_025.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_025_Play_01.ogg"
+    },
+    "Bloodsail Raider": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_018_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_018_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_018.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_018_Play_01.ogg"
+    },
+    "Bluegill Warrior": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_173_Bluegill_Warrior_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_173_Bluegill_Warrior_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_173.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_173_Bluegill_Warrior_EnterPlay1.ogg"
+    },
+    "Boulderfist Ogre": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_200_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_200_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_200.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_200_Play_01.ogg"
+    },
+    "Cabal Shadow Priest": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_091_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_091_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_091.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_091_Play_01.ogg"
+    },
+    "Cairne Bloodhoof": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_110_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_110_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_110.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_110_Play_01.ogg"
+    },
+    "Captain Greenskin": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_024_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_024_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_024.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_024_Play_01.ogg"
+    },
+    "Captain's Parrot": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_016_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_016_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_016.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_016_Play_01.ogg"
+    },
+    "Cenarius": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_573_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_573_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_573.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_573_Play_01.ogg"
+    },
+    "Chillwind Yeti": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_182_ChillwindYeti_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_182_ChillwindYeti_Death4.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_182.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_182_ChillwindYeti_EnterPlay1.ogg"
+    },
+    "Coldlight Oracle": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_050_Coldlight_Oracle_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_050_Coldlight_Oracle_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_050.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_050_Coldlight_Oracle_EnterPlay1.ogg"
+    },
+    "Coldlight Seer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_103_Coldlight_Seer_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_103_Coldlight_Seer_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_103.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_103_Coldlight_Seer_EnterPlay1.ogg"
+    },
+    "Core Hound": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_201_Core_Hound_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_201_Core_Hound_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_201.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_201_Core_Hound_EnterPlay1.ogg"
+    },
+    "Crazed Alchemist": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_059_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_059_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_059.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_059_Play_01.ogg"
+    },
+    "Cruel Taskmaster": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_603_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_603_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_603.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_603_Play_01.ogg"
+    },
+    "Cult Master": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_595_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_595_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_595.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_595_Play_01.ogg"
+    },
+    "Dalaran Mage": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_582_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_582_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_582.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_582_Play_01.ogg"
+    },
+    "Dancing Swords": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/FP1_029_DancingSwords_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/FP1_029_DancingSwords_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_029.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/FP1_029_DancingSwords_EnterPlay.ogg"
+    },
+    "Dark Cultist": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_023_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_023_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_023.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_023_EnterPlay_01.ogg"
+    },
+    "Dark Iron Dwarf": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_046_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_046_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_046.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_046_Play_01.ogg"
+    },
+    "Darkscale Healer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_DS1_055_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_DS1_055_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/DS1_055.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_DS1_055_Play_01.ogg"
+    },
+    "Deathlord": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_009_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_009_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_009.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_009_EnterPlay_01.ogg"
+    },
+    "Deathwing": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_030_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_030_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_030.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_030_Play_01.ogg"
+    },
+    "Defender of Argus": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_093_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_093_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_093.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_093_Play_01.ogg"
+    },
+    "Defias Ringleader": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_131_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_131_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_131.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_131_Play_01.ogg"
+    },
+    "Demolisher": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_102_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_102_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_102.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_102_EnterPlay.ogg"
+    },
+    "Dire Wolf Alpha": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_162_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_162_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_162.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_162_EnterPlay.ogg"
+    },
+    "Doomguard": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_310_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_310_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_310.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_310_Play_01.ogg"
+    },
+    "Doomsayer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_021_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_021_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_021.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_021_Play_01.ogg"
+    },
+    "Dragonling Mechanic": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_025_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_025_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_025.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_025_Play_01.ogg"
+    },
+    "Dread Corsair": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_022_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_022_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_022.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_022_Play_01.ogg"
+    },
+    "Dread Infernal": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_064_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_064_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_064.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_064_EnterPlay.ogg"
+    },
+    "Druid of the Claw": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_165_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_165_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_165.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_165_Play_01.ogg"
+    },
+    "Dust Devil": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_243_Dust_Devil_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_243_Dust_Devil_Death3.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_243.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_243_Dust_Devil_EnterPlay1.ogg"
+    },
+    "Earth Elemental": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_250_Earth_Elemental_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_250_Earth_Elemental_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_250.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_250_Earth_Elemental_EnterPlay2.ogg"
+    },
+    "Earthen Ring Farseer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_117_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_117_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_117.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_117_Play_01.ogg"
+    },
+    "Echoing Ooze": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_003_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_003_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_003.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_003_EnterPlay.ogg"
+    },
+    "Edwin VanCleef": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_613_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_613_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_613.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_613_Play_01.ogg"
+    },
+    "Elite Tauren Chieftain": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_PRO_001_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_PRO_001_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/PRO_001.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_PRO_001_EnterPlay.ogg"
+    },
+    "Elven Archer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_189_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_189_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_189.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_189_Play_01.ogg"
+    },
+    "Emperor Cobra": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_170_Emperor_Cobra_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_170_Emperor_Cobra_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_170.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_170_Emperor_Cobra_EnterPlay1.ogg"
+    },
+    "Ethereal Arcanist": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_274_Ethereal_Arcanist_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_274_Ethereal_Arcanist_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_274.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_274_Ethereal_Arcanist_EnterPlay1.ogg"
+    },
+    "Faceless Manipulator": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_564_FacelessManipulator_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_564_FacelessManipulator_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_564.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_564_FacelessManipulator_EnterPlay.ogg"
+    },
+    "Faerie Dragon": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_023_Faerie_Dragon_Attack_2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_023_Faerie_Dragon_Death_3.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_023.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_023_Faerie_Dragon_EnterPlay_2.ogg"
+    },
+    "Felguard": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_301_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_301_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_301.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_301_Play_01.ogg"
+    },
+    "Fen Creeper": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS1_069_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS1_069_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS1_069.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS1_069_EnterPlay.ogg"
+    },
+    "Feugen": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_015_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_015_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_015.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_015_EnterPlay_01.ogg"
+    },
+    "Fire Elemental": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_042_Attack_FireElemental.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_042_Death_FireElemental.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_042.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_042_Play_FireElemental.ogg"
+    },
+    "Flame Imp": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_319_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_319_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_319.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_319_Play_01.ogg"
+    },
+    "Flametongue Totem": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_565_Attack_00.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_565_Death_FlameTongueTotem.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_565.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_565_Play_FlametongueTotem.ogg"
+    },
+    "Flesheating Ghoul": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/tt_004_FleshEating_Ghoul_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/tt_004_FleshEating_Ghoul_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/tt_004.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/tt_004_FleshEating_Ghoul_EnterPlay1.ogg"
+    },
+    "Frost Elemental": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_283_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_283_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_283.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_283_EnterPlay.ogg"
+    },
+    "Frostwolf Grunt": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_121_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_121_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_121.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_121_Play_01.ogg"
+    },
+    "Frostwolf Warlord": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_226_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_226_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_226.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_226_Play_01.ogg"
+    },
+    "Frothing Berserker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_604_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_604_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_604.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_604_Play_01.ogg"
+    },
+    "Gadgetzan Auctioneer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_095_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_095_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_095.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_095_Play_01.ogg"
+    },
+    "Gelbin Mekkatorque": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_112_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_112_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_112.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_112_Play_01.ogg"
+    },
+    "Gnomish Inventor": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_147_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_147_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_147.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_147_Play_01.ogg"
+    },
+    "Goldshire Footman": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS1_042_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS1_042_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS1_042.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS1_042_Play_01.ogg"
+    },
+    "Grimscale Oracle": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_508_Grimscale_Oracle_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_508_Grimscale_Oracle_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_508.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_508_Grimscale_Oracle_EnterPlay1.ogg"
+    },
+    "Grommash Hellscream": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_414_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_414_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_414.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_414_Play_01.ogg"
+    },
+    "Gruul": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_038_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_038_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_038.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_038_Play_01.ogg"
+    },
+    "Guardian of Kings": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_088_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_088_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_088.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_088_Play_01.ogg"
+    },
+    "Gurubashi Berserker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_399_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_399_Death_02.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_399.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_399_EnterPlay_02.ogg"
+    },
+    "Harrison Jones": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/HarrisonJ_EX1_558_whip_attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_558_Death_02.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_558.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_558_Play_01.ogg"
+    },
+    "Harvest Golem": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_556_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_556_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_556.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_556_EnterPlay.ogg"
+    },
+    "Haunted Creeper": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_002_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_002_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_002.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_002_EnterPlay.ogg"
+    },
+    "Houndmaster": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_DS1_070_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_DS1_070_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/DS1_070.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_DS1_070_Play_01.ogg"
+    },
+    "Hungry Crab": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_017_Hungry_Crab_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_017_Hungry_Crab_Death3.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_017.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_017_Hungry_Crab_EnterPlay1.ogg"
+    },
+    "Imp Master": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_597_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_597_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_597.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_597_Play_01.ogg"
+    },
+    "Injured Blademaster": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_181_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_181_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_181.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_181_Play_01.ogg"
+    },
+    "Ironbark Protector": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_232_Ironbark_Protector_Attack4.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_232_Ironbark_Protector_Death5.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_232.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_232_Ironbark_Protector_EnterPlay2.ogg"
+    },
+    "Ironbeak Owl": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_203_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_203_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_203.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_203_EnterPlay.ogg"
+    },
+    "Ironforge Rifleman": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_141_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_141_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_141.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_141_Play_01.ogg"
+    },
+    "Ironfur Grizzly": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_125_Ironfur_Grizzly_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_125_Ironfur_Grizzly_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_125.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_125_Ironfur_Grizzly_EnterPlay1.ogg"
+    },
+    "Jungle Panther": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_017_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_017_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_017.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_017_EnterPlay.ogg"
+    },
+    "Keeper of the Grove": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_166_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_166_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_166.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_166_Play_01.ogg"
+    },
+    "Kel'Thuzad": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_013_Attack_03.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_013_Death_04.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_013.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_013_Play_02.ogg"
+    },
+    "Kidnapper": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_005_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_005_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_005.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_005_Play_01.ogg"
+    },
+    "King Krush": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_543_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_543_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_543.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_543_EnterPlay.ogg"
+    },
+    "Kirin Tor Mage": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_612_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_612_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_612.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_612_Play_01.ogg"
+    },
+    "Knife Juggler": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_019_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_019_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_019.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_019_Play_01.ogg"
+    },
+    "Kobold Geomancer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_142_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_142_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_142.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_142_Play_01.ogg"
+    },
+    "Kor'kron Elite": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_011_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_011_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_011.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_011_Play_01.ogg"
+    },
+    "Leeroy Jenkins": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_116_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_116_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_116.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_116_Play_01.ogg"
+    },
+    "Leper Gnome": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_029_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_029_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_029.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_029_Play_01.ogg"
+    },
+    "Lightspawn": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_335_Lightspawn_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_335_Lightspawn_Death4.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_335.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_335_Lightspawn_EnterPlay2.ogg"
+    },
+    "Lightwarden": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_001_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_001_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_001.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_001_Play_01.ogg"
+    },
+    "Lightwell": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_341_Attack_Lightwell - Copy.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_341_Death_Lightwell.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_341.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_341_Play_Lightwell.ogg"
+    },
+    "Loot Hoarder": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_096_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_096_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_096.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_096_Play_01.ogg"
+    },
+    "Lord Jaraxxus": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_323_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_323_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_323.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_323_Play_01.ogg"
+    },
+    "Lord of the Arena": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_162_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_162_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_162.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_162_Play_01.ogg"
+    },
+    "Mad Bomber": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_082_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_082_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_082.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_082_Play_01.ogg"
+    },
+    "Mad Scientist": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_004_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_004_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_004.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_004_EnterPlay_01.ogg"
+    },
+    "Maexxna": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_010_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_010_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_010.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_010_EnterPlay.ogg"
+    },
+    "Magma Rager": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_118_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_118_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_118.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_118_EnterPlay.ogg"
+    },
+    "Malygos": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_563_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_563_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_563.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_563_Play_01.ogg"
+    },
+    "Mana Addict": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_055_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_055_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_055.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_055_Play_01.ogg"
+    },
+    "Mana Tide Totem": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_575_Attack_00.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_575_mana_tide_totem_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_575.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_575_mana_tide_totem_EnterPlay.ogg"
+    },
+    "Mana Wraith": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_616_Mana_Wraith_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_616_Mana_Wraith_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_616.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_616_Mana_Wraith_EnterPlay1.ogg"
+    },
+    "Mana Wyrm": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_012_Mana_Wyrm_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_012_Mana_Wyrm_Death3.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_012.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/NEW1_012_Mana_Wyrm_EnterPlay1.ogg"
+    },
+    "Master Swordsmith": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_037_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_037_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_037.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_037_Play_01.ogg"
+    },
+    "Master of Disguise": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_014_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_014_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_014.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_014_Play_01.ogg"
+    },
+    "Millhouse Manastorm": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_029_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_029_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_029.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_029_Play_01.ogg"
+    },
+    "Mind Control Tech": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_085_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_085_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_085.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_085_Play_01.ogg"
+    },
+    "Mogu'shan Warden": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_396_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_396_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_396.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_396_Play_01.ogg"
+    },
+    "Molten Giant": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_620_Molten_Giant_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_620_Molten_Giant_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_620.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_620_Molten_Giant_EnterPlay2.ogg"
+    },
+    "Mountain Giant": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_105_Mountain_Giant_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_105_Mountain_Giant_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_105.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_105_Mountain_Giant_EnterPlay3.ogg"
+    },
+    "Murloc Raider": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_168_Murloc_Raider_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_168_Murloc_Raider_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_168.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_168_Murloc_Raider_EnterPlay1.ogg"
+    },
+    "Murloc Tidecaller": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_509_Murloc_Tidecaller_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_509_Murloc_Tidecaller_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_509.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_509_Murloc_Tidecaller_EnterPlay1.ogg"
+    },
+    "Murloc Tidehunter": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_506_Murloc_Scout_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_506_Murloc_Scout_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_506.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_506_Murloc_Scout_EnterPlay1.ogg"
+    },
+    "Murloc Warleader": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_507_Murloc_Warleader_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_507_Murloc_Warleader_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_507.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_507_Murloc_Warleader_EnterPlay1.ogg"
+    },
+    "Nat Pagle": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_557_Attack_03.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_557_Death_04.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_557.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_557_Play_01.ogg"
+    },
+    "Nerub'ar Weblord": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_017_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_017_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_017.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_017_EnterPlay_01.ogg"
+    },
+    "Nerubian Egg": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_007_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_007_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_007.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_007_EnterPlay.ogg"
+    },
+    "Nightblade": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_593_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_593_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_593.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_593_Play_01.ogg"
+    },
+    "Northshire Cleric": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_235_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_235_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_235.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_235_Play_01.ogg"
+    },
+    "Novice Engineer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_015_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_015_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_015.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_015_Play_01.ogg"
+    },
+    "Nozdormu": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_560_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_560_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_560.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_560_Play_01.ogg"
+    },
+    "Oasis Snapjaw": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_119_Oasis_Snapjaw_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_119_Oasis_Snapjaw_Death2.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_119.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_119_Oasis_Snapjaw_EnterPlay2.ogg"
+    },
+    "Ogre Magi": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_197_Attack_02_MIX.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_197_Death_03_MIX.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_197.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_197_Play_01_MIX.ogg"
+    },
+    "Old Murk-Eye": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_062_Old_Murk_Eye_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_062_Old_Murk_Eye_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_062.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_062_Old_Murk_Eye_EnterPlay1.ogg"
+    },
+    "Onyxia": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_562_Attack_03.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_562_Death_04.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_562.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_562_Play_01.ogg"
+    },
+    "Patient Assassin": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_522_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_522_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_522.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_522_Play_01.ogg"
+    },
+    "Pint-Sized Summoner": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_076_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_076_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_076.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_076_Play_01.ogg"
+    },
+    "Pit Lord": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_313_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_313_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_313.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_313_Play_01.ogg"
+    },
+    "Priestess of Elune": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_583_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/ArcherDeath1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_583.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_583_Play_01.ogg"
+    },
+    "Prophet Velen": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_350_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_350_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_350.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_350_Play_01.ogg"
+    },
+    "Questing Adventurer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_044_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_044_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_044.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_044_Play_01.ogg"
+    },
+    "Raging Worgen": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_412_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_412_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_412.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_412_EnterPlay.ogg"
+    },
+    "Ragnaros the Firelord": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_298_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_298_Death_04.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_298.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_298_Play_01.ogg"
+    },
+    "Raid Leader": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_122_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_122_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_122.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_122_Play_01.ogg"
+    },
+    "Ravenholdt Assassin": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_161_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_161_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_161.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_161_Play_01.ogg"
+    },
+    "Razorfen Hunter": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_196_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_196_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_196.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_196_Play_01.ogg"
+    },
+    "Reckless Rocketeer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_213_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_213_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_213.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_213_Play_01.ogg"
+    },
+    "River Crocolisk": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_120_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_120_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_120.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_120_EnterPlay.ogg"
+    },
+    "SI:7 Agent": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_134_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_134_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_134.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_134_Play_01.ogg"
+    },
+    "Savannah Highmane": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_534_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_534_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_534.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_534_EnterPlay.ogg"
+    },
+    "Scarlet Crusader": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_020_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_020_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_020.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_020_Play_01.ogg"
+    },
+    "Scavenging Hyena": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_531_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_531_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_531.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_531_EnterPlay.ogg"
+    },
+    "Sea Giant": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_586_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_586_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_586.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_586_EnterPlay.ogg"
+    },
+    "Secretkeeper": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_080_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_080_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_080.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_080_Play_01.ogg"
+    },
+    "Sen'jin Shieldmasta": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_179_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_179_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_179.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_179_Play_01.ogg"
+    },
+    "Shade of Naxxramas": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_005_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_005_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_005.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_005_EnterPlay_01.ogg"
+    },
+    "Shattered Sun Cleric": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_019_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_019_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_019.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_019_Play_01.ogg"
+    },
+    "Shieldbearer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_405_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_405_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_405.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_405_Play_01.ogg"
+    },
+    "Silver Hand Knight": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_151_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_151_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_151.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_151_Play_01.ogg"
+    },
+    "Silverback Patriarch": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_127_Silverback_Patriarch_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_127_Silverback_Patriarch_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_127.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_127_Silverback_Patriarch_EnterPlay1.ogg"
+    },
+    "Silvermoon Guardian": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_023_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_023_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_023.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_023_Play_01.ogg"
+    },
+    "Sludge Belcher": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_012_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_012_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_012.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_012_EnterPlay_01.ogg"
+    },
+    "Sorcerer's Apprentice": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_608_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_608_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_608.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_608_Play_01.ogg"
+    },
+    "Southsea Captain": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_027_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_027_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_027.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_027_Play_01.ogg"
+    },
+    "Southsea Deckhand": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_146_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_146_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_146.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_146_Play_01.ogg"
+    },
+    "Spectral Knight": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_008_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_008_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_008.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_008_EnterPlay_01.ogg"
+    },
+    "Spellbreaker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_048_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_048_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_048.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_048_Play_01.ogg"
+    },
+    "Spiteful Smith": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_221_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_221_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_221.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_221_Play_01.ogg"
+    },
+    "Stalagg": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_014_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_014_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_014.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_014_EnterPlay_01.ogg"
+    },
+    "Starving Buzzard": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_237_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_237_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_237.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_237_EnterPlay.ogg"
+    },
+    "Stoneskin Gargoyle": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_027_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_027_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_027.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_027_EnterPlay.ogg"
+    },
+    "Stonetusk Boar": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_171_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_171_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_171.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_CS2_171_EnterPlay.ogg"
+    },
+    "Stormpike Commando": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_150_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_150_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_150.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_150_Play_01.ogg"
+    },
+    "Stormwind Champion": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_222_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_222_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_222.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_222_Play_01.ogg"
+    },
+    "Stormwind Knight": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_131_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_131_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_131.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_131_Play_01.ogg"
+    },
+    "Stranglethorn Tiger": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_028_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_028_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_028.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_028_EnterPlay.ogg"
+    },
+    "Succubus": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_306_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_306_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_306.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_306_Play_01.ogg"
+    },
+    "Summoning Portal": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_315_Attack_00.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_315_Death_00.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_315.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_315_EnterPlay_00.ogg"
+    },
+    "Sunfury Protector": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_058_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_058_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_058.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_058_Play_01.ogg"
+    },
+    "Sunwalker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_032_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_032_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_032.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_032_Play_01.ogg"
+    },
+    "Sylvanas Windrunner": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_Sylvanas_02_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_Sylvanas_04_Death_04.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_016.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_Sylvanas_01_Play_01.ogg"
+    },
+    "Tauren Warrior": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_390_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_390_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_390.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_390_Play_01.ogg"
+    },
+    "Temple Enforcer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_623_Temple_Enforcer_Attack_2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_623_Temple_Enforcer_Death_4.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_623.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_623_Temple_Enforcer_EnterPlay_1.ogg"
+    },
+    "The Beast": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_577_The_Beast_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_577_The_Beast_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_577.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_577_The_Beast_EnterPlay1.ogg"
+    },
+    "The Black Knight": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_002_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_002_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_002.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_002_Play_01.ogg"
+    },
+    "Thrallmar Farseer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_021_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_021_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_021.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_021_Play_01.ogg"
+    },
+    "Timber Wolf": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_DS1_175_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_DS1_175_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/DS1_175.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_DS1_175_EnterPlay.ogg"
+    },
+    "Tinkmaster Overspark": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_083_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_083_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_083.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_083_Play_01.ogg"
+    },
+    "Tirion Fordring": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_383_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_383_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_383.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_383_Play_01.ogg"
+    },
+    "Tundra Rhino": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_DS1_178_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_DS1_178_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/DS1_178.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_DS1_178_EnterPlay.ogg"
+    },
+    "Twilight Drake": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_043_TwilightDrake_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_043_TwilightDrake_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_043.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/WoW_EX1_043_TwilightDrake_EnterPlay.ogg"
+    },
+    "Unbound Elemental": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_258_Unbound_Elemental_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_258_Unbound_Elemental_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_258.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_258_Unbound_Elemental_EnterPlay1.ogg"
+    },
+    "Undertaker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_028_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_028_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_028.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_028_EnterPlay_01.ogg"
+    },
+    "Unstable Ghoul": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_024_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_024_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_024.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_024_EnterPlay.ogg"
+    },
+    "Venture Co. Mercenary": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_227_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_227_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_227.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_227_Play_01.ogg"
+    },
+    "Violet Teacher": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_026_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_026_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_026.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_026_Play_01.ogg"
+    },
+    "Void Terror": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/EX1_304_VoidTerror_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/EX1_304_VoidTerror_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_304.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/EX1_304_VoidTerror_Play.ogg"
+    },
+    "Voidcaller": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_022_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_022_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_022.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_022_EnterPlay_01.ogg"
+    },
+    "Voidwalker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_065_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_065_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_065.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_065_Play_01.ogg"
+    },
+    "Voodoo Doctor": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_011_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_011_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_011.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_011_Play_01.ogg"
+    },
+    "Wailing Soul": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/FP1_016_WailingSoul_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/FP1_016_WailingSoul_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_016.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/FP1_016_WailingSoul_EnterPlay.ogg"
+    },
+    "War Golem": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_186_War_Golem_Attack3.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_186_War_Golem_Death3.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_186.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_186_War_Golem_EnterPlay1.ogg"
+    },
+    "Warsong Commander": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_084_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_084_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_084.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_084_Play_01.ogg"
+    },
+    "Water Elemental": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_033_Attack_WaterElemental.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_033_Death_WaterElemental.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_033.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_033_Play_WaterElemental.ogg"
+    },
+    "Webspinner": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_011_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_011_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_011.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_FP1_011_EnterPlay.ogg"
+    },
+    "Wild Pyromancer": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_020_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_020_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_020.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_NEW1_020_Play_01.ogg"
+    },
+    "Windfury Harpy": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_033_Attack.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_033_Death.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_033.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/SFX_EX1_033_EnterPlay.ogg"
+    },
+    "Windspeaker": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_587_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_587_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_587.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_587_Play_01.ogg"
+    },
+    "Wisp": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_231_Wisp_Attack2.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_231_Wisp_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_231.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_231_Wisp_EnterPlay1.ogg"
+    },
+    "Wolfrider": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_124_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_124_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_124.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_CS2_124_Play_01.ogg"
+    },
+    "Worgen Infiltrator": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_010_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_010_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_010.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_010_Play_01.ogg"
+    },
+    "Young Dragonhawk": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/CS2_169_Young_Dragonhawk_Attack1.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/CS2_169_Young_Dragonhawk_Death1.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_169.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/CS2_169_Young_Dragonhawk_EnterPlay1.ogg"
+    },
+    "Young Priestess": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_004_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_004_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_004.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_004_Play_01.ogg"
+    },
+    "Youthful Brewmaster": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_049_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_049_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_049.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_049_Play_01.ogg"
+    },
+    "Ysera": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_572_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_572_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_572.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_EX1_572_Play_01.ogg"
+    },
+    "Zombie Chow": {
+        "attack": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_001_Attack_02.ogg",
+        "death": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_001_Death_03.ogg",
+        "image": "//wow.zamimg.com/images/hearthstone/cards/enus/original/FP1_001.png?602",
+        "play": "//wowimg.zamimg.com/hearthhead/sounds/VO_FP1_001_EnterPlay_01.ogg"
+    }
+}
