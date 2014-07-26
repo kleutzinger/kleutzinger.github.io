@@ -5,7 +5,7 @@ for (var key in list) {
     keys.push(key);
     $("#select").append(new Option(key, key));
 }
-$.notify.defaults( {elementPosition:'top center'} )
+$.notify.defaults( {elementPosition:'top center', autoHideDelay: 2000} )
 
 var currentCard;
 
