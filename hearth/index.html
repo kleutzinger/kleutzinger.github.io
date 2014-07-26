@@ -3,12 +3,16 @@
     <title>Hearthstone Sounds Quiz</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="notify-combined.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 <body onload="randomize()">
 <body>
 <br>
 <img id='cardImage' src='' onclick='reveal()'></img>
+<br>
+Your Guess: <select id='select'></select>
+<br>
 <br>
 <input id="play" class="bs" type="button" value="Play Sound" onclick="playSound()"</input>
 <input id="attack" class="bs" type="button"value="Attack Sound" onclick="attackSound()"</input>

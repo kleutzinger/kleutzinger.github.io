@@ -3,16 +3,19 @@ var list = JSON.parse(json);
 var keys = [];
 for (var key in list) {
     keys.push(key);
+    $("#select").append(new Option(key, key));
 }
+$.notify.defaults( {elementPosition:'top center'} )
 
 var currentCard;
+
 
 function randomize(){
     randomIndex = Math.floor(Math.random()*keys.length);
     randomKey = keys[randomIndex];
     randomCard = list[randomKey];
     currentCard = randomCard;
-    console.log(randomCard);
+    currentCard.name = randomKey;
     document.getElementById("cardImage").src = '//i.imgur.com/Xqc7rvl.png';
     document.getElementById("pSound").src = currentCard.play;
     document.getElementById("aSound").src = currentCard.attack;
@@ -31,5 +34,11 @@ function deathSound(){
 
 function reveal(){
     document.getElementById("cardImage").src = currentCard.image;
+    if ($("#select").val() === currentCard.name){
+        $.notify($("#select"),"correct", "success");
+    }
+    else{
+        $.notify($("#select"),"wrong", "error");
+    }
 }
 
