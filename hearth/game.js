@@ -8,7 +8,10 @@ for (var key in list) {
 $.notify.defaults( {elementPosition:'top center', autoHideDelay: 2000} )
 
 var currentCard;
-
+var cardRevealed = false;
+var correctCount = 0;
+var attemptCount = 0;
+var correctRatio = "0/0 Correct";
 
 function randomize(){
     randomIndex = Math.floor(Math.random()*keys.length);
@@ -20,6 +23,9 @@ function randomize(){
     document.getElementById("pSound").src = currentCard.play;
     document.getElementById("aSound").src = currentCard.attack;
     document.getElementById("dSound").src = currentCard.death;
+    $.notify($("#cardImage"),"New Card", "success", {position:'right top'});
+    $("#correctText").text(correctRatio);
+    cardRevealed = false;
     };
 
 function playSound(){
@@ -33,12 +39,28 @@ function deathSound(){
 }
 
 function reveal(){
-    document.getElementById("cardImage").src = currentCard.image;
-    if ($("#select").val() === currentCard.name){
-        $.notify($("#select"),"correct", "success");
-    }
-    else{
-        $.notify($("#select"),"wrong", "error");
+    if (!cardRevealed){
+        cardRevealed = true;
+        attemptCount +=1;
+        document.getElementById("cardImage").src = currentCard.image;
+        if ($("#select").val() === currentCard.name){
+            correctCount +=1;
+            $.notify($("#select"),"correct", "success");
+        }
+        else{
+            $.notify($("#select"),"wrong", "error");
+        }
+        correctRatio = ""+correctCount+" / " + attemptCount + " Correct";
+        console.log(correctRatio);
+        $("#correctText").text(correctRatio);
     }
 }
 
+function cardClick(){
+    if(cardRevealed){
+        randomize();
+    }
+    else{
+        reveal()
+    };
+}
