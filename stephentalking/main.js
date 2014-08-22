@@ -28,9 +28,10 @@ function send(){
 }
 
 
-$(".textbox").keyup(function (e) {
-    if (e.keyCode == 13) {
-        alert('n')
+
+$(document).keypress(function(e) {
+  if(e.which == 13) {
         speak();
-    }
+        console.log(meSpeak.getVolume())
+  }
 });
