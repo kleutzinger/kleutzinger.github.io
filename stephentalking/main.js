@@ -1,4 +1,5 @@
 function rot13(input){
+    //taken from http://stackoverflow.com/a/617685
     return input.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
 }
 
@@ -16,6 +17,8 @@ function init(){
         welcome = hash.substring(1);
         if (welcome[0] === "!"){
             welcome = rot13(welcome).substring(1);
+            box = document.getElementById('textbox');
+            box.value = welcome.replace("_"," ");
         }
     }
     meSpeak.speak(welcome);
