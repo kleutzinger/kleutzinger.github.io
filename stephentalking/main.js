@@ -9,7 +9,7 @@ function init(){
         welcome = "welcome  to stephen talking";
     }
     else{
-        welcome = hash.substring(1)
+        welcome = hash.substring(1);
     }
     meSpeak.speak(welcome);
 }
@@ -31,14 +31,11 @@ function hey(){
 }
 
 function addMacro(){
-    document.appendChild(mytext)
-
-    
+    //adding soon
 }
 
 $(document).keypress(function(e) {
   if(e.which == 13) {
         speak();
-        console.log(meSpeak.getVolume())
   }
 });
