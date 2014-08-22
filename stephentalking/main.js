@@ -1,4 +1,3 @@
-//Select english/american voice
 meSpeak.loadConfig("./mespeak_config.json");
 meSpeak.loadVoice("./en-us.json")
 
@@ -12,8 +11,6 @@ else{
     welcome = hash.substring(1)
 }
 meSpeak.speak(welcome);
-//Play a sound
-
 
 function speak(){
     var words = document.getElementById('textbox').value;
