@@ -27,7 +27,9 @@ function send(){
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac), Enter", sendUrl);
 }
 
-
+function hey(){
+    meSpeak.speak("get out of my face");
+}
 
 $(document).keypress(function(e) {
   if(e.which == 13) {
