@@ -19,6 +19,7 @@ function speak(){
 
 function send(){
     var sendWords = document.getElementById('textbox').value;
+    sendWords = sendWords.replace(/ /g,"_");
     var sendUrl = "kevinleutzinger.com/stephentalking#" + sendWords;
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac), Enter", sendUrl);
 }
