@@ -1,7 +1,6 @@
-
 //Select english/american voice
-meSpeak.loadConfig("mespeak_config.json");
-meSpeak.loadVoice("voices/en/en-us.json")
+meSpeak.loadConfig("./mespeak_config.json");
+meSpeak.loadVoice("./en-us.json")
 
 var url = document.URL
 var hash = url.substring(url.indexOf("#"));
