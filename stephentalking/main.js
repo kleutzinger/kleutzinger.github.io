@@ -18,7 +18,7 @@ function init(){
         if (welcome[0] === "!"){
             welcome = rot13(welcome).substring(1);
             box = document.getElementById('textbox');
-            box.value = welcome.replace("_"," ");
+            box.value = welcome.replace(/_/g," ");
         }
     }
     meSpeak.speak(welcome);
