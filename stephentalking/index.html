@@ -5,12 +5,12 @@
     <script src='./main.js'></script>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
-<body>
+<body onload="init()">
 <h3>Stephen Talking v1.0</h3>
 <img src='./sh.jpg' onclick='hey()'><br>
 <input id="textbox" style="width:50%" placeholder="what would you like me to say?"></input><br>
-<button id='button' value='speak' onclick='speak()'>Speak</button><br>
-<button id='send' onclick='send()'>Send to a friend</button><br>
+<button id='button' value='speak' onclick='speak()' class='button big-btn'>Speak</button><br><br>
+<button id='send' onclick='send()' class='button'>Send to a friend</button><br>
 <h3 style="right: 40px; bottom: 40px; position:fixed"> by kevin leutzinger // <a href="//github.com/kleutzinger/kleutzinger.github.io/tree/master/stephentalking">source</a></h3>
 </body>
 

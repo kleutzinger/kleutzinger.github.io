@@ -1,20 +1,22 @@
-meSpeak.loadConfig("./mespeak_config.json");
-meSpeak.loadVoice("./en-us.json")
+function init(){
+    meSpeak.loadConfig("./mespeak_config.json");
+    meSpeak.loadVoice("./en-us.json");
 
-var url = document.URL
-var hash = url.substring(url.indexOf("#"));
-var welcome;
-if (url.indexOf('#') === -1){
-    welcome = "welcome  to stephen talking";
+    var url = document.URL
+    var hash = url.substring(url.indexOf("#"));
+    var welcome;
+    if (url.indexOf('#') === -1){
+        welcome = "welcome  to stephen talking";
+    }
+    else{
+        welcome = hash.substring(1)
+    }
+    meSpeak.speak(welcome);
 }
-else{
-    welcome = hash.substring(1)
-}
-meSpeak.speak(welcome);
 
 function speak(){
     var words = document.getElementById('textbox').value;
-    meSpeak.speak(words)
+    meSpeak.speak(words);
 }
 
 function send(){
@@ -26,6 +28,12 @@ function send(){
 
 function hey(){
     meSpeak.speak("get out of my face");
+}
+
+function addMacro(){
+    document.appendChild(mytext)
+
+    
 }
 
 $(document).keypress(function(e) {
