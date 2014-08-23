@@ -33,7 +33,7 @@ function send(){
     var sendWords = document.getElementById('textbox').value;
     sendWords = "!"+sendWords.replace(/ /g,"_");
     sendWords = rot13(sendWords);
-    var sendUrl = "http://stephentalking.neocities.org/#" + sendWords;
+    var sendUrl = "http://stephentalking.com/#" + sendWords;
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac)", sendUrl);
 }
 
