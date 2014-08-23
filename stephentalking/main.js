@@ -34,7 +34,7 @@ function send(){
     sendWords = "!"+sendWords.replace(/ /g,"_");
     sendWords = rot13(sendWords);
     var sendUrl = "http://stephentalking.neocities.org/#" + sendWords;
-    window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac), Enter", sendUrl);
+    window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac)", sendUrl);
 }
 
 function hey(){
