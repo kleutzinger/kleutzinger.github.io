@@ -3,6 +3,11 @@ function rot13(input){
     return input.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
 }
 
+function speak(text){
+    meSpeak.speak(text, {speed:130, pitch:40});
+    return;
+}
+
 function init(){
     meSpeak.loadConfig("./mespeak_config.json");
     meSpeak.loadVoice("./en-us.json");
@@ -21,12 +26,12 @@ function init(){
             box.value = welcome.replace(/_/g," ");
         }
     }
-    meSpeak.speak(welcome);
+    speak(welcome);
 }
 
-function speak(){
+function speakClicked(){
     var words = document.getElementById('textbox').value;
-    meSpeak.speak(words);
+    speak(words);
 }
 
 function send(){
@@ -38,7 +43,7 @@ function send(){
 }
 
 function hey(){
-    meSpeak.speak("get out of my face");
+    speak("the name's stephen, that's with a PH, as in PHD.");
 }
 
 
@@ -48,6 +53,6 @@ function addMacro(){
 
 $(document).keypress(function(e) {
   if(e.which == 13) {
-        speak();
+        speakClicked();
   }
 });
