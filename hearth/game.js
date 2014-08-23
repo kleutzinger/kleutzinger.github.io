@@ -64,3 +64,17 @@ function cardClick(){
         reveal()
     };
 }
+
+function randomSound(){
+    //just gimme  a random sound
+    randomIndex = Math.floor(Math.random()*keys.length);
+    randomKey = keys[randomIndex];
+    randomCard = list[randomKey];
+    randomCard.name = randomKey;
+    possibleSounds = [randomCard.play, randomCard.attack, randomCard.death]
+    randSoundIndex = Math.floor(Math.random()*3)
+    document.getElementById("rSound").src = possibleSounds[randSoundIndex];
+    document.getElementById("rSound").play();
+    soundType = ["Play", "Attack", "Death"][randSoundIndex];
+    $.notify($("#random"),randomCard.name +" : "+ soundType, "success");
+}
