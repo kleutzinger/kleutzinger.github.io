@@ -22,8 +22,9 @@ function init(){
         welcome = hash.substring(1);
         if (welcome[0] === "!"){
             welcome = rot13(welcome).substring(1);
+            welcome = welcome.replace(/_/g," ");
             box = document.getElementById('textbox');
-            box.value = welcome.replace(/_/g," ");
+            box.value = welcome;
         }
     }
     speak(welcome);
