@@ -23,7 +23,7 @@ function randomize(){
     document.getElementById("pSound").src = currentCard.play;
     document.getElementById("aSound").src = currentCard.attack;
     document.getElementById("dSound").src = currentCard.death;
-    $.notify($("#cardImage"),"New Card", "success", {position:'right top'});
+    $.notify($("#cardImage"),"New Card", "info", {position:'right top'});
     $("#correctText").text(correctRatio);
     cardRevealed = false;
     };
@@ -76,5 +76,5 @@ function randomSound(){
     document.getElementById("rSound").src = possibleSounds[randSoundIndex];
     document.getElementById("rSound").play();
     soundType = ["Play", "Attack", "Death"][randSoundIndex];
-    $.notify($("#random"),randomCard.name +" : "+ soundType, "success");
+    $.notify($("#random"),randomCard.name +" : "+ soundType, "info");
 }
