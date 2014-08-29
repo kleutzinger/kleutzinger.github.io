@@ -4,7 +4,7 @@ function rot13(input){
 }
 
 function speak(text){
-    meSpeak.speak(text, {speed:130, pitch:40});
+    saying = meSpeak.speak(text, {speed:130, pitch:40});
     return;
 }
 
@@ -43,17 +43,31 @@ function send(){
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac)", sendUrl);
 }
 
-function hey(){
-    speak("the name's stephen, that's with a PH, as in PHD.");
-}
-
 
 function addMacro(){
     //adding soon
 }
 
+function twitch(){
+	pic = document.getElementById("pic");
+	if (pic.src.slice(-5)[0] == "1"){
+		pic.src = "frame2.jpg";
+	}
+	else{
+		pic.src="frame1.jpg";
+	}
+	console.log(pic.src + " twitching");
+}
+
+function hey(){
+   speak("the name's stephen, that's with a PH, as in PHD.");
+}
+
+
 $(document).keypress(function(e) {
+  twitch();
   if(e.which == 13) {
         speakClicked();
+		twitch();
   }
 });
