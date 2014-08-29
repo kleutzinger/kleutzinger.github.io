@@ -4,6 +4,7 @@ function rot13(input){
 }
 
 function speak(text){
+	text = text.replace(/\./g,","); //periods don't work. replace w/ commas
     saying = meSpeak.speak(text, {speed:130, pitch:40});
     return;
 }
@@ -12,7 +13,7 @@ function init(){
     meSpeak.loadConfig("./mespeak_config.json");
     meSpeak.loadVoice("./en-us.json");
 
-    var url = document.URL
+    var url = document.URL;
     var hash = url.substring(url.indexOf("#"));
     var welcome;
     if (url.indexOf('#') === -1){
@@ -56,7 +57,6 @@ function twitch(){
 	else{
 		pic.src="frame1.jpg";
 	}
-	console.log(pic.src + " twitching");
 }
 
 function hey(){
@@ -65,7 +65,6 @@ function hey(){
 
 
 $(document).keypress(function(e) {
-  twitch();
   if(e.which == 13) {
         speakClicked();
 		twitch();

@@ -8,7 +8,7 @@
 <body onload="init()">
 <h3>Stephen Talking v2.0</h3>
 <img id="pic" src='./frame1.jpg' onclick='hey()' ><br>
-<input id="textbox" style="width:500px" placeholder="what would you like me to say?" class='button'></input><br><br>
+<input id="textbox" style="width:500px" placeholder="what would you like me to say?" class='button' oninput='twitch()'></input><br><br>
 <button id='button' value='speak' onclick='speakClicked()' class='button big-btn'>Speak</button><br><br>
 <button id='send' onclick='send()' class='button'>Send a message to a friend</button><br><br>
 <h3 style="position:auto"> by kevin leutzinger // <a href="//github.com/kleutzinger/kleutzinger.github.io/tree/master/stephentalking">source</a></h3>
