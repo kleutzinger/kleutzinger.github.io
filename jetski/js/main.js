@@ -72,13 +72,7 @@ function update() {
     }
     
     if (cursors.down.isDown){
-        player.body.velocity.y = 250;
-    }
-
-    if (jumpButton.isDown && player.body.onFloor() && game.time.now > jumpTimer)
-    {
-        player.body.velocity.y = -250;
-        jumpTimer = game.time.now + 750;
+        game.physics.arcade.gravity.y += 500;
     }
 
 }
