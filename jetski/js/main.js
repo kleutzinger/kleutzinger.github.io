@@ -7,7 +7,8 @@ function preload() {
     game.load.image('background', 'assets/background.png');
 
 }
-
+var parallaxToggle = false;
+var toggleTimer = 0;
 var player;
 var facing = 'left';
 var jumpTimer = 0;
@@ -16,6 +17,7 @@ var jumpButton;
 var bg;
 var midY;
 var previousY;
+var waterBits = [];
 
 function create() {
 
@@ -36,7 +38,7 @@ function create() {
     midY -= player.height/2;
 
     cursors = game.input.keyboard.createCursorKeys();
-    jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    toggleButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
 }
 
@@ -51,12 +53,32 @@ function checkSurfaceBreak(){
     if(Math.abs(player.body.y - midY) < 10){
         player.body.velocity.y *= .9;
     }
-    
+}
+
+function pastScreen(s){
+    return s.rect.x > -s.rect.width && parallaxToggle;
+}
+
+function updateWaterBits(){
+    if (Math.random()  || waterBits.length <= 0){
+        size = Math.random() * 5;
+        Prect = new Phaser.Rectangle(game.width,Math.random() * game.height *.5 + game.height*.5,size,size)
+        waterBits.push({
+            rect:Prect,
+            xVelocity: (Math.random() * 1.4) - size -5,
+        }
+        );
+    }
+    for(i=0;i<waterBits.length;i++){
+        waterBits[i].rect.x += waterBits[i].xVelocity;
+    }
+    waterBits = waterBits.filter(pastScreen);
 }
 
 function update() {
     player.angle = player.body.velocity.y / 10;
     setGravity();
+    updateWaterBits();
     checkSurfaceBreak();
     // game.physics.arcade.collide(player, layer);
 
@@ -74,11 +96,18 @@ function update() {
     if (cursors.down.isDown){
         game.physics.arcade.gravity.y += 500;
     }
+    
+    if (toggleButton.isDown && game.time.now > toggleTimer){
+    parallaxToggle = !parallaxToggle;
+    toggleTimer = game.time.now + 750;
+}
 
 }
 
 function render () {
-
+    for (i=0;i<waterBits.length;i++){
+        game.debug.geom(waterBits[i].rect,'#0fffff');
+    }
     // game.debug.text(game.time.physicsElapsed, 32, 32);
     // game.debug.body(player);
     // game.debug.bodyInfo(player, 16, 24);
