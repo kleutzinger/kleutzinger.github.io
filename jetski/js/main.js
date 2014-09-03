@@ -1,113 +1,137 @@
-//HI there this is the main file
-var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'Jetski Mayhem', { preload: preload, create: create, update: update, render: render });
+// create an new instance of a pixi stage
 
-function preload() {
+//CONSTANTS
+var GRAVITY = .001;
+var BUOYANCY_FORCE = -GRAVITY * 2;
+var DOWNWARD_FORCE = GRAVITY * 1.8;
+var AIR_FRICTION = .98;
+var SURFACE_FRICTION = .8;
+var WATER_FRICTION = .98;
+var HEIGHT = 600;
+var WIDTH = 800;
+var WATER_LEVEL = HEIGHT /2;
 
-    game.load.image('ski', 'assets/ski.png', 64, 64);
-    game.load.image('background', 'assets/background.png');
+//GLOBALS
+var deltaTime = 0;
+var time1 = Date.now();
+var water_accel=0;
+var down_accel=0;
+var clickDown = false;
+var submerged = true;
 
+var stage = new PIXI.Stage(0xAACCFF);
+
+// create a renderer instance.
+var renderer = PIXI.autoDetectRenderer(WIDTH, HEIGHT);
+
+// add the renderer view element to the DOM
+console.log(renderer);
+document.body.appendChild(renderer.view);
+
+
+
+
+$(renderer.view).mousedown(function(){
+    clickDown= true;
+});
+
+$(renderer.view).mouseup(function(){
+    clickDown = false;
+})
+
+
+requestAnimFrame( animate );
+
+var texture = PIXI.Texture.fromImage("assets/jetski.png");
+// create a new Sprite using the texture
+var jetski = new PIXI.Sprite(texture);
+var text = new PIXI.Text("hi there");
+
+// center the sprites anchor point
+jetski.anchor.x = 0.5;
+jetski.anchor.y = 0.5;
+
+// move the sprite t the center of the screen
+jetski.position.x = WIDTH/2;
+jetski.position.y = HEIGHT/2;
+jetski.xVel = 0;
+jetski.yVel = 0;
+jetski.yAcc = 0;
+
+
+var graphics = new PIXI.Graphics();
+graphics.beginFill(0x000673)
+graphics.drawRect(0, WATER_LEVEL, WIDTH, HEIGHT - WATER_LEVEL);
+stage.addChild(graphics);
+
+
+stage.addChild(jetski);
+stage.addChild(text);
+
+
+function getDeltaTime(){
+    deltaTime = Date.now() - time1;
+    time1 = Date.now();
 }
-var parallaxToggle = false;
-var toggleTimer = 0;
-var player;
-var facing = 'left';
-var jumpTimer = 0;
-var cursors;
-var jumpButton;
-var bg;
-var midY;
-var previousY;
-var waterBits = [];
-
-function create() {
-
-    game.physics.startSystem(Phaser.Physics.ARCADE);
-
-    bg = game.add.tileSprite(0, 0, 800, 600, 'background');
-
-    //game.physics.arcade.gravity.y = 250;
-
-    player = game.add.sprite(64, 64, 'ski');
-    game.physics.enable(player, Phaser.Physics.ARCADE);
-
-    player.body.bounce.y = 0.2;
-    player.body.collideWorldBounds = true;
-    //player.body.setSize(64, 64, 5, 16);
-
-    midY = game.height / 2;
-    midY -= player.height/2;
-
-    cursors = game.input.keyboard.createCursorKeys();
-    toggleButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-
-}
-
-function setGravity(){
-    game.physics.arcade.gravity.y = -(player.body.y - midY)*2;
-    game.physics.arcade.gravity.y *= 2;
-}
-
-
 
 function checkSurfaceBreak(){
-    if(Math.abs(player.body.y - midY) < 10){
-        player.body.velocity.y *= .9;
+    surfaceBreak = false
+    current = jetski.y >= WATER_LEVEL;
+    if (current != submerged){
+        surfaceBreak = true;
     }
+    submerged = current;
+    return surfaceBreak;
 }
 
-function pastScreen(s){
-    return s.x > -s.width && parallaxToggle;
-}
-
-function updateWaterBits(){
-    if (Math.random() > .4  || waterBits.length <= 0){
-        size = Math.random() * 5;
-        Prect = new Phaser.Rectangle(game.width,Math.random() * game.height *.5 + game.height*.5,size,size)
-        Prect.xVelocity = (Math.random() * 1.4) - size -5,
-        Prect.color = randomColor({luminosity:'light', hue:'blue'});
-        waterBits.push(Prect);
+function setYAccel(){
+    accel = GRAVITY;
+    if (clickDown){ //pushing down
+        accel += DOWNWARD_FORCE
+    };
+    if (jetski.y >= WATER_LEVEL){ //underwater
+        accel += BUOYANCY_FORCE;
+        jetski.yVel *= WATER_FRICTION;
     }
-    for(i=0;i<waterBits.length;i++){
-        waterBits[i].x += waterBits[i].xVelocity;
-    }
-    waterBits = waterBits.filter(pastScreen);
-}
-
-function update() {
-    player.angle = player.body.velocity.y / 10;
-    setGravity();
-    updateWaterBits();
-    checkSurfaceBreak();
-    // game.physics.arcade.collide(player, layer);
-
-    player.body.velocity.x = 0;
-
-    if (cursors.left.isDown)
-    {
-        player.body.velocity.x = -150;
-    }
-    else if (cursors.right.isDown)
-    {
-        player.body.velocity.x = 250;
+    else{//in air
+        jetski.Yvel *= AIR_FRICTION;
     }
     
-    if (cursors.down.isDown){
-        game.physics.arcade.gravity.y += 500;
+    if (jetski.y >= HEIGHT || jetski.y <= 0){ //stay in bounds (kinda)
+        accel = 0;
     }
     
-    if (toggleButton.isDown && game.time.now > toggleTimer){
-    parallaxToggle = !parallaxToggle;
-    toggleTimer = game.time.now + 750;
-}
-
-}
-
-function render () {
-    for (i=0;i<waterBits.length;i++){
-        game.debug.geom(waterBits[i], waterBits[i].color);
+    if (checkSurfaceBreak()){
+        jetski.yVel *= SURFACE_FRICTION;
+        console.log("BROKE");
     }
-    // game.debug.text(game.time.physicsElapsed, 32, 32);
-    // game.debug.body(player);
-    // game.debug.bodyInfo(player, 16, 24);
+    jetski.yAcc = accel;
+}
 
+function positionJetski(){
+// temp = acc*dt
+// pos = pos + dt*(vel + temp/2)
+// vel = vel + temp
+    setYAccel();
+    dt = deltaTime;
+    temp = jetski.yAcc*dt
+    y = jetski.y;
+    y += dt*(jetski.yVel + temp/2)
+    jetski.yVel = jetski.yVel + jetski.yAcc*dt
+    jetski.y = y;
+    if (jetski.y <=0){jetski.y = 10;}
+    if (jetski.y >= HEIGHT){jetski.y = HEIGHT-10;}
+    text.setText(jetski.yAcc);
+}
+
+function rotateJetski(){
+    jetski.rotation = jetski.yVel ;
+}
+
+function animate() {
+    getDeltaTime();
+    requestAnimFrame( animate );
+    positionJetski();
+    rotateJetski();
+    renderer.render(stage);
 }
