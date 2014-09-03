@@ -56,21 +56,19 @@ function checkSurfaceBreak(){
 }
 
 function pastScreen(s){
-    return s.rect.x > -s.rect.width && parallaxToggle;
+    return s.x > -s.width && parallaxToggle;
 }
 
 function updateWaterBits(){
-    if (Math.random()  || waterBits.length <= 0){
+    if (Math.random() > .4  || waterBits.length <= 0){
         size = Math.random() * 5;
         Prect = new Phaser.Rectangle(game.width,Math.random() * game.height *.5 + game.height*.5,size,size)
-        waterBits.push({
-            rect:Prect,
-            xVelocity: (Math.random() * 1.4) - size -5,
-        }
-        );
+        Prect.xVelocity = (Math.random() * 1.4) - size -5,
+        Prect.color = randomColor({luminosity:'light', hue:'blue'});
+        waterBits.push(Prect);
     }
     for(i=0;i<waterBits.length;i++){
-        waterBits[i].rect.x += waterBits[i].xVelocity;
+        waterBits[i].x += waterBits[i].xVelocity;
     }
     waterBits = waterBits.filter(pastScreen);
 }
@@ -106,7 +104,7 @@ function update() {
 
 function render () {
     for (i=0;i<waterBits.length;i++){
-        game.debug.geom(waterBits[i].rect,'#0fffff');
+        game.debug.geom(waterBits[i], waterBits[i].color);
     }
     // game.debug.text(game.time.physicsElapsed, 32, 32);
     // game.debug.body(player);
