@@ -113,15 +113,17 @@ function spawn_bubbles(){
         bubbles.push(bubble);
 
         container.addChild(bubble);
-        console.log("ADDED BUBLE");
     }
 }
-function update_bubbles(){
-    for (var i = 0; i < bubbles.length; i++){
-        bubble = bubbles[i];
-        bubble.position.x += bubble.xVel
-        }
+function update_bubbles(){ //Cap at 200 bubble. got to be a better way
+    while (container.children.length > 200){
+        container.removeChild(container.getChildAt(0));
     }
+    for (var i = 0; i < container.children.length; i++){
+        bubble = container.getChildAt(i);
+        bubble.x += bubble.xVel;
+    }
+}
 function run_bubbles(){
     spawn_bubbles();
     update_bubbles();
@@ -145,7 +147,6 @@ function setYAccel(){
     
     if (checkSurfaceBreak()){
         jetski.yVel *= SURFACE_FRICTION;
-        console.log("BROKE");
     }
     jetski.yAcc = accel;
 }
