@@ -5,7 +5,7 @@ var GRAVITY = .001;
 var BUOYANCY_FORCE = -GRAVITY * 2;
 var DOWNWARD_FORCE = GRAVITY * 1.8;
 var AIR_FRICTION = .98;
-var SURFACE_FRICTION = .8;
+var SURFACE_FRICTION = .9;
 var WATER_FRICTION = .98;
 var HEIGHT = 600;
 var WIDTH = 800;
@@ -18,6 +18,9 @@ var water_accel=0;
 var down_accel=0;
 var clickDown = false;
 var submerged = true;
+var bubbles = [];
+
+//var assetLoader = new PIXI.AssetLoader("assets/jetski.png", false);
 
 var stage = new PIXI.Stage(0xAACCFF);
 
@@ -43,6 +46,8 @@ $(renderer.view).mouseup(function(){
 requestAnimFrame( animate );
 
 var texture = PIXI.Texture.fromImage("assets/jetski.png");
+var bubbleTexture = new PIXI.Texture.fromImage("assets/bubble.png")
+
 // create a new Sprite using the texture
 var jetski = new PIXI.Sprite(texture);
 var text = new PIXI.Text("hi there");
@@ -60,18 +65,23 @@ jetski.yAcc = 0;
 
 
 var graphics = new PIXI.Graphics();
-graphics.beginFill(0x000673)
+graphics.beginFill(0x000673);
 graphics.drawRect(0, WATER_LEVEL, WIDTH, HEIGHT - WATER_LEVEL);
 stage.addChild(graphics);
 
 
 stage.addChild(jetski);
 stage.addChild(text);
+container = new PIXI.SpriteBatch();
+stage.addChild(container);
 
 
 function getDeltaTime(){
     deltaTime = Date.now() - time1;
     time1 = Date.now();
+    if (deltaTime > 300){
+        deltaTime = 300;
+    }
 }
 
 function checkSurfaceBreak(){
@@ -84,6 +94,38 @@ function checkSurfaceBreak(){
     return surfaceBreak;
 }
 
+function pastScreen(x){
+    return x.x < 0;
+}
+
+function spawn_bubbles(){
+    if (Math.random() > .7){
+        var bubble = new PIXI.Sprite(bubbleTexture);
+        bubble.position.x = WIDTH;
+        bubble.position.y = Math.random() * WATER_LEVEL + WATER_LEVEL*1.1;
+        size = Math.random() * 20 + 5;
+        bubble.height = size;
+        bubble.width = size;
+        bubble.xVel = - Math.random() * 2 - size/2;
+        bubble.yVel = 0;
+        bubble.anchor.x = 0.5;
+        bubble.anchor.y = 0.5;
+        bubbles.push(bubble);
+
+        container.addChild(bubble);
+        console.log("ADDED BUBLE");
+    }
+}
+function update_bubbles(){
+    for (var i = 0; i < bubbles.length; i++){
+        bubble = bubbles[i];
+        bubble.position.x += bubble.xVel
+        }
+    }
+function run_bubbles(){
+    spawn_bubbles();
+    update_bubbles();
+}
 function setYAccel(){
     accel = GRAVITY;
     if (clickDown){ //pushing down
@@ -96,9 +138,9 @@ function setYAccel(){
     else{//in air
         jetski.Yvel *= AIR_FRICTION;
     }
-    
-    if (jetski.y >= HEIGHT || jetski.y <= 0){ //stay in bounds (kinda)
+    if (jetski.y >= HEIGHT || jetski.y <= 0){ // for some reason, never fires
         accel = 0;
+        console.log("OUT OF BOUNDS");
     }
     
     if (checkSurfaceBreak()){
@@ -133,5 +175,7 @@ function animate() {
     requestAnimFrame( animate );
     positionJetski();
     rotateJetski();
+    run_bubbles();
+    //parallax();
     renderer.render(stage);
 }
