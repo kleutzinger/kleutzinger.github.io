@@ -22,7 +22,8 @@ var bubbles = [];
 
 //var assetLoader = new PIXI.AssetLoader("assets/jetski.png", false);
 
-var stage = new PIXI.Stage(0xAACCFF);
+var interactive = true;
+var stage = new PIXI.Stage(0xAACCFF, interactive);
 
 // create a renderer instance.
 var renderer = PIXI.autoDetectRenderer(WIDTH, HEIGHT);
@@ -33,7 +34,7 @@ document.body.appendChild(renderer.view);
 
 
 
-
+/*
 $(renderer.view).mousedown(function(){
     clickDown= true;
 });
@@ -41,7 +42,7 @@ $(renderer.view).mousedown(function(){
 $(renderer.view).mouseup(function(){
     clickDown = false;
 })
-
+*/
 
 requestAnimFrame( animate );
 
@@ -70,7 +71,27 @@ testObject = new PIXI.DisplayObject();
 console.log(testObject.hellothere);
 testObject.setPosition();
 console.log(testObject.hellothere);
+var fullScreenSprite = new PIXI.Sprite(PIXI.Texture.fromImage("assets/transparent.png"));
+fullScreenSprite.width = WIDTH;
+fullScreenSprite.height = HEIGHT;
+fullScreenSprite.interactive = 1;
+stage.addChild(fullScreenSprite)
+
 //END OF TEST ZONE
+
+fullScreenSprite.touchstart = function(mouseData){
+   clickDown = true;
+}
+
+fullScreenSprite.touchend = function(mouseData){
+   clickDown = false;
+}
+fullScreenSprite.mousedown = function(mouseData){
+   clickDown = true;
+}
+fullScreenSprite.mouseup = function(mouseData){
+   clickDown = false;
+}
 
 waterLine.worldX = 0;
 waterLine.worldY = WATER_LEVEL;
@@ -190,14 +211,24 @@ function rotateJetski(){
     jetski.rotation = jetski.yVel ;
 }
 
+function positionCamera(){
+    if(jetski.worldY > 200 && jetski.worldY < 400){
+        cam.y = (300 - HEIGHT/2 + cam.y) / 4;
+    }
+    else{
+        cam.y = (jetski.worldY - 300 + cam.y ) / 4;
+    }
+    //cam.x = jetski.worldX - WIDTH/2;
+    //cam.y = jetski.worldY - HEIGHT/2;
+}
+
 function animate() {
     //cam.x +=.001;
     //cam.y += .001;
-    cam.x = jetski.worldX - WIDTH/2;
-    cam.y = jetski.worldY - HEIGHT/2;
     getDeltaTime();
     requestAnimFrame( animate );
     positionJetski();
+    positionCamera();
     waterLine.setPosition();
     rotateJetski();
     run_bubbles();
