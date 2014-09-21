@@ -45,11 +45,13 @@ $(renderer.view).mouseup(function(){
 
 requestAnimFrame( animate );
 
-var texture = PIXI.Texture.fromImage("assets/jetski.png");
+var jetskiTexture = PIXI.Texture.fromImage("assets/jetski.png");
+var waterLineTexture = PIXI.Texture.fromImage("assets/waterline.png");
 var bubbleTexture = new PIXI.Texture.fromImage("assets/bubble.png")
 
 // create a new Sprite using the texture
-var jetski = new PIXI.Sprite(texture);
+var jetski = new PIXI.Sprite(jetskiTexture);
+var waterLine = new PIXI.Sprite(waterLineTexture);
 var text = new PIXI.Text("hi there");
 
 // center the sprites anchor point
@@ -63,18 +65,27 @@ jetski.xVel = 0;
 jetski.yVel = 0;
 jetski.yAcc = 0;
 
+//TEST ZONE
+testObject = new PIXI.DisplayObject();
+console.log(testObject.hellothere);
+testObject.setPosition();
+console.log(testObject.hellothere);
+//END OF TEST ZONE
 
+waterLine.worldX = 0;
+waterLine.worldY = WATER_LEVEL;
+/*
 var graphics = new PIXI.Graphics();
 graphics.beginFill(0x000673);
 graphics.drawRect(0, WATER_LEVEL, WIDTH, HEIGHT - WATER_LEVEL);
 stage.addChild(graphics);
-
+*/
 
 stage.addChild(jetski);
 stage.addChild(text);
 container = new PIXI.SpriteBatch();
 stage.addChild(container);
-
+stage.addChild(waterLine);
 
 function getDeltaTime(){
     deltaTime = Date.now() - time1;
@@ -101,12 +112,15 @@ function pastScreen(x){
 function spawn_bubbles(){
     if (Math.random() > .7){
         var bubble = new PIXI.Sprite(bubbleTexture);
-        bubble.position.x = WIDTH;
-        bubble.position.y = Math.random() * WATER_LEVEL + WATER_LEVEL*1.1;
+        bubble.worldX = WIDTH;
+        bubble.worldY = Math.random() * WATER_LEVEL + WATER_LEVEL*1.1;
+       
+        
         size = Math.random() * 20 + 5;
         bubble.height = size;
         bubble.width = size;
-        bubble.xVel = - Math.random() * 2 - size/2;
+        //bubble.xVel = - Math.random() * 2 - size/2;
+        bubble.xVel = - 5;
         bubble.yVel = 0;
         bubble.anchor.x = 0.5;
         bubble.anchor.y = 0.5;
@@ -121,7 +135,8 @@ function update_bubbles(){ //Cap at 200 bubble. got to be a better way
     }
     for (var i = 0; i < container.children.length; i++){
         bubble = container.getChildAt(i);
-        bubble.x += bubble.xVel;
+        bubble.worldX += bubble.xVel;
+        bubble.setPosition();
     }
 }
 function run_bubbles(){
@@ -133,15 +148,15 @@ function setYAccel(){
     if (clickDown){ //pushing down
         accel += DOWNWARD_FORCE
     };
-    if (jetski.y >= WATER_LEVEL){ //underwater
+    if (jetski.worldY >= WATER_LEVEL){ //underwater
         accel += BUOYANCY_FORCE;
         jetski.yVel *= WATER_FRICTION;
     }
     else{//in air
         jetski.Yvel *= AIR_FRICTION;
     }
-    if (jetski.y >= HEIGHT || jetski.y <= 0){ // for some reason, never fires
-        accel = 0;
+    if (jetski.worldY >= HEIGHT || jetski.y <= 0){ // for some reason, never fires
+        //accel = 0;
         console.log("OUT OF BOUNDS");
     }
     
@@ -151,6 +166,9 @@ function setYAccel(){
     jetski.yAcc = accel;
 }
 
+jetski.worldX = 100;
+jetski.worldY = 0;
+
 function positionJetski(){
 // temp = acc*dt
 // pos = pos + dt*(vel + temp/2)
@@ -158,13 +176,14 @@ function positionJetski(){
     setYAccel();
     dt = deltaTime;
     temp = jetski.yAcc*dt
-    y = jetski.y;
+    y = jetski.worldY;
     y += dt*(jetski.yVel + temp/2)
     jetski.yVel = jetski.yVel + jetski.yAcc*dt
-    jetski.y = y;
-    if (jetski.y <=0){jetski.y = 10;}
-    if (jetski.y >= HEIGHT){jetski.y = HEIGHT-10;}
-    text.setText(jetski.yAcc);
+    jetski.worldY = y;
+    //if (jetski.y <=0){jetski.y = 10;}
+    //if (jetski.y >= HEIGHT){jetski.world = HEIGHT-10;}
+    jetski.setPosition();
+    text.setText("depth: " + Math.floor(jetski.worldY));
 }
 
 function rotateJetski(){
@@ -172,9 +191,14 @@ function rotateJetski(){
 }
 
 function animate() {
+    //cam.x +=.001;
+    //cam.y += .001;
+    cam.x = jetski.worldX - WIDTH/2;
+    cam.y = jetski.worldY - HEIGHT/2;
     getDeltaTime();
     requestAnimFrame( animate );
     positionJetski();
+    waterLine.setPosition();
     rotateJetski();
     run_bubbles();
     //parallax();
