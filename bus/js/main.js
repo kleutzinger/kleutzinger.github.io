@@ -105,7 +105,7 @@ function update() {
         {
             velocity -= .2;
         }
-        else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT)){
+        else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.pointer1.isDown){
             velocity +=  .2;
         }
         else{
