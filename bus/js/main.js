@@ -101,11 +101,13 @@ function update() {
          ||game.input.pointer2.isDown && game.input.pointer2.worldX <= 400)
         {
             velocity -= .2;
+            text.setText("L"+ (Date.now()-start)/1000)
         }
         else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || 
         game.input.pointer1.isDown && game.input.pointer1.worldX > 400||
         game.input.pointer2.isDown && game.input.pointer2.worldX > 400){
             velocity +=  .2;
+        text.setText("R"+ (Date.now()-start)/1000)
         }
         else{
             velocity += (Math.sin(Date.now())/15);
