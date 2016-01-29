@@ -6,6 +6,7 @@ function preload() {
     game.load.image('road', 'assets/road.png');
     game.load.image('kid', 'assets/kid.png');
     game.load.image('sad', 'assets/warped.jpeg');
+    game.load.image('x', 'assets/x.png');
     game.load.audio('honk', 'assets/honk.ogg');
     
 }
@@ -21,8 +22,7 @@ var kid;
 var leftSprite;
 var rightSprite;
 var text;
-
-
+var kidHitbox;
 
  isIntersecting = function(r1, r2) {
         return !(r2.x > (r1.x + r1.width)  || 
@@ -63,7 +63,10 @@ function create() {
     //s.anchor.setTo(0.5, 0.5);
     sad.scale.setTo(.5, .5);
     
-    
+    kidHitbox = game.add.sprite(kid.x,kid.y,'x');
+    kidHitbox.visible = false;
+    kidHitbox.width = kid.width*.85;
+    kidHitbox.height = kid.height*.7;
     
     
     honk = game.add.audio('honk');
@@ -79,6 +82,10 @@ var rightTouch = false;
 
     var style = { fill: "#FFFFFF"};
 function update() {
+    kidHitbox.x = kid.x;
+    kidHitbox.y = kid.y;
+    
+    
 /*
     if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
     {
@@ -96,7 +103,7 @@ function update() {
 */
     if(!end){
         
-        text.setText(" "+ (Date.now()-start)/1000);
+        text.setText("_"+ (Date.now()-start)/1000);
         if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.pointer1.isDown && game.input.pointer1.worldX <= 400
          ||game.input.pointer2.isDown && game.input.pointer2.worldX <= 400)
         {
@@ -109,9 +116,9 @@ function update() {
             velocity +=  .2;
         text.setText("R"+ (Date.now()-start)/1000)
         }
-        else{
-            velocity += (Math.sin(Date.now())/15);
-        }
+        
+        velocity += (Math.sin(Date.now())/15);
+        
 
         if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR) && !honk.isPlaying){
             honk.play();
@@ -135,12 +142,16 @@ function update() {
         
         
         
-    if (isIntersecting(s,kid) || !isIntersecting(road,s)){
+    if (isIntersecting(s,kidHitbox) || !isIntersecting(road,s)){
             honk.play();
             
             end = true;
             sad.x = s.x;
             sad.y = s.y;
+            kidHitbox.visible = true;
+            kidHitbox.width = kid.width;
+            kidHitbox.height = kid.height;
+    
             text.setText(" Rus stayed on the road\n without hitting a kid for\n "+(Date.now()-start)/1000 + " seconds \n\n SPACE OR TAP TO RESTART");
             
         }    
@@ -157,6 +168,10 @@ function update() {
             velocity =0;
             kid.x = 250;
             kid.y = 0;
+            kidHitbox.visible = false;
+            kidHitbox.width = kid.width*.85;
+            kidHitbox.height = kid.height*.7;
+            kidHitbox.visible = false;
             end = false;
             start = Date.now();
             text.setText("");
