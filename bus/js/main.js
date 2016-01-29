@@ -56,12 +56,7 @@ function create() {
     
     
    
-    
-    rightSprite = game.add.sprite(400,0,'sad');
-    rightSprite.height=200;
-    rightSprite.width=400;
-    rightSprite.setInteractive(true);
-    //leftSprite.visible=false;
+        //leftSprite.visible=false;
     
     sad = game.add.sprite(-200,-200, 'sad');
     //s.anchor.setTo(0.5, 0.5);
@@ -140,7 +135,7 @@ function update() {
             end = true;
             sad.x = s.x;
             sad.y = s.y;
-            text.setText(" Cyrus stayed on the road\n without hitting a kid for\n "+(Date.now()-start)/1000 + " SECONDS \n SPACE TO RESTART");
+            text.setText(" Rus stayed on the road\n without hitting a kid for\n "+(Date.now()-start)/1000 + " seconds \n\n SPACE OR TAP TO RESTART");
             
         }    
         
@@ -148,11 +143,12 @@ function update() {
     
     
     else{//IS ENDED
-        if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)){
+        if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR) || (!honk.isPlaying && game.input.pointer1.isDown)){
             sad.x = -200;
             sad.y = -200;
             s.x = 500;
             s.y = 420;
+            velocity =0;
             kid.x = 250;
             kid.y = 0;
             end = false;
@@ -168,7 +164,7 @@ function gameEND(){
     
 }
 function render() {
-        game.debug.pointer(game.input.pointer1);
+        //game.debug.pointer(game.input.pointer1);
         
 
 }
