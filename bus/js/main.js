@@ -1,3 +1,4 @@
+var interactive = true;
 var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
@@ -17,7 +18,9 @@ var velocity_multiplier = 0;
 var velocity;
 velocity = 0;
 var kid;
-
+var leftSprite;
+var rightSprite;
+var text;
 
 
 
@@ -27,6 +30,8 @@ var kid;
            r2.y > (r1.y + r1.height) ||
            (r2.y + r2.height) < r1.y);
     }
+
+
 
 
 function create() {
@@ -39,7 +44,7 @@ function create() {
     road.scale.setTo(.5,4);
     
     
-    kid = game.add.sprite(250,0,'kid');
+    kid = game.add.sprite(250,-100,'kid');
     //kid.anchor.setTo(.5,.5);
     kid.scale.setTo(.1,.1);
     
@@ -47,6 +52,15 @@ function create() {
     s = game.add.sprite(500, 420, 'mushroom');
     //s.anchor.setTo(0.5, 0.5);
     s.scale.setTo(.5, .5);
+    
+    
+   
+    
+    rightSprite = game.add.sprite(400,0,'sad');
+    rightSprite.height=200;
+    rightSprite.width=400;
+    rightSprite.setInteractive(true);
+    //leftSprite.visible=false;
     
     sad = game.add.sprite(-200,-200, 'sad');
     //s.anchor.setTo(0.5, 0.5);
@@ -62,6 +76,9 @@ function create() {
 var end = false;
 var kidspeed = 10;
 var start = Date.now();
+
+var leftTouch  = false;
+var rightTouch = false;
 
     var style = { fill: "#FFFFFF"};
 function update() {
@@ -81,16 +98,8 @@ function update() {
 }
 */
     if(!end){
-        if (isIntersecting(s,kid) || !isIntersecting(road,s)){
-            honk.play();
-            
-            end = true;
-            sad.x = s.x;
-            sad.y = s.y;
-            text.setText("You stayed on the road\n without hitting a kid for\n"+(Date.now()-start)/1000 + " SECONDS ");
-            
-        }
-
+        
+        text.setText(" "+ (Date.now()-start)/1000);
         if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
         {
             velocity -= .2;
@@ -121,7 +130,22 @@ function update() {
             kid.x = 230+ Math.random()*320;
         }
         
+        
+        
+        
+    if (isIntersecting(s,kid) || !isIntersecting(road,s)){
+            honk.play();
+            
+            end = true;
+            sad.x = s.x;
+            sad.y = s.y;
+            text.setText(" Cyrus stayed on the road\n without hitting a kid for\n "+(Date.now()-start)/1000 + " SECONDS \n SPACE TO RESTART");
+            
+        }    
+        
     }
+    
+    
     else{//IS ENDED
         if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)){
             sad.x = -200;
@@ -143,4 +167,6 @@ function gameEND(){
     
 }
 function render() {
+        game.debug.pointer(game.input.mousePointer);
+
 }
