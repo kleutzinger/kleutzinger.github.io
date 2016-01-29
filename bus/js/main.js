@@ -35,6 +35,7 @@ var text;
 
 
 function create() {
+    game.input.addPointer();
     game.stage.backgroundColor = 0xaaaabb;
 
     
@@ -167,6 +168,7 @@ function gameEND(){
     
 }
 function render() {
-        game.debug.pointer(game.input.mousePointer);
+        game.debug.pointer(game.input.pointer1);
+        
 
 }
