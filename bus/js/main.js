@@ -36,6 +36,7 @@ var text;
 
 function create() {
     game.input.addPointer();
+    game.input.addPointer();
     game.stage.backgroundColor = 0xaaaabb;
 
     
@@ -96,11 +97,14 @@ function update() {
     if(!end){
         
         text.setText(" "+ (Date.now()-start)/1000);
-        if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.pointer1.isDown && game.input.pointer1.worldX <= 400)
+        if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.pointer1.isDown && game.input.pointer1.worldX <= 400
+         ||game.input.pointer2.isDown && game.input.pointer2.worldX <= 400)
         {
             velocity -= .2;
         }
-        else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.pointer1.isDown && game.input.pointer1.worldX > 400){
+        else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || 
+        game.input.pointer1.isDown && game.input.pointer1.worldX > 400||
+        game.input.pointer2.isDown && game.input.pointer2.worldX > 400){
             velocity +=  .2;
         }
         else{
