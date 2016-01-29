@@ -82,9 +82,6 @@ var rightTouch = false;
 
     var style = { fill: "#FFFFFF"};
 function update() {
-    kidHitbox.x = kid.x;
-    kidHitbox.y = kid.y;
-    
     
 /*
     if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
@@ -102,6 +99,10 @@ function update() {
 }
 */
     if(!end){
+        kidHitbox.x = kid.x;
+        kidHitbox.y = kid.y;
+    
+    
         
         text.setText("_"+ (Date.now()-start)/1000);
         if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.pointer1.isDown && game.input.pointer1.worldX <= 400
@@ -151,7 +152,12 @@ function update() {
             kidHitbox.visible = true;
             kidHitbox.width = kid.width;
             kidHitbox.height = kid.height;
-    
+            if (!isIntersecting(road,s)){
+                kidHitbox.x = s.x;
+                kidHitbox.y = s.y;
+                kidHitbox.width = s.width;
+                kidHitbox.height = s.height;
+            }
             text.setText(" Rus stayed on the road\n without hitting a kid for\n "+(Date.now()-start)/1000 + " seconds \n\n SPACE OR TAP TO RESTART");
             
         }    
