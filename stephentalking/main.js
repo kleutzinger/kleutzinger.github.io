@@ -40,7 +40,7 @@ function send(){
     var sendWords = document.getElementById('textbox').value;
     sendWords = "!"+sendWords.replace(/ /g,"_");
     sendWords = rot13(sendWords);
-    var sendUrl = "http://kevinleutzinger.com/stephentalking.com/#" + sendWords;
+    var sendUrl = "http://kevinleutzinger.com/stephentalking/#" + sendWords;
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac)", sendUrl);
 }
 
