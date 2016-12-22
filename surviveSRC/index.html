@@ -5,11 +5,13 @@
     <style type="text/css" media="screen">
       canvas { border: 3px solid; text:"did not work? try refreshing"}
     </style>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8 " src="./surviveSRC.js"> </script>
+
   </head>
 
-  <body onload="Game.start()">
+  <body onload="init(); Game.start()">
   <!-- Thanks to Aaron Santiago for FB sharing -->
   <div id="fb-root"></div>
   <script>
@@ -59,12 +61,18 @@
       src="https://dl.dropboxusercontent.com/u/1703360/c/01%20Everything%20Right%20Is%20Wrong%20Again.ogg"
       style="display: none;">
     </audio>
+    <div>
+      <p>Players who finished:
+      <ol id="skill_list"></ol>
+      </p>
+    </div>
+<!-- 
     <a href="http://kevinleutzinger.com">home</a>
     <p>
       <strong> Now with endgame content, and settings, too!</strong>
       <a href="https://github.com/kleutzinger/kleutzinger.github.io/tree/master/surviveSRC">View source on github</a>
     </p>
-    <div align="left"><br>
+    <div align="left"><br>-->
 <input id="BE_checkbox" type="checkbox" name="option1" value="BigEnemies">Big Enemies</input>
 <input id="SS_checkbox" type="checkbox" name="option2" value="SuperSpeed">Super Speed</input>
 <input id="MM_checkbox" type="checkbox" name="option3" value="MegaMode">Mega Mode</input>
@@ -76,8 +84,6 @@
 value="Share Last Death on FB" onclick="shareLastDeath()"
 style="color:white; background-color:#3B5998; font-weight:bold;">
 </input>
-
-</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

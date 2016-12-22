@@ -1,5 +1,63 @@
 //http://code.createjs.com/soundjs-0.5.0.min.js
 // WIN AT > 157
+
+var ref;
+var database;
+function init(){
+      b = "Dgr63LW2IB3Da3QUT8A"
+      a = "AIzaSyB8nlBxoXl1JgDz"
+  var config = {
+      apiKey: a+b, // wowza...
+      authDomain: "survivesrc.firebaseapp.com",
+      databaseURL: "https://survivesrc.firebaseio.com",
+      storageBucket: "survivesrc.appspot.com",
+      messagingSenderId: "287272396943"
+    };
+    firebase.initializeApp(config);
+    database = firebase.database();
+    ref = database.ref('src');
+    ref.on('value', gotData, errData);
+}
+
+var submit = function(){
+    name = prompt("Please enter your name", "Harry Potter");
+    quote = prompt("What is your quote?", "Your Quote Here");
+    date = new Date();
+    day = date.getDate();
+    monthIndex = date.getMonth();
+    year = date.getFullYear();
+    d_string = monthIndex + "-" + day + "-" + year
+    var data = {
+      name: name,
+      quote:  quote,
+      date: d_string,
+    }
+    console.log(data);
+    ref.push(data);
+}
+
+
+function gotData(data){
+  $("#skill_list").empty();
+
+  entries = data.val();
+  keys = Object.keys(entries);
+for (var i = 0; i < keys.length; i++) {
+    k = keys[i];
+    entry = entries[k];
+    name = entry.name;
+    quote = entry.quote;
+    d = entry.date;
+    $("#skill_list").append( '<li>' + d + " <b>" + name +"</b>: \"" + quote +'\"</li>' );
+  }
+  return
+}
+
+function errData(){
+  return false;
+}
+
+var won = false;
 var thisURL = 'http://kevinleutzinger.com/surviveSRC'
 var lastScore = -1;
 var deathPost = '';
@@ -64,7 +122,7 @@ var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted"
 "no contact ordered","investigated","snacked on","noticed","zapped","shanked","imprisoned","incarcerated","helped","cha-cha slided",
 "was inside", "was","creamed","sweat on", "punked","punted","outlasted","pickled", "rap battled", "lightning bolted",
 "fertilized","abducted","kidnapped","abstracted","aggroed","beat the daylights out of","oneshot","instakilled",
-"blackmailed","blazed","pinched","busted","axed",];
+"blackmailed","blazed","pinched","busted","axed","instagibbed", "thunder punched", "stomped", "thought about"];
 
 var names  = ["Sara","Sarah","Ethan","Eliana","Courtney","Tony","Tessa","Kathleen","Zara","Daniel","Ishmael","Jin","Edward","Makaela","Alexandra","Meredith","Natalie","Klodian","Garland","Paul","Brianna","Sarah","Guthrie","Adam","Elijah","Alexandra","Maritza","Jackson","Ceilidh","Hanna","Kaelyn","Cayle","Kori","Hannah","Alexis","Sahra","David","Jack","Cat","Sabrina","Chi","Will","Gina","Simay","Joyce","Khin","Michael","Nina","Quille","Lulu","Yueming","Katherine","Grifﬁn","Naomi","Kolya","Rebecca","Mina","Mikaela","Alexander","Alef","Elibba","Kate","Anna","Rose","Michael","Demitria","Natalie","Olivia","Haley","Freya","House","Cian","Leo","Rachel","Jenny","Martha","Anton","Shahreen","Winter","Becka","Najwa","Colin","Delaney","Hannah","Greig","Isabel","Michael","Avonlea","Stephanie","Ligaya","Oliver","Theodor","Rhiannon","Harry","Marcel","Julian","Courtney-Marie","Victoria","Paige","Gemma","Bethany","Ella","Robert","Rohan","Aidan","Lillian","Trixie","Julia","Courtney","Tyler","Nicole","Ishan","Naomi","Samuel","Lee","Hazemach","Jasmine","Izaak","Lorelei","Oscar","Ian","Patrick","Niah","Sophie","London","Zoe","Chloe","Regan","Sahal","Shannon","Greg","Lucy","Jacob","Nishant","Malcolm","Sarah","Bianca","Jan","Elliot","Julian","Youjeen","Feston","Spencer","Emma","Jacob","Reed","Maksim","Madeleine","Andrew","Ei","Ray","Ben","James","Dakotah","Jake","Amara","Eldred","Isabella","Connor","Hannah","Kevin","Jonathan","Wanying","Zhaoran","Hannah","Jordan","Cary","Jazmine","Christina","Elliot","Ross","Theo","Luke","Juliette","Cary","Audrey","Kulu","Alicia","Marianna","Sarena","David","Avery","Wyatt","Rachel","Sophie","Mia","Molly","Kirsiah","Chelsea","Heather","Matthew","Jade","Matthew","David","Sophie","Kendra","Drew","Meghan","Aung","Meredith","Elise","Jenifer","Cassandra","Kayleigh","Chazlee","Jaeeun","Kai","Mika","Vinzie","Evan","Huw","Jake","Michael","Isabel","Jeheli","Bradley","Max","Serina","Alana","Benjamin","Sam","Bryce","Grant","Megan","Ashley","Lucy","Neil","Queen-Ama","Georges","Vijay","Alexander","Naomi","Konrad","Ingrid","Solomon","Taylor","Jaeme","Brianna","Phil","Simon","Anna","Dante","Joelle","Cameron","Maria","Mallie","Philip","Diego","Dominica","Camille","Vasu","Soﬁa","Payal","Katharine","Laurens","AJ","Virginia","Seth","Maya","Grace","Abi","Kahlia","Nathan","Emma","Andre","Daniel","Thomas","Andrea","Johanna","Sam","Hayden","Patricia","Linsen","Irene","Michael","Melissa","Daneil","Leandra","Nate","Ihor","Simon","Mercy","Sebastian","Elle","Ian","Cori","Ali","Luke","Moses","Chelsea","Koshu","Bazl","Danya","Tara","Uzoamaka","Nichol","Zev","Samantha","Yuxing","George","Sierra","Pearl","Aaron","Jared","Naida","Erin","Kiyomi","Jonathan","Samantha","Amy","June","Nancy","Samantha","Sophie","Minji","Gavin","James","Maisha","Spencer","Mengtian","Alwaleed","Amber","Molly","Sally","Gabe","Dawson","Andy","Julian",]
 var deathmessages = ["Daniel ninja kicked you",
@@ -148,7 +206,7 @@ var Game = {
 };
 
 Game._onEachFrame = (function() {
-  var requestAnimationFrame = window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
+  var requestAnimationFrame = window.RequestAnimationFrame || window.mozRequestAnimationFrame;
 
   if (requestAnimationFrame) {
    return function(cb) {
@@ -209,7 +267,12 @@ Game.draw = function() {
   Game.context.clearRect(0,0, Game.width, Game.height);
   Game.context.fillStyle = 'black';
     Game.context.fillText("You win! Also I fixed the glitches now, so it's legit. Tell Kevin.", Game.width/2, Game.height/2);
-    winSong.play();  
+    if(won == false){
+      won = true;
+      soundEfx.pause();
+      winSong.play();  
+      submit();
+    }
   };
 /*  else{
     if (Game.enemies.length == 0){
