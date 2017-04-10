@@ -1,5 +1,5 @@
-## Projects by Kevin Leutzinger
-
+## Projects by Kevin Leutzinger [(My Github)](https://github.com/kleutzinger/kleutzinger.github.io/)
+***
 ### Survive Simon's Rock College Game
 http://www.kevinleutzinger.com/surviveSRC/
 An avoider game featuring every student's face from my old school Simon's Rock. Dodge the faces and try to make it to the end of the song.
