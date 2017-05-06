@@ -10,7 +10,7 @@
 
 </head>
 <body onload="init()">
-<h3>Youtube Multi-Partioner (beta v0.1)</h3>
+<h3>Youtube Multi-Partioner (beta v0.2)  by kevin leutzinger // <a href="//github.com/kleutzinger/kleutzinger.github.io/tree/master/ytpartition">source</a></h3>
 
 <div id="player"></div>
 
@@ -60,12 +60,13 @@
     </script>
 <br>
 <input id='textbox' style="width:500px" placeholder="what video do you want to partition?" class='button' oninput='twitch()'></input>
+<button id='selectButtonid' value='https://www.youtube.com/watch?v=yKXaTLD9qoM' onclick='selectButton()' class='button big-btn'>Select Video to Partion</button>
 <p>
-  <button id='selectButtonid' value='https://www.youtube.com/watch?v=yKXaTLD9qoM' onclick='selectButton()' class='button big-btn'>Select Video to Partion</button>
+  <button id='playid' class='button big-btn' onclick="play(partitions);"><strong>Play Partitions</strong></button>
   <button id='send' onclick='putHash()' class='button'>Send partitions to a friend</button>
-  <button id='playid' class='button big-btn' onclick="play();"><strong>Play Partitions</strong></button>
 </p>
 <p>Autoplay in send? <input id='autoCheckBox' type="checkbox" checked=true></p>
+<p>Loop in send? (not implemented)<input id='loopCheckBox' type="checkbox" checked=true></p>
 
 
 <input id='startid' type="number">start time </input>
@@ -73,7 +74,7 @@
 
 <div width=100px id='slider'></div>
 <button id='addid' class='button big-btn' placeholder="hi there" onclick="add(0);">Add Partition</button>
-<h3 style="position:auto"> by kevin leutzinger // <a href="//github.com/kleutzinger/kleutzinger.github.io/tree/master/ytpartition">source</a></h3>
+<h3 style="position:auto"></h3>
 
 <ol id="partition_list"></ol>
 </body>
