@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='./main.js'></script>
+    <script src='./nouislider.min.js'></script>
+<!--
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+-->
+    <link rel="stylesheet" type="text/css" href="./nouislider.min.css"/>
+
+</head>
+<body onload="init()">
+<h3>Youtube Multi-Partioner (beta v0.1)</h3>
+
+<div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          playerVars: { 'autoplay': 0, 'controls': 1 },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        //event.target.playVideo();
+        //event.target.pauseVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        //player.stopVideo();
+      }
+    </script>
+<br>
+<input id='textbox' style="width:500px" placeholder="what video do you want to partition?" class='button' oninput='twitch()'></input>
+<p>
+  <button id='selectButtonid' value='https://www.youtube.com/watch?v=yKXaTLD9qoM' onclick='selectButton()' class='button big-btn'>Select Video to Partion</button>
+  <button id='send' onclick='putHash()' class='button'>Send partitions to a friend</button>
+  <button id='playid' class='button big-btn' onclick="play();"><strong>Play Partitions</strong></button>
+</p>
+<p>Autoplay in send? <input id='autoCheckBox' type="checkbox" checked=true></p>
+
+
+<input id='startid' type="number">start time </input>
+<input id='endid' type="number">end time </input>
+
+<div width=100px id='slider'></div>
+<button id='addid' class='button big-btn' placeholder="hi there" onclick="add(0);">Add Partition</button>
+<h3 style="position:auto"> by kevin leutzinger // <a href="//github.com/kleutzinger/kleutzinger.github.io/tree/master/ytpartition">source</a></h3>
+
+<ol id="partition_list"></ol>
+</body>
