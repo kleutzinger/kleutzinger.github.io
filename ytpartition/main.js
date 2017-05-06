@@ -14,7 +14,7 @@ function getHash(){
     parts = [];
     lastid = split[0];
     for (i=0;i<split.length-1;i+=3){
-        if(split[i] == "^") {split[i] = lastid;}
+        if(split[i].length <= 1) {split[i] = lastid;}
         else {lastid = split[i];}
         p = newPartition(split[i], parseInt(split[i+1]), parseInt(split[i+2]))
         parts.push(p);
@@ -83,7 +83,7 @@ function putHash(){
     lastid = "";
     for(i=0;i<p.length;i++){
         if(i>0){lastid = p[i-1].id;}
-        if (p[i].id == lastid){ temp = "^"; }
+        if (p[i].id == lastid){ temp = "!"; }
         else {temp = p[i].id};
         h = temp + "+" + p[i].start + "+" + p[i].end + "+";
         hash_string+= h;
