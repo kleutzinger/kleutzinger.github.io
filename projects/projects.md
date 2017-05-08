@@ -1,5 +1,14 @@
 ## Projects by Kevin Leutzinger [(My Github)](https://github.com/kleutzinger/kleutzinger.github.io/)
 ***
+### Youtube Multi Clipper (work in progress)
+http://www.kevinleutzinger.com/ytpartition
+Play specified segments of multiple youtube videos in a sequence automatically
+Technologies used: HTML/JS/CSS, Youtube Embedded Player API
+[source](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/ytpartition)
+![](./img/yt.png "")
+
+***
+
 ### Survive Simon's Rock College Game
 http://www.kevinleutzinger.com/surviveSRC/
 An avoider game featuring every student's face from my old school Simon's Rock. Dodge the faces and try to make it to the end of the song.
