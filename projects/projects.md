@@ -4,7 +4,7 @@
 
 ### Better Challonge Results
 https://chrome.google.com/webstore/detail/better-challonge-results/nlmopkefkemlpdpfkgllbeifljhkfeno
-A chrome extension that improvess and adds features to the results screen on challonge.com brackets
+A chrome extension that improves and adds features to the results screen on challonge.com brackets
 Technologies used: HTML/JS/CSS, Chrome Extension
 [source](https://github.com/kleutzinger/better-challonge)
 ![](./img/challonge.png "")
