@@ -1,80 +1,33 @@
 <!DOCTYPE html>
-<head>
+<html>
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src='./main.js'></script>
-    <script src='./nouislider.min.js'></script>
+    <div id="player"></div>
+	<script src='./player.js'></script>
+	<script src='./utils.js'></script>
+	<script src='./main2.js'></script>
 <!--
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<button id='selectButtonid' value='https://www.youtube.com/watch?v=yKXaTLD9qoM' onclick='selectButton()' class='button big-btn'>Select Video to Partion</button>
 -->
-    <link rel="stylesheet" type="text/css" href="./nouislider.min.css"/>
+	<p>
+		<button id='playid' class='button big-btn' onclick='playButton();'><strong>Play all clips</strong></button>
+		<button id='send' onclick='sendButton()' class='button'>Send clips to a friend</button>
+	</p>
+<!--
+	<p>Autoplay in send? <input id='autoCheckBox' type="checkbox" checked=true></p>
+-->
+<!--
+	<p>Loop in send? (not implemented)<input id='loopCheckBox' type="checkbox" checked=true></p>
+-->
+	<input id='addvideoid' style="width:500px" placeholder="What youtube video do you want to clip? (paste yt link)"></input><br>
+	<input id='startid' type="number">&nbsp;&nbsp;start time (sec) </input><br>
+	<input id='endid' type="number">&nbsp;&nbsp;end time (sec) </input>
 
-</head>
-<body onload="init()">
-<h3>Youtube Multi-Partioner (beta v0.2)  by kevin leutzinger // <a href="//github.com/kleutzinger/kleutzinger.github.io/tree/master/ytpartition">source</a></h3>
+	<div width=100px id='slider'></div>
+	<button id='addid' class='button big-btn' placeholder="hi there" onclick="addButton();">Add Clip</button>
+	<h3 style="position:auto"></h3>
 
-<div id="player"></div>
-
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
-          playerVars: { 'autoplay': 0, 'controls': 1 },
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        //event.target.playVideo();
-        //event.target.pauseVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        //player.stopVideo();
-      }
-    </script>
-<br>
-<input id='textbox' style="width:500px" placeholder="what video do you want to partition?" class='button' oninput='twitch()'></input>
-<button id='selectButtonid' value='https://www.youtube.com/watch?v=yKXaTLD9qoM' onclick='selectButton()' class='button big-btn'>Select Video to Partion</button>
-<p>
-  <button id='playid' class='button big-btn' onclick="play(partitions);"><strong>Play Partitions</strong></button>
-  <button id='send' onclick='putHash()' class='button'>Send partitions to a friend</button>
-</p>
-<p>Autoplay in send? <input id='autoCheckBox' type="checkbox" checked=true></p>
-<p>Loop in send? (not implemented)<input id='loopCheckBox' type="checkbox" checked=true></p>
-
-
-<input id='startid' type="number">start time </input>
-<input id='endid' type="number">end time </input>
-
-<div width=100px id='slider'></div>
-<button id='addid' class='button big-btn' placeholder="hi there" onclick="add(0);">Add Partition</button>
-<h3 style="position:auto"></h3>
-
-<ol id="partition_list"></ol>
-</body>
+	<ol id="partition_list"></ol>
+	</body>
+</html>
