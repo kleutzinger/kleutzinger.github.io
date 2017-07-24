@@ -1,4 +1,4 @@
-var videos = [];
+//var videos = [];
 var tag = document.createElement('script');
 tag.src = "http://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -16,17 +16,21 @@ player = new YT.Player('player', {
 }
 
 var index = 0;
-var videos = [];
-
+//~ function setVideos(v){
+	//~ videos = v;
+//~ };
+//~ function getVideos(){
+	//~ return videos;
+//~ }
 function playTheseVideos(v, startIndex){
+	//console.log(v);
 	if(!v) {return false;}
-	videos = v;
 	index = startIndex;
-	writePartitions(videos,index);
+	writePartitions(v,index);
 	player.stopVideo();
-	player.cueVideoById({videoId: videos[index].vid,
-	startSeconds: videos[index].startSeconds,
-	endSeconds: videos[index].endSeconds})
+	player.cueVideoById({videoId: v[index].vid,
+	startSeconds: v[index].startSeconds,
+	endSeconds: v[index].endSeconds})
 	player.playVideo();
 }
 
@@ -44,7 +48,7 @@ function onPlayerStateChange(event) {
 //console.log("State change: " + event.data + " for index: " + index);
 
 	if (event.data === YT.PlayerState.ENDED && player.getVideoLoadedFraction() > 0) {
-	  console.log(index);
+	  //console.log(index);
 	  if (index < videos.length - 1) {
 		index++;
 		event.target.loadVideoById({

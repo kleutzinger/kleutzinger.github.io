@@ -50,8 +50,8 @@ function sendButton(){
         h = temp + "+" + v[i].startSeconds + "+" + v[i].endSeconds + "+";
         hash_string+= h;
     } 
-    checked = document.getElementById('autoCheckBox').checked;
-   
+    //checked = document.getElementById('autoCheckBox').checked;
+    checked = false;
     if (checked) { hash_string = "!" + hash_string;}
     sendUrl = "http://www.kevinleutzinger.com/ytpartition/#" + hash_string;
     if (window.location.href.indexOf("local") != -1) {sendUrl = "http://localhost:8000/#" + hash_string;}
