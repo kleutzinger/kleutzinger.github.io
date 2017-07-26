@@ -3,6 +3,11 @@
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>	
+
+	<h1>Youtube Multi Clipper By Kevin Leutzinger</h1>
     <div id="player"></div>
     <script type='text/javascript' > 
 		var videos = []; 
@@ -15,6 +20,9 @@
 	<button id='selectButtonid' value='https://www.youtube.com/watch?v=yKXaTLD9qoM' onclick='selectButton()' class='button big-btn'>Select Video to Partion</button>
 -->
 	<p>
+		<div id="customtitle" contenteditable="true" style="font-size:30px" onblur="updateHash();">
+			Cool Playlist
+		</div><br>
 		<button id='playid' class='button big-btn' onclick='playButton();'><strong>Play all clips</strong></button>
 		<button id='send' onclick='sendButton()' class='button'>Send clips to a friend</button>
 	</p>

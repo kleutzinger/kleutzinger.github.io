@@ -5,6 +5,11 @@ function getHash(){
     autoplay = hash[0] == "!";
     if (autoplay) { hash = hash.substring(1)};
     split = hash.split("+");
+    customtitle = hash.split("+").pop();
+    customtitle = customtitle.trim();
+    customtitle = customtitle.replace(/_/g, " ");
+    if (customtitle.trim().length != 0) {$("#customtitle").text(customtitle);}
+    console.log(customtitle);
     parts = [];
     lastid = split[0];
     for (i=0;i<split.length-1;i+=3){
@@ -29,8 +34,13 @@ function newClip(vid, startSeconds, endSeconds){
 }
 
 // Write the partition
-function writePartitions(p,boldIndex){
+
+function updateHash(){
 	window.location.hash = constructHash();
+}
+
+function writePartitions(p,boldIndex){
+	updateHash();
     $("#partition_list").empty();
     for (i=0;i<p.length;i++){
 		element = "";
@@ -67,14 +77,19 @@ function constructHash(){
     //checked = document.getElementById('autoCheckBox').checked;
     checked = false;
     if (checked) { hash_string = "!" + hash_string;}
+    customtitle = $("#customtitle").text();
+    customtitle = customtitle.trim();
+    customtitle = customtitle.replace(/\s/g, "_");
+    customtitle= customtitle.replace(/\W/g, '');
+    hash_string += customtitle;
     return hash_string;
 }
 
 function sendButton(){
 	v=videos;
     hash_string = constructHash();
-    sendUrl = "http://www.kevinleutzinger.com/ytpartition/" + hash_string;
-    if (window.location.href.indexOf("local") != -1) {sendUrl = "http://localhost:8000/#" + hash_string;}
+    sendUrl = "http://www.kevinleutzinger.com/ytpartition/#" + hash_string;
+    //if (window.location.href.indexOf("local") != -1) {sendUrl = "http://localhost:8000/#" + hash_string;}
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac)", sendUrl);
 }
 
