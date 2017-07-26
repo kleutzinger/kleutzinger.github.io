@@ -78,8 +78,21 @@ function sendButton(){
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac)", sendUrl);
 }
 
+function timestampShortcut(){
+	_id = $("#addvideoid").val();
+	if (!_id){ _id = "";}
+	t_index = Math.max(_id.indexOf("&t="), t_index = _id.indexOf("?t="));
+	if(t_index != -1){ // there is a timestamp in the yt link
+		timestr = _id.substring(t_index+3, _id.length);
+		timeint = parseInt(timestr);
+		$("#startid").val(timeint);
+		$("#endid").val(timeint+1);
+		console.log(timestr);
+	}
+}
+
 function addButton(){
-	_id = document.getElementById('addvideoid').value
+	_original_id = _id = document.getElementById('addvideoid').value;
     _id = youtube_parser(_id);
     _start = document.getElementById('startid').value;
     _start = hmsToSecondsOnly(_start);
