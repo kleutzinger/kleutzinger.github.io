@@ -10,6 +10,7 @@
 	<script src='./player.js'></script>
 	<script src='./utils.js'></script>
 	<script src='./main2.js'></script>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 <!--
 	<button id='selectButtonid' value='https://www.youtube.com/watch?v=yKXaTLD9qoM' onclick='selectButton()' class='button big-btn'>Select Video to Partion</button>
 -->
@@ -23,14 +24,20 @@
 <!--
 	<p>Loop in send? (not implemented)<input id='loopCheckBox' type="checkbox" checked=true></p>
 -->
-	<input id='addvideoid' style="width:500px" placeholder="What youtube video do you want to clip? (paste yt link)"></input><br>
-	<input id='startid' type="number">&nbsp;&nbsp;start time (sec) </input><br>
-	<input id='endid' type="number">&nbsp;&nbsp;end time (sec) </input>
-
+	<ol id="partition_list"></ol>
+	<p>
+		<input id='addvideoid' style="width:500px" placeholder="What youtube video do you want to clip? (paste or drag yt link)"></input><br>
+		<input id='startid' type="text">&nbsp;&nbsp;start time (sec or hh:mm:ss) </input><br>
+		<input id='endid' type="text">&nbsp;&nbsp;end time</input><br>
+		<select id='indexid'><option value='end'>end</option></select>
+		add at index
+	</p>
+	
+<!--
 	<div width=100px id='slider'></div>
+-->
 	<button id='addid' class='button big-btn' placeholder="hi there" onclick="addButton();">Add Clip</button>
 	<h3 style="position:auto"></h3>
 
-	<ol id="partition_list"></ol>
 	</body>
 </html>

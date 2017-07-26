@@ -13,36 +13,50 @@ function getHash(){
         p = newClip(split[i], parseInt(split[i+1]), parseInt(split[i+2]))
 		parts.push(p);
     }
+    setIndexButton(parts);
     return parts;
 }
 
 
-
+// make new clip, ensure valid
 function newClip(vid, startSeconds, endSeconds){
     clip = new Object();
     clip.vid = vid;
     clip.startSeconds = startSeconds;
     clip.endSeconds = endSeconds;
+    if (isNaN(clip.endSeconds)) {return false;}
     return clip;
 }
 
+// Write the partition
 function writePartitions(p,boldIndex){
+	window.location.hash = constructHash();
     $("#partition_list").empty();
-    p = videos;
     for (i=0;i<p.length;i++){
-        if (i==boldIndex){$("#partition_list").append( '<strong><li onclick="playSingleClip('+i+');">' +p[i].startSeconds + "-" + p[i].endSeconds +  ", "+ p[i].vid + '<span style="cursor:pointer;" onclick="deleteClip('+i+');"> &#215; </span></li></strong>');}
-        else{$("#partition_list").append( '<li onclick="playSingleClip('+i+');">' +p[i].startSeconds + "-" + p[i].endSeconds +  ", "+ p[i].vid + '<span style="cursor:pointer;" onclick="deleteClip('+i+');"> &#215; </span></li>');}
+		element = "";
+		if (i==boldIndex){element+= "<strong>";}
+		element+='<li>'+'<span onclick="playSingleClip('+i+')">' +
+		p[i].startSeconds + "-" +p[i].endSeconds +  "</span>, "+ 
+		"<a href=https://youtu.be/"+p[i].vid+">"+p[i].vid+"</a>" + 
+		'<span style="cursor:pointer;" onclick="deleteClip('+i+');"> &#215; </span></li>';
+		if(i==boldIndex){element+="</strong>";}
+		$("#partition_list").append($(element));
     }
+    $("#indexid").attr({
+		"max" : i+1,
+		"min" : 0
+	});
 }
 
 function playButton(){
 	playTheseVideos(videos,0);
 }
 
-function sendButton(){
-	v=videos;
-    hash_string = "";
+function constructHash(){
+	setIndexButton(videos.length);
+	hash_string = "";
     lastid = "";
+    v = videos;
     for(i=0;i<v.length;i++){
         if(i>0){lastid = v[i-1].vid;}
         if (v[i].id == lastid){ temp = "!"; }
@@ -53,7 +67,13 @@ function sendButton(){
     //checked = document.getElementById('autoCheckBox').checked;
     checked = false;
     if (checked) { hash_string = "!" + hash_string;}
-    sendUrl = "http://www.kevinleutzinger.com/ytpartition/#" + hash_string;
+    return hash_string;
+}
+
+function sendButton(){
+	v=videos;
+    hash_string = constructHash();
+    sendUrl = "http://www.kevinleutzinger.com/ytpartition/" + hash_string;
     if (window.location.href.indexOf("local") != -1) {sendUrl = "http://localhost:8000/#" + hash_string;}
     window.prompt("Copy to clipboard: Ctrl+C (Cmd + C on mac)", sendUrl);
 }
@@ -61,13 +81,35 @@ function sendButton(){
 function addButton(){
 	_id = document.getElementById('addvideoid').value
     _id = youtube_parser(_id);
-    _start  = document.getElementById('startid').value;
+    _start = document.getElementById('startid').value;
+    _start = hmsToSecondsOnly(_start);
     _end = document.getElementById('endid').value
+    _end = hmsToSecondsOnly(_end);
 	clip = newClip(_id,_start,_end);
-	videos.push(clip);
-	writePartitions(videos,-1);
+	
+	index = $("#indexid").val();
+	if (clip != false && _id != false){
+		player.pauseVideo();
+		if (index == "end"){
+			videos.push(clip);
+		}
+		else{
+			videos.splice(parseInt(index-1), 0, clip);
+		}
+		writePartitions(videos,-1);
+	}
 }
 
+function setIndexButton(length){
+	$('#indexid').empty();
+	
+	option = '';
+	option += '<option value=end>' + "end" + '</option>';
+	for (var i=0;i<length;i++){
+		option += '<option value="'+ (i+1) + '">' + (i+1) + '</option>';
+	}
+	$('#indexid').append(option);
+}
 
 function youtube_parser(url){
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
@@ -77,5 +119,16 @@ function youtube_parser(url){
 
 function deleteClip(i){
 	videos.splice(i,1);
+	player.pauseVideo();
 	writePartitions(videos,-1);
+}
+
+function hmsToSecondsOnly(str) {
+    var p = str.split(':'),
+        s = 0, m = 1;
+    while (p.length > 0) {
+        s += m * parseInt(p.pop(), 10);
+        m *= 60;
+    }
+    return s;
 }

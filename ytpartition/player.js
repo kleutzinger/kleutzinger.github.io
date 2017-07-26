@@ -8,6 +8,7 @@ function onYouTubeIframeAPIReady() {
 player = new YT.Player('player', {
   height: '390',
   width: '640',
+  color: 'WHITE',
   events: {
 	'onReady': onPlayerReady,
 	'onStateChange': onPlayerStateChange
@@ -23,7 +24,6 @@ var index = 0;
 	//~ return videos;
 //~ }
 function playTheseVideos(v, startIndex){
-	//console.log(v);
 	if(!v) {return false;}
 	index = startIndex;
 	writePartitions(v,index);
