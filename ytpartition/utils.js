@@ -39,16 +39,34 @@ function updateHash(){
 	window.location.hash = constructHash();
 }
 
+//pads with spaces on the left
+function leftPad(str,len){
+	spaces = "&nbsp;".repeat(len - str.toString().length);
+	return spaces + ""+ str;
+}
+
+
 function writePartitions(p,boldIndex){
 	updateHash();
     $("#partition_list").empty();
+    maxLengthNumber = 0;
+    for(i=0;i<p.length;i++){
+		s = p[i].startSeconds.toString();
+		e = p[i].endSeconds.toString();
+		curmax = Math.max(s.length, e.length);
+		maxLengthNumber = Math.max(maxLengthNumber, curmax);
+	}
     for (i=0;i<p.length;i++){
 		element = "";
 		if (i==boldIndex){element+= "<strong>";}
-		element+='<li>'+'<span onclick="playSingleClip('+i+')">' +
-		p[i].startSeconds + "-" +p[i].endSeconds +  "</span>, "+ 
-		"<a href=https://youtu.be/"+p[i].vid+">"+p[i].vid+"</a>" + 
-		'<span style="cursor:pointer;" onclick="deleteClip('+i+');"> &#215; </span></li>';
+		element+=
+			'<li>'+'<span id="vidli'+i+'" style="cursor:pointer;" onclick="playSingleClip('+i+')"> &#9658;</span>' +
+			'&nbsp;<input id=start'+i+' oninput="startChange('+i+');" type="number" pattern=[0-9] value='+p[i].startSeconds+'>-'+
+			'<input   id=end'+i+' oninput="endChange('+i+');"   type="number" pattern=[0-9] value='+p[i].endSeconds+'>'+
+			"&nbsp;&nbsp;<a href=https://youtu.be/"+p[i].vid+"?t="+p[i].startSeconds+">"+p[i].vid+"</a>" +
+			'&nbsp;&nbsp;<span onclick="moveUp('+i+')" style="cursor:pointer;">&#8593;</span>'+
+			'&nbsp;<span onclick=moveDown('+i+') style="cursor:pointer;">&#8595;</span>'+
+			'&nbsp;<span style="cursor:pointer;" onclick="deleteClip('+i+');"> &#215;</span>  </li>';
 		if(i==boldIndex){element+="</strong>";}
 		$("#partition_list").append($(element));
     }
@@ -56,6 +74,15 @@ function writePartitions(p,boldIndex){
 		"max" : i+1,
 		"min" : 0
 	});
+}
+
+function bolden(i){
+	for(n=0;n<videos.length;n++){
+		$("#vidli"+n).css('color', 'black');
+		if(n==i){
+			$("#vidli"+n).css('color', 'red');
+		}
+	}
 }
 
 function playButton(){
@@ -117,7 +144,7 @@ function addButton(){
 	
 	index = $("#indexid").val();
 	if (clip != false && _id != false){
-		player.pauseVideo();
+		player.stopVideo();
 		if (index == "end"){
 			videos.push(clip);
 		}
@@ -146,8 +173,8 @@ function youtube_parser(url){
 }
 
 function deleteClip(i){
+	player.stopVideo();
 	videos.splice(i,1);
-	player.pauseVideo();
 	writePartitions(videos,-1);
 }
 
@@ -159,4 +186,39 @@ function hmsToSecondsOnly(str) {
         m *= 60;
     }
     return s;
+}
+
+function startChange(i){
+	player.stopVideo();
+	val = $("#start"+i).val();
+	videos[i].startSeconds = parseInt(val);
+	updateHash();
+}
+
+function endChange(i){
+	player.stopVideo();
+	val = $("#end"+i).val();
+	videos[i].endSeconds = parseInt(val);
+	updateHash();
+}
+
+
+function moveUp(i){
+	if(i>0){
+		player.stopVideo();
+		temp = videos[i];
+		videos[i] = videos[i-1];
+		videos[i-1] = temp;
+		writePartitions(videos, -1);
+	}
+}
+
+function moveDown(i){
+	if (i < videos.length-1){
+		player.stopVideo();
+		temp = videos[i];
+		videos[i] = videos[i+1];
+		videos[i+1] = temp;
+		writePartitions(videos, -1);
+	}
 }

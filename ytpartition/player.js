@@ -26,12 +26,13 @@ var index = 0;
 function playTheseVideos(v, startIndex){
 	if(!v) {return false;}
 	index = startIndex;
-	writePartitions(v,index);
+	//writePartitions(v,index);
 	player.stopVideo();
 	player.cueVideoById({videoId: v[index].vid,
 	startSeconds: v[index].startSeconds,
 	endSeconds: v[index].endSeconds})
 	player.playVideo();
+	bolden(index);
 }
 
 function playSingleClip(i){
@@ -51,12 +52,13 @@ function onPlayerStateChange(event) {
 	  //console.log(index);
 	  if (index < videos.length - 1) {
 		index++;
+		bolden(index);
 		event.target.loadVideoById({
 		  videoId: videos[index].vid,
 		  startSeconds: videos[index].startSeconds,
 		  endSeconds: videos[index].endSeconds
 		});
-		writePartitions(videos,index);
+		//writePartitions(videos,index);
 		}
 	}
 }

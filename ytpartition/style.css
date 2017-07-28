@@ -3,3 +3,28 @@ iframe#player {
 	border-image: linear-gradient(rgb(100,0,0),rgb(255,0,0)) 10;
 	padding: 0px;
 }
+
+#partition_list {
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+
+
+input[type="number"]
+{
+    background: transparent;
+    width:5em;
+    text-align:left;
+/*
+    border: none;
+*/
+}
+
+input[type="text"]
+{
+    background: transparent;
+    width:5em;
+    text-align:left;
+/*
+    border: none;
+*/
+}
