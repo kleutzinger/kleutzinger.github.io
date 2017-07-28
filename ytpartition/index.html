@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<h3> This project has moved to <a href="http://clipyt.me">clipyt.me</a></h3>
+		<h3> This project has moved to <a id="link" href="http://clipyt.me">clipyt.me</a></h3>
+		<script>
+			var hash = window.location.hash;
+			document.getElementById("link").href="http://clipyt.me" + hash; 
+		</script>
 	</body>
 </html>
