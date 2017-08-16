@@ -49,7 +49,7 @@ Technologies used: HTML/JS
 ***
 
 ### Hearthstone Card Sound Identification Game  
-http://www.kevinleutzinger.com/projects/final/  
+http://www.kevinleutzinger.com/hearth
 Play the sounds and try to guess the card name.  
 Technologies used: HTML/JS  
 [[source]](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/hearth)  
