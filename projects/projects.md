@@ -11,7 +11,7 @@ I enjoy making websites and tools that do useful things. Everything listed is ma
 | <a href="https://chrome.google.com/webstore/detail/hide-retweets/iehhaigbokpilpilegajanpckfgbegdm"><img class="icon" src="./img/crx2.png"></img></a>| Hide Retweets       |   Hide retweets on twitter by specified users |
 | <a href="https://chrome.google.com/webstore/detail/netflix-timestamp-link/nfamdnmnodndjpnfnlebmconoildihib"><img class="icon" src="./img/crx3.png"></img></a>      | Netflix Timestamp Link        | Send Netflix links at a specified time in the video   |
 | <a href="https://chrome.google.com/webstore/detail/youtube-disable-keyboard/aahkpmpmpjbmjaanknmnamdbodbgdape"><img class="icon" src="./img/crx4.png"></img></a>      | Disable Youtube Keyboard Shortcuts        | Prevents keyboard controls on videos   |
-| <a href="https://chrome.google.com/webstore/detail/full-size-instagram-right/lkkiifjajjichjecgefjlefgidpihnpp"><img class="icon" src="./img/crx5.png"></img></a>      | Full Size Instagram Right Click       | Easily see full size IG pictures  |
+| <a href="https://github.com/kleutzinger/instagram-fullsize"><img class="icon" src="./img/crx5.png"></img></a>      | Full Size Instagram Right Click       | Easily see full size IG pictures  |
 <br>
 
 ***
