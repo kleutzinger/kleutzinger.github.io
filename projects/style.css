@@ -6,13 +6,17 @@ body
 
 a{
     text-decoration:  none;
-
+}
+h3{
+  font-size: 150%;
+  margin:0;
+  padding:0;
 }
 h1
 {
   text-align: center;
   font-weight: bold;
-  font-size: 250%;
+  font-size: 200%;
   margin: 0px;
   padding: 0px;
 }
@@ -21,6 +25,23 @@ hr{
   border-top: 5px double #8c8b8b;
 }
 
+.icon {
+  height:32px;
+  widows: 32px;
+  vertical-align: baseline;
+}
+
+table td, table td * {
+    vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr { 
+  border: solid;
+  border-width: 1px 0;
+}
 
 img
 {
@@ -32,6 +53,8 @@ img
   display: block;
   margin: 0 auto;
 }
+
+
 
 th.
 {
