@@ -29,7 +29,7 @@ I've added ~35,000 games to my collection.
 <!-- [[Source Code]](https://github.com/kleutzinger/clipyt.me)   -->
 
 ### Peer to Peer Group Video Chat with 2d Movement and Spatial Audio [2020]  
-[![Youtube Demo](http://img.youtube.com/vi/o3WlqJb2VDQ/0.jpg)](https://www.youtube.com/watch?v=o3WlqJb2VDQ "Youtube Demo")  
+[![Youtube Demo](./img/lounge.jpg)](https://www.youtube.com/watch?v=o3WlqJb2VDQ "Youtube Demo")  
 Move around with the arrow keys and only hear the people you're near.  
 Technologies used: Nodejs, WebSockets, HTML/JS/CSS  
 [Currently Offline 🙁]  
@@ -38,7 +38,7 @@ Technologies used: Nodejs, WebSockets, HTML/JS/CSS
 ***  
 
 ### Automatic Melee Stage Music Player [2020]  
-[![Youtube Demo](http://img.youtube.com/vi/l6pDUrRTPew/0.jpg)](https://www.youtube.com/watch?v=l6pDUrRTPew "Youtube Demo")  
+[![Youtube Demo](./img/music.jpg)](https://www.youtube.com/watch?v=l6pDUrRTPew "Youtube Demo")  
 The new Melee online build has music disabled, due to difficulty synchronizing reading audio files from disc.  
 This external program listens for live replay files and automatically plays the appropriate stage music.  
 Technologies used: Nodejs, HTML/JS  
