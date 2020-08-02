@@ -28,6 +28,8 @@ I've added ~35,000 games to my collection.
 [Currently Closed Source] (Collaboration with Aaron Santiago)  
 <!-- [[Source Code]](https://github.com/kleutzinger/clipyt.me)   -->
 
+***  
+
 ### Peer to Peer Group Video Chat with 2d Movement and Spatial Audio [2020]  
 [![Youtube Demo](./img/lounge.jpg)](https://www.youtube.com/watch?v=o3WlqJb2VDQ "Youtube Demo")  
 Move around with the arrow keys and only hear the people you're near.  
