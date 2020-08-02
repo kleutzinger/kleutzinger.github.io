@@ -21,7 +21,7 @@ I enjoy making websites and tools that do useful things. Everything listed is ma
 Using a gamepad or mouse/keyboard, quickly browse through as many roms as you can scrape from archive.org and launch them.
 I've added ~35,000 games to my collection.  
 [More info here](https://kevbot.xyz/download/well-help.html)  
-  - Backend: (By me) [Python](https://www.python.org/downloads/) + [Eel](https://github.com/samuelhwilliams/Eel)  
+  - Backend: [Python](https://www.python.org/downloads/) + [Eel](https://github.com/samuelhwilliams/Eel)  
   - Frontend:  (By Aaron)  [lit-html](https://lit-html.polymer-project.org/)/JS/CSS  
   - Emulators: [Retroarch](https://www.retroarch.com/) / [Libretro](https://www.libretro.com/)  
 
