@@ -11,27 +11,57 @@ I enjoy making websites and tools that do useful things. Everything listed is ma
 | <a href="https://chrome.google.com/webstore/detail/twitch-pause-resume-live/bfgebolngkajgakbhhfdhgdldmjmiebe"><img class="icon" src="./img/twitch.png"></img></a>      | Twitch Pause Live       | Save your spot in a livestream to continue watching later on [twitch.tv](http://twitch.tv)  |
 | <a href="https://chrome.google.com/webstore/detail/hide-retweets/iehhaigbokpilpilegajanpckfgbegdm"><img class="icon" src="./img/crx2.png"></img></a>| Hide Retweets       |   Hide retweets on twitter by specified users |
 | <a href="https://chrome.google.com/webstore/detail/netflix-timestamp-link/nfamdnmnodndjpnfnlebmconoildihib"><img class="icon" src="./img/crx3.png"></img></a>      | Netflix Timestamp Link        | Send Netflix links at a specified time in the video   |
-| <a href="https://chrome.google.com/webstore/detail/youtube-disable-keyboard/aahkpmpmpjbmjaanknmnamdbodbgdape"><img class="icon" src="./img/crx4.png"></img></a>      | Disable Youtube Keyboard Shortcuts        | Prevents keyboard controls on videos   |
-| <a href="https://github.com/kleutzinger/instagram-fullsize"><img class="icon" src="./img/crx5.png"></img></a>      | Full Size Instagram Right Click       | Easily see full size IG pictures  |
-<br>
+| <a href="https://github.com/kleutzinger/instagram-fullsize"><img class="icon" src="./img/crx5.png"></img></a>      | Full Size Instagram Right Click       | Easily see full size IG pictures  |  
+<!-- | <a href="https://chrome.google.com/webstore/detail/youtube-disable-keyboard/aahkpmpmpjbmjaanknmnamdbodbgdape"><img class="icon" src="./img/crx4.png"></img></a>      | Disable Youtube Keyboard Shortcuts        | Prevents keyboard controls on videos   | -->
 
-***
+***  
+
+### Rom Scraper/Downloader/Launcher [2020]  
+[Youtube Demo]()  
+Using a gamepad or mouse/keyboard, quickly browse through as many roms as you can scrape from archive.org and launch them.
+I've added ~35,000 games to my collection.  
+[More info here](https://kevbot.xyz/download/well-help.html)  
+  - Backend: (By me) [Python](https://www.python.org/downloads/) + [Eel](https://github.com/samuelhwilliams/Eel)  
+  - Frontend:  (By Aaron)  [lit-html](https://lit-html.polymer-project.org/)/JS/CSS  
+  - Emulators: [Retroarch](https://www.retroarch.com/) / [Libretro](https://www.libretro.com/)  
+
+[Currently Closed Source] (Collaboration with Aaron Santiago)  
+<!-- [[Source Code]](https://github.com/kleutzinger/clipyt.me)   -->
+
+### Peer to Peer Group Video Chat with 2d Movement and Spatial Audio [2020]  
+[![Youtube Demo](http://img.youtube.com/vi/o3WlqJb2VDQ/0.jpg)](https://www.youtube.com/watch?v=o3WlqJb2VDQ "Youtube Demo")  
+Move around with the arrow keys and only hear the people you're near.  
+Technologies used: Nodejs, WebSockets, HTML/JS/CSS  
+[Currently Offline 🙁]  
+[[Source Code]](https://github.com/kleutzinger/the-lounge/) (Collaboration with Aaron Santiago)  
+
+***  
+
+### Automatic Melee Stage Music Player [2020]  
+[![Youtube Demo](http://img.youtube.com/vi/l6pDUrRTPew/0.jpg)](https://www.youtube.com/watch?v=l6pDUrRTPew "Youtube Demo")  
+The new Melee online build has music disabled, due to difficulty synchronizing reading audio files from disc.  
+This external program listens for live replay files and automatically plays the appropriate stage music.  
+Technologies used: Nodejs, HTML/JS  
+[[Source Code]](https://github.com/kleutzinger/clipyt.me)  
+<!-- ![](./img/yt2.png "")   -->
+
+***  
 
 ### ClipYT.me [2017]  
-[clipyt.me](http://clipyt.me/#VQBbHzypBro+71+79+VQBbHzypBro+140+146+pZwvLFhYUL0+129+133+hGY44DIQb-A+81+92+MdcuaeYV9oM+164+177+IydCCUfPDLE+11+34+Interesting_Videos)  
+[Visit clipyt.me](http://clipyt.me/#VQBbHzypBro+71+79+VQBbHzypBro+140+146+pZwvLFhYUL0+129+133+hGY44DIQb-A+81+92+MdcuaeYV9oM+164+177+IydCCUfPDLE+11+34+Interesting_Videos)  
 A website that creates shareable compilations of multiple parts of youtube videos. It lets you combine or compare specific sections of many videos which then play in sequence when shared.  
 Technologies used: HTML/JS/CSS, Youtube Embedded Player API  
-[[source]](https://github.com/kleutzinger/clipyt.me)  
+[[Source Code]](https://github.com/kleutzinger/clipyt.me)  
 ![](./img/yt2.png "")  
 
-***
+***  
 
 ### Better Challonge Results  [2017]
 https://chrome.google.com/webstore/detail/better-challonge-results/nlmopkefkemlpdpfkgllbeifljhkfeno  
 https://addons.mozilla.org/en-US/firefox/addon/better-challonge-results/  
 A Chrome and Firefox extension that improves and adds features to the results screen on challonge.com brackets. It adds displays for the wins/losses of every player, seeding, upsets, and more. Very useful for tournaments.  
 Technologies used: HTML/JS/CSS, Chrome Extension, Firefox Extension    
-[[source]](https://github.com/kleutzinger/better-challonge)  
+[[Source Code]](https://github.com/kleutzinger/better-challonge)  
 ![](./img/challonge.png "")  
 
 ***  
@@ -40,7 +70,7 @@ Technologies used: HTML/JS/CSS, Chrome Extension, Firefox Extension
 https://chrome.google.com/webstore/detail/full-size-instagram-right/lkkiifjajjichjecgefjlefgidpihnpp  
 A Chrome extension that allows you to right click on an Instagram picture to see and save it at full resolution.
 Technologies used: HTML/JS/, Chrome Extension  
-[[source]](https://github.com/kleutzinger/instagram-fullsize)  
+[[Source Code]](https://github.com/kleutzinger/instagram-fullsize)  
 ![](./img/insta.png "")  
 
 ***  
@@ -49,7 +79,7 @@ Technologies used: HTML/JS/, Chrome Extension
 http://www.kevinleutzinger.com/surviveSRC/  
 An avoider game featuring every student's face from my old school Simon's Rock. Dodge the faces and try to make it to the end of the song.  
 Technologies used: HTML/JS, Firebase, Facebook API  
-[[source]](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/surviveSRC)  
+[[Source Code]](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/surviveSRC)  
 ![](./img/src.png "")
 
 ***
@@ -58,7 +88,7 @@ Technologies used: HTML/JS, Firebase, Facebook API
 http://www.kevinleutzinger.com/projects/final/  
 Set the initial conditions for the star, planet, and moon to see how they behave.  
 Technologies used: HTML/JS  
-[[source]](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/projects/final)
+[[Source Code]](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/projects/final)  
 (made with Aaron Santiago)  
 ![](./img/planet.png "")  
 
@@ -68,7 +98,7 @@ Technologies used: HTML/JS
 http://www.kevinleutzinger.com/hearth
 Play the sounds and try to guess the card name.  
 Technologies used: HTML/JS  
-[[source]](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/hearth)  
+[[Source Code]](https://github.com/kleutzinger/kleutzinger.github.io/tree/master/hearth)  
 ![](./img/hs.png "")  
 
 ***
@@ -77,7 +107,7 @@ Technologies used: HTML/JS
 http://www.kevinleutzinger.com/  
 Click refresh to get a new background.  
 Technologies used: HTML/CSS/JS, D3.js  
-[[source]](https://github.com/kleutzinger/kleutzinger.github.io/blob/master/index.html)  
+[[Source Code]](https://github.com/kleutzinger/kleutzinger.github.io/blob/master/index.html)  
 ![](./img/kevinleutzinger.png "")  
 
 ***
