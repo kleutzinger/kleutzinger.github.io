@@ -14,6 +14,14 @@ I enjoy making websites and tools that do useful things. Everything listed is ma
 | <a href="https://github.com/kleutzinger/instagram-fullsize"><img class="icon" src="./img/crx5.png"></img></a>      | Full Size Instagram Right Click       | Easily see full size IG pictures  |  
 <!-- | <a href="https://chrome.google.com/webstore/detail/youtube-disable-keyboard/aahkpmpmpjbmjaanknmnamdbodbgdape"><img class="icon" src="./img/crx4.png"></img></a>      | Disable Youtube Keyboard Shortcuts        | Prevents keyboard controls on videos   | -->
 
+
+### Peer to Peer Group Video Chat with 2d Movement and Spatial Audio [2020]  
+[![Youtube Demo](./img/lounge.jpg)](https://thelounge.kevbot.xyz/ "Enter the lounge")  
+Move around a space while you video chat with friends. The people you are near are loudest.  
+Technologies used: Nodejs, WebSockets, HTML/JS/CSS  
+[Go to the lounge](https://thelounge.kevbot.xyz/)  
+[[Source Code]](https://github.com/kleutzinger/the-lounge/) (Collaboration with Aaron Santiago)  
+
 ***  
 
 ### Rom Scraper/Downloader/Launcher [2020]  
@@ -30,21 +38,12 @@ I've added ~35,000 games to my collection.
 
 ***  
 
-### Peer to Peer Group Video Chat with 2d Movement and Spatial Audio [2020]  
-[![Youtube Demo](./img/lounge.jpg)](https://www.youtube.com/watch?v=o3WlqJb2VDQ "Youtube Demo")  
-Move around with the arrow keys and only hear the people you're near.  
-Technologies used: Nodejs, WebSockets, HTML/JS/CSS  
-[Currently Offline 🙁]  
-[[Source Code]](https://github.com/kleutzinger/the-lounge/) (Collaboration with Aaron Santiago)  
-
-***  
-
 ### Automatic Melee Stage Music Player [2020]  
 [![Youtube Demo](./img/music.jpg)](https://www.youtube.com/watch?v=l6pDUrRTPew "Youtube Demo")  
 The new Melee online build has music disabled, due to difficulty synchronizing reading audio files from disc.  
 This external program listens for live replay files and automatically plays the appropriate stage music.  
 Technologies used: Nodejs, HTML/JS  
-[[Source Code]](https://github.com/kleutzinger/clipyt.me)  
+[[Source Code]](https://github.com/kleutzinger/slippi-melee-music-player)  
 <!-- ![](./img/yt2.png "")   -->
 
 ***  
