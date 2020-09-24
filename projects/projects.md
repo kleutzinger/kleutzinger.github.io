@@ -16,6 +16,7 @@ I enjoy making websites and tools that do useful things. Everything listed is ma
 
 
 ### Peer to Peer Group Video Chat with 2d Movement and Spatial Audio [2020]  
+(Firefox only)  
 [![Youtube Demo](./img/lounge.jpg)](https://thelounge.kevbot.xyz/ "Enter the lounge")  
 Move around a space while you video chat with friends. The people you are near are loudest.  
 Technologies used: Nodejs, WebSockets, HTML/JS/CSS  
