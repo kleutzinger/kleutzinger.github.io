@@ -1,7 +1,7 @@
 # Projects by Kevin Leutzinger [[My Github]](https://github.com/kleutzinger/)  
 I enjoy making websites and tools that do useful things. Everything listed is made from scratch by me.
 ***  
-
+# <a href="https://kevbot.xyz" >Visit my new site: kevbot.xyz</a>
 ### Chrome Extensions
 
 | **Link**        | **Title**           |  **Description** |
@@ -17,10 +17,10 @@ I enjoy making websites and tools that do useful things. Everything listed is ma
 
 ### Peer to Peer Group Video Chat with 2d Movement and Spatial Audio [2020]  
 (Firefox only)  
-[![Youtube Demo](./img/lounge.jpg)](https://thelounge.kevbot.xyz/ "Enter the lounge")  
+[![Youtube Demo](./img/lounge.jpg)](https://lounge.kevbot.xyz/ "Enter the lounge")  
 Move around a space while you video chat with friends. The people you are near are loudest.  
 Technologies used: Nodejs, WebSockets, HTML/JS/CSS  
-[Go to the lounge](https://thelounge.kevbot.xyz/)  
+[Go to the lounge](https://lounge.kevbot.xyz/)  
 [[Source Code]](https://github.com/kleutzinger/the-lounge/) (Collaboration with Aaron Santiago)  
 
 ***  
@@ -50,7 +50,7 @@ Technologies used: Nodejs, HTML/JS
 ***  
 
 ### ClipYT.me [2017]  
-[Visit clipyt.me](http://clipyt.me/#VQBbHzypBro+71+79+VQBbHzypBro+140+146+pZwvLFhYUL0+129+133+hGY44DIQb-A+81+92+MdcuaeYV9oM+164+177+IydCCUfPDLE+11+34+Interesting_Videos)  
+[Visit clipyt.me](http://clipyt.kevbot.xyz/#VQBbHzypBro+71+79+VQBbHzypBro+140+146+pZwvLFhYUL0+129+133+hGY44DIQb-A+81+92+MdcuaeYV9oM+164+177+IydCCUfPDLE+11+34+Interesting_Videos)  
 A website that creates shareable compilations of multiple parts of youtube videos. It lets you combine or compare specific sections of many videos which then play in sequence when shared.  
 Technologies used: HTML/JS/CSS, Youtube Embedded Player API  
 [[Source Code]](https://github.com/kleutzinger/clipyt.me)  
