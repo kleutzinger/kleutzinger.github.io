@@ -122,7 +122,7 @@ function update() {
         
 
         if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR) && !honk.isPlaying){
-            honk.play();
+            // honk.play();
         }
         
         if (velocity > 2){
@@ -144,7 +144,7 @@ function update() {
         
         
     if (isIntersecting(s,kidHitbox) || !isIntersecting(road,s)){
-            honk.play();
+            // honk.play();
             
             end = true;
             sad.x = s.x;
