@@ -1,4 +1,7 @@
+__pycache__
 hearth/Thumbs.db
 jetski/assets/Thumbs.db
-
+portfolio_id.txt
+client_secrets.json
+.venv
 *.db
