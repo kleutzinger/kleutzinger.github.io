@@ -177,7 +177,6 @@ $color_grey_dark: #7a7a7a;
     .description {
       flex-basis: 60%;
       &:before {
-        transform: skewX(-3deg);
         content: "";
         background: #fff;
         width: 30px;
@@ -194,7 +193,6 @@ $color_grey_dark: #7a7a7a;
         &:before {
           left: inherit;
           right: -10px;
-          transform: skew(3deg);
         }
       }
       .details {

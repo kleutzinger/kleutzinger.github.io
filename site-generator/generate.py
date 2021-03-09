@@ -1,41 +1,52 @@
 import datetime
 import time
 import os
-
 from markdown import markdown
 import dominate
 import sass
 from dominate.tags import *
 from dominate.util import raw
-
+from prettify import html_prettify
 import ingest
 
-with open("card.scss") as f:
-    uncompiled = f.read()
-    compiled = sass.compile(string=uncompiled)
-    with open("card.css", "r+") as w:
-        infile = w.read()
-        if infile != compiled:
-            print("recompile card.scss")
-            w.seek(0)
-            w.write(compiled)
-            w.truncate()
+
+def generate_css():
+    with open("card.scss") as f:
+        uncompiled = f.read()
+        compiled = sass.compile(string=uncompiled)
+        with open("card.css", "r+") as w:
+            infile = w.read()
+            if infile != compiled:
+                print("recompile card.scss")
+                w.seek(0)
+                w.write(compiled)
+                w.truncate()
 
 
-doc = dominate.document(title="Portfolio - kevinleutzinger.com")
+def gen_tags(project):
+    "display tags over picture when card is hovered"
+    tag_list = project.get("technologies", "")
+    if tag_list == "":
+        return ""
+    tag_list = tag_list.split(",")
+    LIS = "\n".join([f'<li><a href="#">{text}</a></li>' for text in tag_list])
+    out = f"""
+        <li class="tags">
+          <ul>
+            {LIS}
+          </ul>
+        </li>
+    """
+    return out
 
-with doc.head:
-    link(rel="stylesheet", href="site-generator/card.css")
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width,initial-scale=1")
-    # script(type='text/javascript', src='script.js')
 
-
-def gen_card_html(project, alt=False):
+def gen_card_html(project, is_alt_card=False):
+    "return raw html of a project card"
     title = project.get("title", "_TITLE_")
     screenshot_url = project.get("screenshot_url", "")
     subtitle = project.get("technologies", "")
     subtitle = subtitle.replace(",", ", ")
+    subtitle = project.get("medium", "")
     description_text = project.get("web_description", "")
     # description = p(project.get("web_description", ""))
     description = raw(markdown(description_text))
@@ -59,10 +70,8 @@ def gen_card_html(project, alt=False):
         date_created = li(month_year, cls="date")
     else:
         date_created = ""
-    if alt:
-        alt_class = "alt"
-    else:
-        alt_class = ""
+    alt_class = "alt" * is_alt_card
+    hover_tags = gen_tags(project)
 
     project_card = f"""\
     <div class="blog-card {alt_class}">
@@ -71,20 +80,18 @@ def gen_card_html(project, alt=False):
       <ul class="details">
         <li class="author"><a href="https://github.com/kleutzinger">Kevin Leutzinger</a></li>
         {date_created}
-        <!--
-        <li class="tags">
-          <ul>
-            <li><a href="#">Tag</a></li>
-          </ul>
-        </li>
-         -->
+        {hover_tags}
       </ul>
     </div>
     <div class="description">
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
       {description}
-      <p class="read-more">{repo_url}{youtube}{demo_url}</p>
+      <p class="read-more">
+      {repo_url}
+      {youtube}
+      {demo_url}
+      </p>
     </div>
     </div>
     """
@@ -92,6 +99,15 @@ def gen_card_html(project, alt=False):
 
 
 if __name__ == "__main__":
+    generate_css()
+    doc = dominate.document(title="Portfolio - kevinleutzinger.com")
+
+    with doc.head:
+        link(rel="stylesheet", href="site-generator/card.css")
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+        # script(type='text/javascript', src='script.js')
+
     print("getting all rows")
     projects = ingest.get_rows()
 
@@ -105,11 +121,12 @@ if __name__ == "__main__":
     for proj in projects:
         if "kl" in proj.get("omit_from", ""):
             continue
-        htm = gen_card_html(proj, alt=even_idx)
+        htm = gen_card_html(proj, is_alt_card=even_idx)
         with doc:
             raw(htm)
         even_idx = not even_idx
 
     with open(os.path.join("..", "index.html"), "w") as f:
-        f.write(str(doc))
+        pretty_html = html_prettify(str(doc))
+        f.write(pretty_html)
     print("regenerated index at", time.asctime(time.localtime()))

@@ -132,7 +132,6 @@ body {
       .blog-card .description {
         flex-basis: 60%; }
         .blog-card .description:before {
-          transform: skewX(-3deg);
           content: "";
           background: #fff;
           width: 30px;
@@ -145,7 +144,6 @@ body {
         flex-direction: row-reverse; }
         .blog-card.alt .description:before {
           left: inherit;
-          right: -10px;
-          transform: skew(3deg); }
+          right: -10px; }
         .blog-card.alt .details {
           padding-left: 25px; } }
