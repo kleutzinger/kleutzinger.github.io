@@ -31,7 +31,7 @@ with doc.head:
     # script(type='text/javascript', src='script.js')
 
 
-def gen_card_html(project):
+def gen_card_html(project, alt=False):
     title = project.get("title", "_TITLE_")
     screenshot_url = project.get("screenshot_url", "")
     subtitle = project.get("technologies", "")
@@ -59,9 +59,13 @@ def gen_card_html(project):
         date_created = li(month_year, cls="date")
     else:
         date_created = ""
+    if alt:
+        alt_class = "alt"
+    else:
+        alt_class = ""
 
     project_card = f"""\
-    <div class="blog-card">
+    <div class="blog-card {alt_class}">
     <div class="meta">
       <div class="photo" style="background-image: url({screenshot_url})"></div>
       <ul class="details">
@@ -96,12 +100,15 @@ if __name__ == "__main__":
         shine_rating = int(proj.get("shine_rating", 0))
         return (shine_rating + star_rating) / 2
 
-    for proj in sorted(projects, reverse=True, key=order_proj):
+    projects.sort(reverse=True, key=order_proj)
+    even_idx = True
+    for proj in projects:
         if "kl" in proj.get("omit_from", ""):
             continue
-        htm = gen_card_html(proj)
+        htm = gen_card_html(proj, alt=even_idx)
         with doc:
             raw(htm)
+        even_idx = not even_idx
 
     with open(os.path.join("..", "index.html"), "w") as f:
         f.write(str(doc))
