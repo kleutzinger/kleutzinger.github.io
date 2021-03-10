@@ -97,16 +97,6 @@ body {
         color: #2a208a;
         display: inline-block;
         position: relative; }
-        .blog-card .description .read-more a:after {
-          content: "\f061";
-          font-family: FontAwesome;
-          margin-left: -10px;
-          opacity: 0;
-          vertical-align: middle;
-          transition: margin 0.3s, opacity 0.3s; }
-        .blog-card .description .read-more a:hover:after {
-          margin-left: 5px;
-          opacity: 1; }
   .blog-card p {
     position: relative;
     margin: 1rem 0 0; }

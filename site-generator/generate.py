@@ -101,6 +101,7 @@ def gen_card_html(project, is_alt_card=False):
 if __name__ == "__main__":
     generate_css()
     doc = dominate.document(title="Portfolio - kevinleutzinger.com")
+    doc["lang"] = "en"
 
     with doc.head:
         link(rel="stylesheet", href="site-generator/card.css")

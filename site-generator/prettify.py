@@ -4,7 +4,7 @@ import shutil
 
 
 def html_prettify(html_string):
-    "must have `tidy` installed"
+    "returns html back as formatted string. must have `tidy` installed"
     if not shutil.which("tidy"):
         print("tidy not installed")
         print("not prettifying html")
