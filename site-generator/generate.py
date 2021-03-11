@@ -51,7 +51,7 @@ def gen_card_html(project, is_alt_card=False):
     # description = p(project.get("web_description", ""))
     description = raw(markdown(description_text))
     if "demo_url" in project:
-        demo_url = a("Open", href=project["demo_url"])
+        demo_url = a("< Open >", href=project["demo_url"])
     else:
         demo_url = ""
     if "repo_url" in project and project["repo_url"] not in project.get("demo_url", ""):
