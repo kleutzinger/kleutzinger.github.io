@@ -376,7 +376,7 @@ function Enemy() {
 Enemy.prototype.update = function () {
   this.x += this.xVel;
   this.y += this.yVel;
-  if (c1_in_c2(Game.goal, this) && Game.goal.active) {
+  if (c1_in_c2(Game.goal, this) && this.active && Game.goal.active) {
     //hit by protector
     Game.goal.active = false;
     this.active = false;
