@@ -40,6 +40,20 @@ def gen_tags(project):
     return out
 
 
+def gen_description(project):
+    description_text = project.get("web_description", "")
+    if "date_created" in project:
+        date_slashes = project["date_created"]
+        month_year = datetime.datetime.strptime(date_slashes, "%Y-%m-%d").strftime(
+            "%b %Y"
+        )
+        date_created = p(month_year)
+    else:
+        date_created = ""
+    description = raw(markdown(description_text) + str(date_created))
+    return description
+
+
 def gen_card_html(project, is_alt_card=False):
     "return raw html of a project card"
     title = project.get("title", "_TITLE_")
@@ -47,9 +61,7 @@ def gen_card_html(project, is_alt_card=False):
     subtitle = project.get("technologies", "")
     subtitle = subtitle.replace(",", ", ")
     subtitle = project.get("medium", "")
-    description_text = project.get("web_description", "")
-    # description = p(project.get("web_description", ""))
-    description = raw(markdown(description_text))
+    description = gen_description(project)
     if "demo_url" in project:
         demo_url = a("< Open >", href=project["demo_url"])
     else:
