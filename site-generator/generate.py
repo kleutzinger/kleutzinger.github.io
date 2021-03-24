@@ -40,27 +40,38 @@ def gen_tags(project):
     return out
 
 
-def gen_description(project):
-    description_text = project.get("web_description", "")
+def get_date(project):
     if "date_created" in project:
         date_slashes = project["date_created"]
         month_year = datetime.datetime.strptime(date_slashes, "%Y-%m-%d").strftime(
             "%b %Y"
         )
-        date_created = p(month_year)
+        date_created = month_year
     else:
         date_created = ""
-    description = raw(markdown(description_text) + str(date_created))
+    return date_created
+
+
+def gen_description(project):
+    description_text = project.get("web_description", "")
+    description = raw(markdown(description_text))
     return description
+
+
+def gen_subtitle(project):
+    sub_text = project.get("medium", "")
+    sub_date = get_date(project)
+    if sub_date:
+        sub_date = "<br>" + sub_date
+    templ = f"<h2>{sub_text}{sub_date}</h2>"
+    return templ
 
 
 def gen_card_html(project, is_alt_card=False):
     "return raw html of a project card"
     title = project.get("title", "_TITLE_")
     screenshot_url = project.get("screenshot_url", "")
-    subtitle = project.get("technologies", "")
-    subtitle = subtitle.replace(",", ", ")
-    subtitle = project.get("medium", "")
+    subtitle = gen_subtitle(project)
     description = gen_description(project)
     if "demo_url" in project:
         demo_url = a("< Open >", href=project["demo_url"])
@@ -74,14 +85,6 @@ def gen_card_html(project, is_alt_card=False):
         youtube = a("Video Demo", href=project["youtube"])
     else:
         youtube = ""
-    if "date_created" in project:
-        date_slashes = project["date_created"]
-        month_year = datetime.datetime.strptime(date_slashes, "%Y-%m-%d").strftime(
-            "%b %Y"
-        )
-        date_created = li(month_year, cls="date")
-    else:
-        date_created = ""
     alt_class = "alt" * is_alt_card
     hover_tags = gen_tags(project)
 
@@ -91,13 +94,12 @@ def gen_card_html(project, is_alt_card=False):
       <div class="photo" style="background-image: url({screenshot_url})"></div>
       <ul class="details">
         <li class="author"><a href="https://github.com/kleutzinger">Kevin Leutzinger</a></li>
-        {date_created}
         {hover_tags}
       </ul>
     </div>
     <div class="description">
       <h1>{title}</h1>
-      <h2>{subtitle}</h2>
+      {subtitle}
       {description}
       <p class="read-more">
       {repo_url}
