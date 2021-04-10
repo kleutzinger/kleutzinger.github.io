@@ -30,23 +30,31 @@ def main():
     global TEMPLATE
     projects = ingest.get_rows()
     projects.sort(reverse=True, key=lambda x: x.get("date_created", "0"))
-    used_fields = ["date_created", "title"]
+    used_fields = ["date_created", "title/link", "source code"]
     piped = "|".join(used_fields)
     headers = f"|{piped}|"
     spacer = f"|{'---|'*len(used_fields)}"
     output_string = f"{headers}\n{spacer}\n"
 
     def modify_project(project):
-        if "demo_url" not in project:
-            return project
-        title = project.get('title', 'title')
-        project["title"] = f"[{title}]({project['demo_url']})"
+        title = project.get("title", "title")
+        if "demo_url" in project:
+            project["title/link"] = f"[{title}]({project['demo_url']})"
+        else:
+            project["title/link"] = title
+        if "repo_url" in project:
+            project["source code"] = f"[source]({project['repo_url']})"
+        if "star_rating" in project:
+            full_star = "★"
+            star_rating = project["star_rating"]
+            project["stars"] = full_star * int(star_rating)
+
         return project
 
     for project in map(modify_project, projects):
         if "kb" in project.get("omit_from", []):
             continue
-        piped = "|".join([project.get(f, "") for f in used_fields])
+        piped = "|".join([str(project.get(f, "")) for f in used_fields])
         vals = f"|{piped}|\n"
         output_string += vals
 
