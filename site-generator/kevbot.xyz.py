@@ -10,9 +10,10 @@ import ingest
 
 CONTENTS_LR = "/home/kevin/lektor/kev-project-lektor/content/contents.lr"
 TEMPLATE = """
-title: Home
+title: 
 ---
 body:
+# [back to my visual portfolio here](https://kevinleutzinger.com)
 MARKDOWN
 ---
 alt_note: alt note

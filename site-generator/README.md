@@ -20,6 +20,6 @@ title star_rating presentation tags repo_url demo_url date_created screenshot_ur
 - [x] set as homepage for kevinleutzinger.com
 - [ ] deploy script (send to github pages)
 - - [ ] show confirmation / diff?
-- [ ] build https://blog.kevbot.xyz markdown
+- [x] build https://blog.kevbot.xyz markdown
 - [x] prettify html output
 - [ ] move screenshots off imgur
