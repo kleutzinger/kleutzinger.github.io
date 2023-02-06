@@ -45,6 +45,8 @@ def main():
         if "repo_url" in project:
             project["source code"] = f"[source]({project['repo_url']})"
             title_link = title_link or project["repo_url"]
+        if "readme_url" in project:
+            title_link = title_link or project["readme_url"]
         if "star_rating" in project:
             full_star = "★"
             star_rating = project["star_rating"]
