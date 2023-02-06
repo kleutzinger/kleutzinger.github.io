@@ -1,25 +1,37 @@
-from gsheets import Sheets
 from iterfzf import iterfzf
 from pprint import pprint
+import requests
 import os
+from io import StringIO
+import csv
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-with open("portfolio_id.txt", "r") as f:
-    PORTFOLIO_ID = f.readlines()[0].strip()
-sheets = Sheets.from_files("client_secrets.json")
+def get_csv() -> list:
+    with open("portfolio_url.txt", "r") as f:
+        url, csv_dl= [line.strip() for line in  f.readlines()]
+        resp = requests.get(csv_dl)
+        scsv = resp.text
+
+        f = StringIO(scsv)
+        reader = csv.reader(f, delimiter=',')
+        rows = []
+        for row in reader:
+            rows.append(row)
+            print('\t'.join(row))
+    return rows
+
 
 row_cache = None
 
 
-def get_rows():
+def get_rows() -> list[dict]:
     "get all rows as array of project_dicts"
     global row_cache
     ans = None
     if row_cache:
         ans = row_cache
     else:
-        port = sheets.get(PORTFOLIO_ID)[0]
-        rows = port.values()
+        rows = get_csv()
         fields = rows[0]
         ans = []
         for idx, row in enumerate(rows[1:]):

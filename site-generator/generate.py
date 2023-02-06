@@ -73,18 +73,15 @@ def gen_card_html(project, is_alt_card=False):
     screenshot_url = project.get("screenshot_url", "")
     subtitle = gen_subtitle(project)
     description = gen_description(project)
+    readme = youtube = demo_url = readme_url = repo_url = ""
     if "demo_url" in project:
         demo_url = a("< Open >", href=project["demo_url"])
-    else:
-        demo_url = ""
     if "repo_url" in project and project["repo_url"] not in project.get("demo_url", ""):
         repo_url = a("Source Code", href=project["repo_url"])
-    else:
-        repo_url = ""
+    if project.get("readme_url"):
+        readme = a("readme", href=project["readme_url"])
     if "youtube" in project:
         youtube = a("Video Demo", href=project["youtube"])
-    else:
-        youtube = ""
     alt_class = "alt" * is_alt_card
     hover_tags = gen_tags(project)
 
@@ -105,6 +102,7 @@ def gen_card_html(project, is_alt_card=False):
       {repo_url}
       {youtube}
       {demo_url}
+      {readme}
       </p>
     </div>
     </div>
@@ -127,8 +125,8 @@ if __name__ == "__main__":
     projects = ingest.get_rows()
 
     def order_proj(proj):
-        star_rating = int(proj.get("star_rating", 0))
-        shine_rating = int(proj.get("shine_rating", 0))
+        star_rating = int(float(proj.get("star_rating", 0)))
+        shine_rating = int(float(proj.get("shine_rating", 0)))
         return (shine_rating + star_rating) / 2
 
     projects.sort(reverse=True, key=order_proj)

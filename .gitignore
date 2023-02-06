@@ -5,3 +5,4 @@ portfolio_id.txt
 client_secrets.json
 .venv
 *.db
+venv
