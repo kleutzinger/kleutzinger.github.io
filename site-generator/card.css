@@ -137,3 +137,5 @@ body {
           right: -10px; }
         .blog-card.alt .details {
           padding-left: 25px; } }
+.blog-card:first-of-type .photo {
+  background-position: center; }
