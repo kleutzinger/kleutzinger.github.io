@@ -2,13 +2,13 @@
 
 this page is mostly markdown
 
-#__PUBLISH_TO_XYZ__# /home/kevin/gits/kleutzinger.github.io/.venv/bin/python #__file__# && cd /home/kevin/lektor/kev-project-lektor && source ../.venv/bin/activate && lektor build && lektor deploy
+#__PUBLISH_TO_XYZ__# /home/kevin/.virtualenvs/kleutzinger-github-io/bin/python #__file__# && blog.fish deploy
 """
 
 
 import ingest
 
-CONTENTS_LR = "/home/kevin/lektor/kev-project-lektor/content/contents.lr"
+CONTENTS_LR = "/home/kevin/lektor/content/contents.lr"
 TEMPLATE = """
 title: 
 ---
@@ -39,16 +39,19 @@ def main():
 
     def modify_project(project):
         title = project.get("title", "title")
+        title_link = None
         if "demo_url" in project:
-            project["title/link"] = f"[{title}]({project['demo_url']})"
-        else:
-            project["title/link"] = title
+            title_link = project["demo_url"]
         if "repo_url" in project:
             project["source code"] = f"[source]({project['repo_url']})"
+            title_link = title_link or project["repo_url"]
         if "star_rating" in project:
             full_star = "★"
             star_rating = project["star_rating"]
-            project["stars"] = full_star * int(star_rating)
+            project["stars"] = full_star * int(float(star_rating))
+        title_link = title_link or "#"
+        project["title/link"] = f"[{title}]({title_link})"
+
 
         return project
 
@@ -65,3 +68,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
