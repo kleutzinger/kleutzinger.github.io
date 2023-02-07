@@ -185,6 +185,11 @@ var Key = {
   RIGHT: 39,
   DOWN: 40,
 
+  W: 87,
+  A: 65,
+  S: 83,
+  D: 68,
+
   isDown: function (keyCode) {
     return this._pressed[keyCode];
   },
@@ -531,10 +536,10 @@ Player.prototype.update = function () {
   playerG += dG;
   this.xVel = 0;
   this.yVel = 0;
-  if (Key.isDown(Key.UP)) this.moveUp();
-  if (Key.isDown(Key.LEFT)) this.moveLeft();
-  if (Key.isDown(Key.DOWN)) this.moveDown();
-  if (Key.isDown(Key.RIGHT)) this.moveRight();
+  if (Key.isDown(Key.W) || Key.isDown(Key.UP)) this.moveUp();
+  if (Key.isDown(Key.A) || Key.isDown(Key.LEFT)) this.moveLeft();
+  if (Key.isDown(Key.S) || Key.isDown(Key.DOWN)) this.moveDown();
+  if (Key.isDown(Key.D) || Key.isDown(Key.RIGHT)) this.moveRight();
   this.x += this.xVel;
   this.y += this.yVel;
   this.bind();
