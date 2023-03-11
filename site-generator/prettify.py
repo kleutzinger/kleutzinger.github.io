@@ -1,24 +1,19 @@
 import sys
 from subprocess import Popen, PIPE, STDOUT
 import shutil
+import prettierfier
+from bs4 import BeautifulSoup
+
+# format html string using beautiful soup
 
 
-def html_prettify(html_string):
+def html_prettify(html_string: str) -> str:
     "returns html back as formatted string. must have `tidy` installed"
-    if not shutil.which("tidy"):
-        print("tidy not installed")
-        print("not prettifying html")
-        return html_string
+
     try:
-        html_string = str.encode(html_string)
-        p = Popen(
-            ["tidy", "-q", "--wrap", "0", "-i", "--"],
-            stdout=PIPE,
-            stdin=PIPE,
-            stderr=STDOUT,
-        )
-        tidy_stout = p.communicate(input=html_string)[0]
-        return tidy_stout.decode("utf-8")
+        soup = BeautifulSoup(html_string, "html.parser")
+        html_string = soup.prettify()
+        return prettierfier.prettify_html(html_string)
     except Exception as err:
         print(err)
         print("prettifying failed")
