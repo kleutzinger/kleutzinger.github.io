@@ -1,5 +1,10 @@
 name: main
-on: workflow_dispatch
+# run nightly
+on:
+  workflow_dispatch:
+  - name: do the deploy
+  schedule:
+  - cron: "0 0 * * *"
 
 jobs:
   main:
@@ -15,5 +20,13 @@ jobs:
         . venv/bin/activate
         python -m pip install -r requirements.txt
         python3 site-generator/generate.py
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update site
+        commit_options: '--no-verify'
+        commit_user_name: GitHub Actions
+        commit_user_email: github-actions[bot]@users.noreply.github.com
+        commit_author: GitHub Actions <github-actions[bot]@users.noreply.github.com>
+        file_pattern: index.html
 
 
