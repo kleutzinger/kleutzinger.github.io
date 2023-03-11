@@ -1,8 +1,9 @@
 name: main
 # run nightly
 on:
-  schedule:
-  - cron: "*/10 * * * *"
+  [workflow_dispatch]
+    
+  
 
 jobs:
   main:
