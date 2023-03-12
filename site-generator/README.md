@@ -23,3 +23,8 @@ title star_rating presentation tags repo_url demo_url date_created screenshot_ur
 - [x] build https://blog.kevbot.xyz markdown
 - [x] prettify html output
 - [ ] move screenshots off imgur
+
+## useful links
+
+https://github.com/Naereen/badges
+https://codepen.io/thedookmaster/pen/mdGXdOG

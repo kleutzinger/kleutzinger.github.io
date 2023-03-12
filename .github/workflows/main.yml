@@ -1,6 +1,7 @@
 name: Nightly update from google sheet
 # TODO: run nightly
 on:
+  workflow_dispatch:
   schedule:
     # run every night at 2:42 am PST
     - cron:  '42 10 * * *'
