@@ -1,9 +1,9 @@
-name: main
-# run nightly
+name: Nightly update from google sheet
+# TODO: run nightly
 on:
-  [workflow_dispatch]
-    
-  
+  schedule:
+    # run every night at 2:42 am PST
+    - cron:  '42 10 * * *'
 
 jobs:
   main:
@@ -27,5 +27,3 @@ jobs:
         commit_user_email: github-actions[bot]@users.noreply.github.com
         commit_author: GitHub Actions <github-actions[bot]@users.noreply.github.com>
         file_pattern: index.html
-
-
