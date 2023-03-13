@@ -3,7 +3,7 @@ name: Nightly update from google sheet
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
   schedule:
     # run every night at 2:42 am PST
