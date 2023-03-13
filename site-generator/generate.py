@@ -120,10 +120,9 @@ if __name__ == "__main__":
     doc["lang"] = "en"
 
     with doc.head:
-        script(
-            type="text/javascript",
-            # src="/site-generator/kevbadge.js",
-            src="https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/kevbadge.js",
+        raw(
+            '<script src="https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/kevbadge.js" '
+            'type="text/javascript" async="true"></script>'
         )
         link(rel="stylesheet", href="site-generator/generated/card.css")
         meta(charset="UTF-8")

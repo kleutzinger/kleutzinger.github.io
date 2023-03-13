@@ -5,7 +5,7 @@ This is my static site. I've been hacking on it for a good number of years
 ### Add my button to your website
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/kevbadge.js"></script>
+  <script async="true" src="https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/kevbadge.js" type="text/javascript">
 ```
 
 or paste the contents of [kevbadge.js](https://raw.githubusercontent.com/kleutzinger/kleutzinger.github.io/master/site-generator/kevbadge.js) into the developer console anywhere on your site
