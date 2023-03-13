@@ -685,7 +685,7 @@
       "website",
       "blog"
     ],
-    "repo_url": "https://github.com/kleutzinger/lektor-blog",
+    "repo_url": "http://github.com/kleutzinger/lektor-blog",
     "demo_url": "https://kevbot.xyz/",
     "web_description": "My other site featuring a blog and even more projects of mine.",
     "date_created": "2020-10-22",
