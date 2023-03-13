@@ -11,13 +11,10 @@
     console.time("getting sheet");
     let json_url =
       "https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json";
-    debugger;
-    // if (IS_KEVINLEUTINGER_SOMEWHERE) {
-    // }
     if (IS_LOCAL_DEV) {
-      // working on a different local project would require using the cdn instaed
+      // working on a different local project would require using the cdn instead
       // but for now, just use the local file
-      // json_url = "/site-generator/generated/projects.json";
+      json_url = "/site-generator/generated/projects.json";
       document.body.style.background = "red";
     }
     const response = await fetch(json_url);
@@ -144,6 +141,7 @@
 
     const kevbadge_list = document.querySelector(".kevbadge-list");
     const project = locate_relevant_project(projects);
+    console.log(project);
     // function that makes links from a url and a text
     const make_list = (links) => {
       const ul = document.createElement("ul");
@@ -155,14 +153,19 @@
       return ul;
     };
     const links = [];
+    // permanent links
     links.push(
       make_link(
         `javascript:var%20KICKASSVERSION='2.0';var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);`,
-        "Destroy This Page"
+        "🚀 minigame"
       )
     );
+    links.push(make_link(`https://kevinleutzinger.com`, "🏠 Homepage"));
+    links.push(make_link(`https://kevbot.xyz`, "🏠 kevbot.xyz"));
+    links.push(make_link(`#`, "🔀 random project (todo)"));
+    // dynamic links
     if (project.repo_url) {
-      links.push(make_link(project.repo_url, "Source Code"));
+      links.push(make_link(project.repo_url, "Source Code for this page"));
     }
     kevbadge_list.appendChild(make_list(links));
   }
