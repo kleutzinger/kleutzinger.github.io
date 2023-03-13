@@ -10,7 +10,8 @@
   async function get_json() {
     console.time("getting sheet");
     let json_url =
-      "https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json";
+      "https://kevinleutzinger.com/site-generator/generated/projects.json";
+      // "https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json";
     if (IS_LOCAL_DEV) {
       // working on a different local project would require using the cdn instead
       // but for now, just use the local file
