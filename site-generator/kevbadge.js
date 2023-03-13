@@ -165,8 +165,8 @@
     links.push(make_link(`https://kevbot.xyz`, "🏠 kevbot.xyz"));
     links.push(make_link(`#`, "🔀 random project (todo)"));
     // dynamic links
-    if (project.repo_url) {
-      links.push(make_link(project.repo_url, "ℹ️ Readme for this page"));
+    if (project.readme_url) {
+      links.push(make_link(project.readme_url, "ℹ️ Readme for this page"));
     }
     if (project.repo_url) {
       links.push(make_link(project.repo_url, "🗏 Source Code for this page"));
