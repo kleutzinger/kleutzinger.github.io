@@ -58,8 +58,8 @@ def get_rows() -> list[dict]:
             for idx, field in enumerate(fields):
                 if len(row) > idx and row[idx] != "":
                     val = row[idx]
-                    if field in ["star", "shine"]:
-                        val = parse_or_fallback(field, val, float, -1)
+                    if field in ["star_rating", "shine_rating"]:
+                        val = parse_or_fallback(field, val, int, -1)
                     # fmt: off
                     if field in ["identifiers", "technologies", "tags", "i_learned", "omit_from"]:
                         val = parse_or_fallback(field, val, comma_separated, [])

@@ -2,11 +2,8 @@
   {
     "_id": 0,
     "title": "Projects by<br>Kevin Leutzinger",
-    "identifiers": [
-      "kevinleutzinger.com"
-    ],
-    "star_rating": "99",
-    "shine_rating": "99",
+    "star_rating": 99,
+    "shine_rating": 99,
     "medium": "Inventive websites and programming",
     "web_description": "You can click \"Open\" to try out any of these projects. Tell me what you think!  \nHover on a card for more info.  \n\nI'm currently a Software Engineer for [Squid Cloud](https://squid.cloud). Previously, I worked for [Rescale](https://rescale.com).\n\nI specialize in python, javascript, shell scripting, automation, and linux. \n\nI make tools and software all the time, you can find a gallery of my work below.\n\n<h3> Contact info </h3>\n\n[My Resume](https://docs.google.com/document/d/1-Sx9gcD6VsBZovPjbuFmXEhK-RTtE_BrvRMpE0Epq4I/edit)\n[Linkedin](https://www.linkedin.com/in/kevin-leutzinger-556758114/)   \n[Github](https://github.com/kleutzinger/)\n\n\n[Youtube](https://www.youtube.com/channel/UCANztgzBKoVk1WnoVKz4UPg)\n[Pro Gamer](https://www.ssbwiki.com/Smasher:Kevbot)\n[Expert Mode](https://kevbot.xyz)",
     "screenshot_url": "https://i.imgur.com/Zdr1KZf.png",
@@ -25,8 +22,8 @@
     "identifiers": [
       "roms.kevbot.xyz"
     ],
-    "star_rating": "4",
-    "shine_rating": "4",
+    "star_rating": 4,
+    "shine_rating": 4,
     "medium": "Application",
     "tags": [
       "game scraper",
@@ -54,8 +51,8 @@
     "identifiers": [
       "rom-browser-(pro)"
     ],
-    "star_rating": "5",
-    "shine_rating": "5",
+    "star_rating": 5,
+    "shine_rating": 5,
     "medium": "Application",
     "tags": [
       "game scraper",
@@ -84,8 +81,8 @@
     "identifiers": [
       "twitch.tv-pause-live"
     ],
-    "star_rating": "-4",
-    "shine_rating": "5",
+    "star_rating": -4,
+    "shine_rating": 5,
     "medium": "Chrome Extension",
     "tags": [
       "crx",
@@ -111,8 +108,8 @@
     "identifiers": [
       "lounge.kevbot.xyz"
     ],
-    "star_rating": "4",
-    "shine_rating": "4",
+    "star_rating": 4,
+    "shine_rating": 4,
     "medium": "Website",
     "tags": [
       "website",
@@ -142,8 +139,8 @@
       "movies.kevbot.xyz",
       "actors.kevbot.xyz"
     ],
-    "star_rating": "4.5",
-    "shine_rating": "5",
+    "star_rating": 4,
+    "shine_rating": 5,
     "medium": "Website",
     "tags": [
       "website",
@@ -169,8 +166,8 @@
     "identifiers": [
       "classic-project-page"
     ],
-    "star_rating": "3",
-    "shine_rating": "3",
+    "star_rating": 3,
+    "shine_rating": 3,
     "medium": "Website",
     "tags": [
       "website",
@@ -193,8 +190,8 @@
     "identifiers": [
       "smash-bros.-melee-gameplay-sharing"
     ],
-    "star_rating": "4",
-    "shine_rating": "4.5",
+    "star_rating": 4,
+    "shine_rating": 4,
     "medium": "Website",
     "tags": [
       "website",
@@ -217,8 +214,8 @@
     "identifiers": [
       "survive-src"
     ],
-    "star_rating": "4",
-    "shine_rating": "3",
+    "star_rating": 4,
+    "shine_rating": 3,
     "medium": "Web Game",
     "tags": [
       "game",
@@ -239,8 +236,8 @@
     "identifiers": [
       "better-challonge-tournament-results"
     ],
-    "star_rating": "3",
-    "shine_rating": "5",
+    "star_rating": 3,
+    "shine_rating": 5,
     "medium": "Chrome Extension",
     "tags": [
       "crx",
@@ -267,8 +264,8 @@
     "identifiers": [
       "fullsize-instagram-right-click"
     ],
-    "star_rating": "3",
-    "shine_rating": "5",
+    "star_rating": 3,
+    "shine_rating": 5,
     "medium": "Chrome Extension",
     "tags": [
       "crx",
@@ -292,8 +289,8 @@
     "identifiers": [
       "advent-of-code-2020-solutions"
     ],
-    "star_rating": "4",
-    "shine_rating": "5",
+    "star_rating": 4,
+    "shine_rating": 5,
     "medium": "Coding Challenge",
     "tags": [
       "code_challenge"
@@ -318,8 +315,8 @@
     "identifiers": [
       "combo-video"
     ],
-    "star_rating": "3",
-    "shine_rating": "5",
+    "star_rating": 3,
+    "shine_rating": 5,
     "medium": "Video",
     "tags": [
       "melee",
@@ -342,8 +339,8 @@
     "identifiers": [
       "youtube-\"now-playing\""
     ],
-    "star_rating": "4",
-    "shine_rating": "4",
+    "star_rating": 4,
+    "shine_rating": 4,
     "medium": "Chrome Extension",
     "tags": [
       "crx",
@@ -367,8 +364,8 @@
     "identifiers": [
       "clipyt"
     ],
-    "star_rating": "3",
-    "shine_rating": "2",
+    "star_rating": 3,
+    "shine_rating": 2,
     "medium": "Website",
     "tags": [
       "website",
@@ -394,8 +391,8 @@
     "identifiers": [
       "serpent2.py"
     ],
-    "star_rating": "3",
-    "shine_rating": "2",
+    "star_rating": 3,
+    "shine_rating": 2,
     "medium": "Desktop Game",
     "tags": [],
     "demo_url": "https://repl.it/@thedookmaster/serpent2py",
@@ -414,8 +411,8 @@
     "identifiers": [
       "twitter-domains-bot"
     ],
-    "star_rating": "3",
-    "shine_rating": "0",
+    "star_rating": 3,
+    "shine_rating": 0,
     "medium": "Bot",
     "tags": [
       "bot",
@@ -434,8 +431,8 @@
     "identifiers": [
       "bachelors-degree"
     ],
-    "star_rating": "3",
-    "shine_rating": "0",
+    "star_rating": 3,
+    "shine_rating": 0,
     "medium": "Education",
     "tags": [
       "education"
@@ -456,8 +453,8 @@
     "identifiers": [
       "reddit-actually-bot"
     ],
-    "star_rating": "2.5",
-    "shine_rating": "0",
+    "star_rating": 2,
+    "shine_rating": 0,
     "medium": "Bot",
     "tags": [
       "bot",
@@ -477,8 +474,8 @@
     "identifiers": [
       "dotfiles"
     ],
-    "star_rating": "3.5",
-    "shine_rating": "5",
+    "star_rating": 3,
+    "shine_rating": 5,
     "medium": "Config",
     "tags": [
       "config",
@@ -500,8 +497,8 @@
     "identifiers": [
       "rus-the-desert-bus"
     ],
-    "star_rating": "2",
-    "shine_rating": "3",
+    "star_rating": 2,
+    "shine_rating": 3,
     "medium": "Web Game",
     "tags": [
       "game"
@@ -522,8 +519,8 @@
     "identifiers": [
       "melee-music-player"
     ],
-    "star_rating": "2",
-    "shine_rating": "2",
+    "star_rating": 2,
+    "shine_rating": 2,
     "medium": "Application",
     "tags": [
       "melee",
@@ -545,8 +542,8 @@
     "identifiers": [
       "discord-bet-bot"
     ],
-    "star_rating": "2",
-    "shine_rating": "2",
+    "star_rating": 2,
+    "shine_rating": 2,
     "medium": "Bot",
     "tags": [
       "bot",
@@ -570,8 +567,8 @@
     "identifiers": [
       "hearthstone-sound-guesser"
     ],
-    "star_rating": "4",
-    "shine_rating": "2",
+    "star_rating": 4,
+    "shine_rating": 2,
     "medium": "Website",
     "tags": [
       "website"
@@ -592,8 +589,8 @@
     "identifiers": [
       "projects-sheet"
     ],
-    "star_rating": "2",
-    "shine_rating": "0",
+    "star_rating": 2,
+    "shine_rating": 0,
     "medium": "Website",
     "demo_url": "https://docs.google.com/spreadsheets/d/1MVghM465zjbMGB89CwvH-GwfwyLXqHqfY1emM7Mp-uA/edit?usp=sharing",
     "date_created": "2020-03-01",
@@ -608,8 +605,8 @@
     "identifiers": [
       "jetski"
     ],
-    "star_rating": "2.5",
-    "shine_rating": "2",
+    "star_rating": 2,
+    "shine_rating": 2,
     "medium": "Web Game",
     "tags": [
       "unfinished",
@@ -629,8 +626,8 @@
     "identifiers": [
       "youtube-transcript-search"
     ],
-    "star_rating": "1",
-    "shine_rating": "5",
+    "star_rating": 1,
+    "shine_rating": 5,
     "medium": "Website",
     "tags": [
       "website",
@@ -657,14 +654,14 @@
     "identifiers": [
       "norcal-melee-power-ranking"
     ],
-    "star_rating": "4.5",
-    "shine_rating": "0",
+    "star_rating": 4,
+    "shine_rating": 0,
     "medium": "Personal",
     "tags": [
       "personal",
       "melee"
     ],
-    "demo_url": "https://www.ssbwiki.com/NorCal_Power_Rankings#Super_Smash_Bros_Melee",
+    "readme_url": "https://www.ssbwiki.com/NorCal_Power_Rankings#Super_Smash_Bros_Melee",
     "date_created": "2018-04-06",
     "screenshot_url": "https://i.imgur.com/FN7pSZ9.png",
     "omit_from": [
@@ -681,8 +678,8 @@
     "identifiers": [
       "kevbot.xyz"
     ],
-    "star_rating": "3",
-    "shine_rating": "5",
+    "star_rating": 3,
+    "shine_rating": 5,
     "medium": "Website",
     "tags": [
       "website",
@@ -705,8 +702,8 @@
     "identifiers": [
       "kevinleutzinger.com"
     ],
-    "star_rating": "4",
-    "shine_rating": "5",
+    "star_rating": 4,
+    "shine_rating": 5,
     "medium": "Website",
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io",
     "date_created": "2013-06-01",
@@ -724,8 +721,8 @@
     "identifiers": [
       "invidious-redirect"
     ],
-    "star_rating": "2",
-    "shine_rating": "2",
+    "star_rating": 2,
+    "shine_rating": 2,
     "medium": "Website",
     "tags": [
       "unfinished"
@@ -745,10 +742,10 @@
     "_id": 31,
     "title": "Portfolio Generator",
     "identifiers": [
-      "portfolio-generator"
+      "kevinleutzinger.com"
     ],
-    "star_rating": "4",
-    "shine_rating": "3",
+    "star_rating": 4,
+    "shine_rating": 3,
     "medium": "Website",
     "tags": [
       "inprogress"
@@ -772,8 +769,8 @@
     "identifiers": [
       "health"
     ],
-    "star_rating": "0",
-    "shine_rating": "0",
+    "star_rating": 0,
+    "shine_rating": 0,
     "medium": "Personal",
     "tags": [
       "personal"
@@ -793,8 +790,8 @@
     "identifiers": [
       "associates-degree"
     ],
-    "star_rating": "0",
-    "shine_rating": "0",
+    "star_rating": 0,
+    "shine_rating": 0,
     "medium": "Personal",
     "omit_from": [
       "kl",
@@ -811,8 +808,8 @@
     "identifiers": [
       "balance-game"
     ],
-    "star_rating": "2",
-    "shine_rating": "2",
+    "star_rating": 2,
+    "shine_rating": 2,
     "medium": "Web game",
     "tags": [
       "game",
@@ -820,6 +817,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/balance",
     "demo_url": "https://kevinleutzinger.com/balance",
+    "broken": "yes requires capital z",
     "date_created": "2014-04-13",
     "screenshot_url": "https://i.imgur.com/9g9kwzy.png",
     "omit_from": [
@@ -836,8 +834,8 @@
     "identifiers": [
       "url-shortening-service"
     ],
-    "star_rating": "3",
-    "shine_rating": "2",
+    "star_rating": 3,
+    "shine_rating": 2,
     "medium": "Website",
     "tags": [
       "unfinished"
@@ -863,8 +861,8 @@
     "identifiers": [
       "slippi-melee-nametag-generator"
     ],
-    "star_rating": "4",
-    "shine_rating": "2",
+    "star_rating": 4,
+    "shine_rating": 2,
     "medium": "Website",
     "tags": [
       "finished"
@@ -887,8 +885,8 @@
     "identifiers": [
       "advent-of-code-2021-solutions"
     ],
-    "star_rating": "4",
-    "shine_rating": "3",
+    "star_rating": 4,
+    "shine_rating": 3,
     "medium": "Coding Challenge",
     "tags": [
       "code_challenge"
@@ -916,8 +914,8 @@
     "identifiers": [
       "kevbot-lbx-layout"
     ],
-    "star_rating": "3",
-    "shine_rating": "2",
+    "star_rating": 3,
+    "shine_rating": 2,
     "medium": "Firmware",
     "tags": [
       "melee"
@@ -938,8 +936,8 @@
     "identifiers": [
       "userscripts-repo"
     ],
-    "star_rating": "4",
-    "shine_rating": "3",
+    "star_rating": 4,
+    "shine_rating": 3,
     "medium": "Utility",
     "tags": [
       "inprogress"
@@ -960,8 +958,8 @@
     "identifiers": [
       "diy-rectangle-controller"
     ],
-    "star_rating": "5",
-    "shine_rating": "5",
+    "star_rating": 5,
+    "shine_rating": 5,
     "medium": "Hardware",
     "tags": [
       "melee"
@@ -977,8 +975,8 @@
     "identifiers": [
       "torrent-downloader"
     ],
-    "star_rating": "4",
-    "shine_rating": "4",
+    "star_rating": 4,
+    "shine_rating": 4,
     "medium": "Website",
     "tags": [
       "private"
@@ -1001,8 +999,8 @@
     "identifiers": [
       "gh-action-deployments"
     ],
-    "star_rating": "4",
-    "shine_rating": "3",
+    "star_rating": 4,
+    "shine_rating": 3,
     "medium": "Automation",
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/site-generator",
     "readme_url": "https://github.com/kleutzinger/kleutzinger.github.io/blob/master/site-generator/README.md",

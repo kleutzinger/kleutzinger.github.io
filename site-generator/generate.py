@@ -120,6 +120,7 @@ if __name__ == "__main__":
     doc["lang"] = "en"
 
     with doc.head:
+        script(type="text/javascript", src="site-generator/kevbadge.js")
         link(rel="stylesheet", href="site-generator/generated/card.css")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width,initial-scale=1")
