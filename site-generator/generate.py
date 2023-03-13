@@ -8,14 +8,18 @@ from dominate.tags import *
 from dominate.util import raw
 from prettify import html_prettify
 import ingest
+import json
 
 
 def generate_css():
     with open("card.scss") as f:
         uncompiled = f.read()
         compiled = sass.compile(string=uncompiled)
-        with open("card.css", "r+") as w:
-            infile = w.read()
+        with open(os.path.join("generated", "card.css"), "w+") as w:
+            try:
+                infile = w.read()
+            except FileNotFoundError:
+                infile = ""
             if infile != compiled:
                 print("recompile card.scss")
                 w.seek(0)
@@ -25,10 +29,10 @@ def generate_css():
 
 def gen_tags(project):
     "display tags over picture when card is hovered"
-    tag_list = project.get("technologies", "")
+    tag_list = project.get("technologies", [])
     if tag_list == "":
         return ""
-    tag_list = tag_list.split(",")
+    tag_list
     LIS = "\n".join([f'<li><a href="#">{text}</a></li>' for text in tag_list])
     out = f"""
         <li class="tags">
@@ -116,13 +120,16 @@ if __name__ == "__main__":
     doc["lang"] = "en"
 
     with doc.head:
-        link(rel="stylesheet", href="site-generator/card.css")
+        link(rel="stylesheet", href="site-generator/generated/card.css")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width,initial-scale=1")
         # script(type='text/javascript', src='script.js')
 
     print("getting all rows")
     projects = ingest.get_rows()
+    # write project json to file
+    with open(os.path.join("generated", "projects.json"), "w") as f:
+        json.dump(projects, f, indent=2)
 
     def order_proj(proj):
         star_rating = int(float(proj.get("star_rating", 0)))
@@ -132,7 +139,7 @@ if __name__ == "__main__":
     projects.sort(reverse=True, key=order_proj)
     even_idx = True
     for proj in projects:
-        if "kl" in proj.get("omit_from", ""):
+        if "kl" in proj.get("omit_from", []):
             continue
         htm = gen_card_html(proj, is_alt_card=even_idx)
         with doc:

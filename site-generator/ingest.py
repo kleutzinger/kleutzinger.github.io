@@ -1,3 +1,4 @@
+from typing import Callable
 from iterfzf import iterfzf
 from pprint import pprint
 import requests
@@ -6,22 +7,40 @@ from io import StringIO
 import csv
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+
 def get_csv() -> list:
     with open("portfolio_url.txt", "r") as f:
-        url, csv_dl= [line.strip() for line in  f.readlines()]
+        url, csv_dl = [line.strip() for line in f.readlines()]
         resp = requests.get(csv_dl)
         scsv = resp.text
 
         f = StringIO(scsv)
-        reader = csv.reader(f, delimiter=',')
+        reader = csv.reader(f, delimiter=",")
         rows = []
         for row in reader:
             rows.append(row)
-            print('\t'.join(row))
+            print("\t".join(row))
     return rows
 
 
 row_cache = None
+
+
+def parse_or_fallback(field: str, value: str, parse_fn: Callable, fallback: any):
+    try:
+        return parse_fn(value)
+    except:
+        return fallback
+
+
+def comma_separated(val: str) -> list[str]:
+    output = []
+    for item in val.split(","):
+        item = item.strip()
+        if item != "":
+            output.append(item)
+    return output
 
 
 def get_rows() -> list[dict]:
@@ -35,10 +54,19 @@ def get_rows() -> list[dict]:
         fields = rows[0]
         ans = []
         for idx, row in enumerate(rows[1:]):
-            d = dict({"_id": idx + 1})
+            d = dict({"_id": idx})
             for idx, field in enumerate(fields):
                 if len(row) > idx and row[idx] != "":
-                    d[field] = row[idx]
+                    val = row[idx]
+                    if field in ["star", "shine"]:
+                        val = parse_or_fallback(field, val, float, -1)
+                    # fmt: off
+                    if field in ["identifiers", "technologies", "tags", "i_learned", "omit_from"]:
+                        val = parse_or_fallback(field, val, comma_separated, [])
+                    # fmt: on
+
+                    d[field] = val
+                    "now dats"
             ans.append(d)
         row_cache = ans
     return ans
