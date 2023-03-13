@@ -1,6 +1,9 @@
 name: Nightly update from google sheet
 # TODO: run nightly
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     # run every night at 2:42 am PST
@@ -29,7 +32,8 @@ jobs:
         commit_author: GitHub Actions <github-actions[bot]@users.noreply.github.com>
         file_pattern: index.html site-generator/generated/*
     - uses: gacts/purge-jsdelivr-cache@v1
-      if: steps.auto-commit-action.outputs.changes_detected == 'true'
+      # temporarily always purge
+      # if: steps.auto-commit-action.outputs.changes_detected == 'true'
       with:
         url: |
           https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json
