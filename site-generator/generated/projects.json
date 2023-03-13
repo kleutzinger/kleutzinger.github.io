@@ -685,7 +685,7 @@
       "website",
       "blog"
     ],
-    "repo_url": "http://github.com/kleutzinger/lektor-blog",
+    "repo_url": "https://github.com/kleutzinger/lektor-blog",
     "demo_url": "https://kevbot.xyz/",
     "web_description": "My other site featuring a blog and even more projects of mine.",
     "date_created": "2020-10-22",
@@ -753,6 +753,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/site-generator",
     "demo_url": "https://kevinleutzinger.com/",
+    "readme_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master#readme",
     "date_created": "2021-03-01",
     "screenshot_url": "https://i.imgur.com/c8e9gmT.png",
     "omit_from": [

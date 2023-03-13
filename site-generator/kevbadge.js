@@ -11,7 +11,7 @@
     console.time("getting sheet");
     let json_url =
       "https://kevinleutzinger.com/site-generator/generated/projects.json";
-      // "https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json";
+    // "https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json";
     if (IS_LOCAL_DEV) {
       // working on a different local project would require using the cdn instead
       // but for now, just use the local file
@@ -30,7 +30,7 @@
     <!-- list will go here--!>
   </ul>
   <button class="kevbadge-button">
-    <span>👨‍💻</span>
+    <span>️info</span>
   </button>
 </div>`;
 
@@ -62,7 +62,7 @@
 }
 .kevbadge-button span {
   display: block;
-  font-size: 3em;
+  font-size: 2em;
   transform: scale(1);
   transition: transform 100ms ease;
 }
@@ -166,7 +166,10 @@
     links.push(make_link(`#`, "🔀 random project (todo)"));
     // dynamic links
     if (project.repo_url) {
-      links.push(make_link(project.repo_url, "Source Code for this page"));
+      links.push(make_link(project.repo_url, "ℹ️ Readme for this page"));
+    }
+    if (project.repo_url) {
+      links.push(make_link(project.repo_url, "🗏 Source Code for this page"));
     }
     kevbadge_list.appendChild(make_list(links));
   }
