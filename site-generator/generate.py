@@ -121,7 +121,7 @@ if __name__ == "__main__":
 
     with doc.head:
         raw(
-            '<script src="https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/kevbadge.js" '
+            '<script src="https://unpkg.com/kevbadge/kevbadge.js" '
             'type="text/javascript" async="true"></script>'
         )
         link(rel="stylesheet", href="site-generator/generated/card.css")
