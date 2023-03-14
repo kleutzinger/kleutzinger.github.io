@@ -1,0 +1,26 @@
+{
+	"name": "kevbadge",
+	"version": "0.0.3",
+	"description": "badge featured on a few of my websites which provides info like source code, links, and other fun things",
+	"main": "kevbadge.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kleutzinger/kleutzinger.github.io.git"
+	},
+	"keywords": [
+		"badge",
+		"kevinleutzinger"
+	],
+	"author": "Kevin Leutzinger",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kleutzinger/kleutzinger.github.io/issues"
+	},
+	"files": [
+		"kevbadge.js"
+	],
+	"homepage": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/site-generator#readme"
+}

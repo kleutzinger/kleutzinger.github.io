@@ -161,9 +161,15 @@
         "🚀 minigame"
       )
     );
+    links.push(
+      make_link(
+        `https://github.com/kleutzinger/kleutzinger.github.io/blob/master/site-generator/kevbadge.js`,
+        "🔳Source code for this button"
+      )
+    );
     links.push(make_link(`https://kevinleutzinger.com`, "🏠 Homepage"));
     links.push(make_link(`https://kevbot.xyz`, "🏠 kevbot.xyz"));
-    links.push(make_link(`#`, "🔀 random project (todo)"));
+    links.push(make_link(`#`, "🔀 random project (coming soon)"));
     // dynamic links
     if (project.readme_url) {
       links.push(make_link(project.readme_url, "ℹ️ Readme for this page"));
