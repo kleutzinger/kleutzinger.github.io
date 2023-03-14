@@ -10,8 +10,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
-      - run: npm install
-      - run: npm test
+      - run: |
+          cd site-generator
+          npm install
+          npm test
       # publish kevbadge to https://www.npmjs.com/package/kevbadge
       - uses: JS-DevTools/npm-publish@v1
         with:
