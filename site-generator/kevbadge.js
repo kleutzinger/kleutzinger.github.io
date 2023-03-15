@@ -227,24 +227,24 @@
     links.push(
       make_link(
         `javascript:var%20KICKASSVERSION='2.0';var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);`,
-        "🚀 minigame"
+        "minigame 🚀"
       )
     );
     links.push(
       make_link(
         `https://github.com/kleutzinger/kleutzinger.github.io/blob/master/site-generator/kevbadge.js`,
-        "🔳Source code for this button"
+        "source code for this button 🟩"
       )
     );
-    links.push(make_link(`https://kevinleutzinger.com`, "🏠 Homepage"));
-    links.push(make_link(`https://kevbot.xyz`, "🏠 kevbot.xyz"));
-    links.push(make_link(`${find_random_valid_project_link(projects)}`, "🔀 random project (coming soon)"));
+    links.push(make_link(`https://kevinleutzinger.com`, "Homepage 🏠"));
+    links.push(make_link(`https://kevbot.xyz`, "kevbot.xyz 🏠"));
+    links.push(make_link(`${find_random_valid_project_link(projects)}`, "go to random project by kevin 🔀"));
     // dynamic links
     if (project.readme_url) {
-      links.push(make_link(project.readme_url, "ℹ️ Readme for this page"));
+      links.push(make_link(project.readme_url, "readme for this page 📖"));
     }
     if (project.repo_url) {
-      links.push(make_link(project.repo_url, "🗏 Source Code for this page"));
+      links.push(make_link(project.repo_url, "open source code for this page ℹ️"));
     }
     kevbadge_list.appendChild(make_list(links));
   }
