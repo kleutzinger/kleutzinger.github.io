@@ -89,6 +89,7 @@
     ],
     "demo_url": "https://chrome.google.com/webstore/detail/twitch-pause-resume-live/bfgebolngkajgakbhhfdhgdldmjmiebe",
     "web_description": "[Twitch.tv](https://twitch.tv) is a video game live streaming platform. This extension allows viewers to store a bookmark during the middle of a live broadcast and resume watching later at their convenience.",
+    "broken": "twitch changed its api, rip",
     "date_created": "2019-01-27",
     "screenshot_url": "https://i.imgur.com/5uhbBoC.png",
     "technologies": [
@@ -928,10 +929,13 @@
       "melee"
     ],
     "repo_url": "https://github.com/kleutzinger/CL-FW",
-    "demo_url": "https://github.com/kleutzinger/CL-FW",
+    "readme_url": "https://github.com/kleutzinger/CL-FW",
     "web_description": "My custom layout for my lbx controller forked from Crane's Firmware. I use this to play melee on my Junkfood Arcads LBX controller on wii + pc.",
     "date_created": "2022-07-20",
     "screenshot_url": "https://i.imgur.com/7GCYUYA.png",
+    "omit_from": [
+      "random"
+    ],
     "technologies": [
       "Firmware",
       "Arduino"
