@@ -19,16 +19,14 @@
   {
     "_id": 1,
     "title": "Classic Game Scraper",
-    "identifiers": [
-      "roms.kevbot.xyz"
-    ],
     "star_rating": 4,
     "shine_rating": 4,
     "medium": "Application",
     "tags": [
       "game scraper",
       "desktop",
-      "website"
+      "website",
+      "private"
     ],
     "web_description": "I just might have the world's largest video game collection! This personal tool allows me to browse, download, and emulate over 35,000 roms scraped from [archive.org](https://archive.org). I can get any official game on demand from over 25 systems such as Dreamcast, Gameboy, Sega, Playstation 1/2, Super Nintendo, Gamecube and more!",
     "date_created": "2020-05-01",
@@ -57,7 +55,8 @@
     "tags": [
       "game scraper",
       "desktop",
-      "website"
+      "website",
+      "private"
     ],
     "repo_url": "https://github.com/kleutzinger/find-and-play-classic-videogames",
     "demo_url": "https://roms.kevbot.xyz/",
@@ -164,7 +163,7 @@
     "_id": 6,
     "title": "Classic Project Page",
     "identifiers": [
-      "classic-project-page"
+      "kevinleutzinger.com/projects"
     ],
     "star_rating": 3,
     "shine_rating": 3,
@@ -188,7 +187,8 @@
     "_id": 7,
     "title": "Smash Bros. Melee Gameplay Sharing",
     "identifiers": [
-      "smash-bros.-melee-gameplay-sharing"
+      "replay.kevbot.xyz",
+      "spectate.kevbot.xyz"
     ],
     "star_rating": 4,
     "shine_rating": 4,
@@ -212,7 +212,7 @@
     "_id": 8,
     "title": "Survive SRC",
     "identifiers": [
-      "survive-src"
+      "kevinleutzinger.com/surviveSRC"
     ],
     "star_rating": 4,
     "shine_rating": 3,
@@ -273,6 +273,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/instagram-fullsize",
     "web_description": "Instagram images on the web are not clickable or saveable. Use this plugin to right click to open the image directly at high quality.",
+    "broken": "yeah this got taken down",
     "date_created": "2016-08-06",
     "screenshot_url": "https://i.imgur.com/21zhecs.png",
     "technologies": [
@@ -337,7 +338,7 @@
     "_id": 13,
     "title": "Youtube \"Now Playing\"",
     "identifiers": [
-      "youtube-\"now-playing\""
+      "youtube-now-playing"
     ],
     "star_rating": 4,
     "shine_rating": 4,
@@ -362,7 +363,7 @@
     "_id": 14,
     "title": "Clipyt",
     "identifiers": [
-      "clipyt"
+      "clipyt.kevbot.xyz"
     ],
     "star_rating": 3,
     "shine_rating": 2,
@@ -418,6 +419,7 @@
       "bot",
       "dead"
     ],
+    "broken": "this is not currently running anywhere",
     "omit_from": [
       "kl"
     ],
@@ -435,7 +437,8 @@
     "shine_rating": 0,
     "medium": "Education",
     "tags": [
-      "education"
+      "education",
+      "personal"
     ],
     "demo_url": "https://cs.ucdavis.edu/",
     "date_created": "2017-03-01",
@@ -495,7 +498,7 @@
     "_id": 20,
     "title": "Rus the desert bus",
     "identifiers": [
-      "rus-the-desert-bus"
+      "kevinleutzinger.com/bus"
     ],
     "star_rating": 2,
     "shine_rating": 3,
@@ -565,7 +568,7 @@
     "_id": 23,
     "title": "Hearthstone Sound Guesser",
     "identifiers": [
-      "hearthstone-sound-guesser"
+      "kevinleutzinger.com/hearth"
     ],
     "star_rating": 4,
     "shine_rating": 2,
@@ -603,7 +606,7 @@
     "_id": 25,
     "title": "Jetski",
     "identifiers": [
-      "jetski"
+      "kevinleutzinger.com/jetski"
     ],
     "star_rating": 2,
     "shine_rating": 2,
@@ -624,7 +627,7 @@
     "_id": 26,
     "title": "Youtube Transcript Search",
     "identifiers": [
-      "youtube-transcript-search"
+      "caption-search.kevbot.xyz"
     ],
     "star_rating": 1,
     "shine_rating": 5,
@@ -662,6 +665,7 @@
       "melee"
     ],
     "readme_url": "https://www.ssbwiki.com/NorCal_Power_Rankings#Super_Smash_Bros_Melee",
+    "broken": "i'm not on the pr :(",
     "date_created": "2018-04-06",
     "screenshot_url": "https://i.imgur.com/FN7pSZ9.png",
     "omit_from": [
@@ -720,14 +724,11 @@
     "_id": 30,
     "title": "invidious redirect",
     "identifiers": [
-      "invidious-redirect"
+      "invidious.kevbot.xyz"
     ],
     "star_rating": 2,
     "shine_rating": 2,
     "medium": "Website",
-    "tags": [
-      "unfinished"
-    ],
     "repo_url": "https://github.com/kleutzinger/invidious-redirect",
     "demo_url": "https://invidious.kevbot.xyz/",
     "date_created": "2020-12-14",
@@ -795,6 +796,9 @@
     "star_rating": 0,
     "shine_rating": 0,
     "medium": "Personal",
+    "tags": [
+      "personal"
+    ],
     "omit_from": [
       "kl",
       "kb"
@@ -808,7 +812,7 @@
     "_id": 34,
     "title": "Balance Game",
     "identifiers": [
-      "balance-game"
+      "kevinleutzinger.com/balance"
     ],
     "star_rating": 2,
     "shine_rating": 2,
@@ -834,7 +838,7 @@
     "_id": 35,
     "title": "Url Shortening Service",
     "identifiers": [
-      "url-shortening-service"
+      "u.kevbot.xyz"
     ],
     "star_rating": 3,
     "shine_rating": 2,
@@ -861,7 +865,8 @@
     "_id": 36,
     "title": "Slippi Melee Nametag Generator ",
     "identifiers": [
-      "slippi-melee-nametag-generator"
+      "codepen.io/thedookmaster/project/editor/DPQmqa",
+      "codepen.io/thedookmaster/project/editor/DPQmqa#"
     ],
     "star_rating": 4,
     "shine_rating": 2,
@@ -945,6 +950,7 @@
       "inprogress"
     ],
     "repo_url": "https://github.com/kleutzinger/userscripts",
+    "demo_url": "https://github.com/kleutzinger/userscripts#readme",
     "readme_url": "https://github.com/kleutzinger/userscripts#readme",
     "web_description": "My list of custom made userscripts which can execute on your browser. They are like chrome extensions, but you can rapidly develop them.",
     "date_created": "2023-02-04",
@@ -981,7 +987,7 @@
     "shine_rating": 4,
     "medium": "Website",
     "tags": [
-      "private"
+      "protected"
     ],
     "repo_url": "https://github.com/kleutzinger/get-movie",
     "date_created": "2022-05-10",
@@ -1019,8 +1025,13 @@
     "_id": 43,
     "title": "Source Code Badges",
     "identifiers": [
-      "source-code-badges"
+      "https://kevinleutzinger.com/site-generator"
     ],
+    "star_rating": 5,
+    "shine_rating": 4,
+    "medium": "Web Utility",
+    "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/blob/master/site-generator/kevbadge.js",
+    "demo_url": "https://kevinleutzinger.com/site-generator/",
     "omit_from": [
       "kl",
       "kb"
