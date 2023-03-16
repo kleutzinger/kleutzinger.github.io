@@ -1,8 +1,10 @@
 (function () {
+  // "version": "0.0.7",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname
   );
+  const IS_DEBUG = location.search.includes("debug");
   const IS_KEVINLEUTINGER_HOMEPAGE =
     location.hostname === "kevinleutzinger.com" && location.pathname === "/";
   const IS_KEVINLEUTINGER_SOMEWHERE =
@@ -30,7 +32,9 @@
     <!-- list will go here--!>
   </ul>
   <button class="kevbadge-button">
-    <span>️info</span>
+    <span>page</span>
+    </br>
+    <span>info</span>
   </button>
 </div>`;
 
@@ -88,6 +92,7 @@
 .expanded .kevbadge-list {
   transform: translate(0px, 20px) scale(1);
   opacity: 1;
+  background: #fff;
 }
 .kevbadge-list li {
   margin-bottom: 1em;
@@ -139,8 +144,7 @@
     */
     // check for full url match against project.identifiers
 
-
-    let {hostname, pathname, href}= url
+    let { hostname, pathname, href } = url;
     // remove trailing slash from pathname
     if (pathname.endsWith("/")) {
       pathname = pathname.slice(0, -1);
@@ -171,39 +175,40 @@
     return {};
   }
 
-
-  function find_random_valid_project_link(projects){
-    function project_is_valid(project){
-      // return a valid string to redirect to, or return "" to skip
-      const tags = project.tags || []
-      const demo_url = project.demo_url || ""
-      const omit_from = projects.omit_from || []
+  function find_random_valid_project_link(projects) {
+    function project_is_valid(project) {
+      // return a valid urlstring to redirect to, or return "" if none found
+      const tags = project.tags || [];
+      const demo_url = project.demo_url || "";
+      const omit_from = projects.omit_from || [];
       // list of banned tags
-      const banned_tags = ["private", "protected", "personal"]
-      if (omit_from.includes("random")){
-        return ""
+      const banned_tags = ["private", "protected", "personal"];
+      if (omit_from.includes("random")) {
+        return "";
       }
-      if (tags.some(tag => banned_tags.includes(tag))){
-        return ""
+      if (tags.some((tag) => banned_tags.includes(tag))) {
+        return "";
       }
-      if (project.broken){
-        return ""
+      if (project.broken) {
+        return "";
       }
-      if (project.demo_url){
-        return demo_url
+      if (project.demo_url) {
+        return demo_url;
       }
-      if (project.youtube){
-        return youtube
+      if (project.youtube) {
+        return youtube;
       }
-      return ""
+      return "";
     }
-    let valid_links = projects.map(project_is_valid).filter(x => x !== "")
-    console.log(valid_links)
-    if (Math.random() < 0.005){
+    let valid_links = projects.map(project_is_valid).filter((x) => x !== "");
+    if (IS_DEBUG) {
+      console.log(valid_links);
+    }
+    if (Math.random() < 0.005) {
       // i didn't make this website
-      return "https://aaron.work?ref=kevbadge"
+      return "https://aaron.work?ref=kevbadge";
     }
-    return valid_links[Math.floor(Math.random() * valid_links.length)]
+    return valid_links[Math.floor(Math.random() * valid_links.length)];
   }
 
   function handle_js_response(projects) {
@@ -211,7 +216,9 @@
 
     const kevbadge_list = document.querySelector(".kevbadge-list");
     const project = locate_relevant_project(projects);
-    console.log(project);
+    if (IS_DEBUG) {
+      console.log(project);
+    }
     // function that makes links from a url and a text
     const make_list = (links) => {
       const ul = document.createElement("ul");
@@ -233,18 +240,29 @@
     links.push(
       make_link(
         `https://github.com/kleutzinger/kleutzinger.github.io/blob/master/site-generator/kevbadge.js`,
-        "source code for this button 🟩"
+        "open source code for this button 🟩"
       )
     );
     links.push(make_link(`https://kevinleutzinger.com`, "Homepage 🏠"));
     links.push(make_link(`https://kevbot.xyz`, "kevbot.xyz 🏠"));
-    links.push(make_link(`${find_random_valid_project_link(projects)}`, "go to random project by kevin 🔀"));
+    links.push(
+      make_link(
+        `${find_random_valid_project_link(projects)}`,
+        "go to another random project by kevin 🔀"
+      )
+    );
     // dynamic links
     if (project.readme_url) {
       links.push(make_link(project.readme_url, "readme for this page 📖"));
     }
     if (project.repo_url) {
-      links.push(make_link(project.repo_url, "open source code for this page ℹ️"));
+      const year = project?.date_created?.split("-")[0];
+      links.push(
+        make_link(
+          project.repo_url,
+          "open source code for this page " + (year ? ` (${year})` : "") + " ℹ️"
+        )
+      );
     }
     kevbadge_list.appendChild(make_list(links));
   }
@@ -267,7 +285,9 @@
       });
 
     const projects = await get_json();
-    console.log(projects);
+    if (IS_DEBUG) {
+      console.log(projects);
+    }
     handle_js_response(projects);
   }
 
