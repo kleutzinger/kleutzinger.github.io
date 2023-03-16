@@ -17,6 +17,13 @@
   ga('send', 'pageview');
 
 </script>
-<script async="true" src="https://unpkg.com/kevbadge/kevbadge.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function () {
+        const cdn_script_url = 'https://cdn.jsdelivr.net/npm/kevbadge/kevbadge.js';
+        let kevbadge = document.createElement('script'); kevbadge.type = 'text/javascript'; kevbadge.async = true;
+        kevbadge.src = cdn_script_url;
+        let s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(kevbadge, s);
+    })();
+</script>
 </body>
 </html>

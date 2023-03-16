@@ -10,6 +10,14 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <script type="text/javascript">
+    (function () {
+        const cdn_script_url = 'https://cdn.jsdelivr.net/npm/kevbadge/kevbadge.js';
+        let kevbadge = document.createElement('script'); kevbadge.type = 'text/javascript'; kevbadge.async = true;
+        kevbadge.src = cdn_script_url;
+        let s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(kevbadge, s);
+    })();
+  </script>
 </head>
 <body>
     <div id="mainBox">

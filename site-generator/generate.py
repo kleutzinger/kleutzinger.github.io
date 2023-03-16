@@ -11,6 +11,20 @@ import ingest
 import json
 
 
+# this is in the style of google analytics
+# paste this somewhere in the head of the html
+KEVBADGE_EMBED_SCRIPT = """
+<script type="text/javascript">
+    (function () {
+        const cdn_script_url = 'https://cdn.jsdelivr.net/npm/kevbadge/kevbadge.js';
+        let kevbadge = document.createElement('script'); kevbadge.type = 'text/javascript'; kevbadge.async = true;
+        kevbadge.src = cdn_script_url;
+        let s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(kevbadge, s);
+    })();
+</script>
+"""
+
+
 def generate_css():
     with open("card.scss") as f:
         uncompiled = f.read()
@@ -120,13 +134,11 @@ if __name__ == "__main__":
     doc["lang"] = "en"
 
     with doc.head:
-        raw(
-            '<script src="https://unpkg.com/kevbadge/kevbadge.js" '
-            'type="text/javascript" async="true"></script>'
-        )
         link(rel="stylesheet", href="site-generator/generated/card.css")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width,initial-scale=1")
+        # kevbadge
+        raw(KEVBADGE_EMBED_SCRIPT)
         # script(type='text/javascript', src='script.js')
 
     print("getting all rows")
