@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.7",
+  // "version": "0.0.8",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname
@@ -32,9 +32,7 @@
     <!-- list will go here--!>
   </ul>
   <button class="kevbadge-button">
-    <span>page</span>
-    </br>
-    <span>info</span>
+  <p class="kevbadge-button-text">page</p><p class="kevbadge-button-text">info </p>
   </button>
 </div>`;
 
@@ -46,10 +44,14 @@
   text-align: right;
   z-index: 999;
 }
+.kevbadge-button-text {
+  font-family: monospace;
+  margin: 0;
+  font-size: 30px;
+}
 .kevbadge-button {
   height: 6em;
   width: 6em;
-  font-size: 14px;
   border: 0 none;
   background: #72ab59;
   color: #fff;
@@ -81,7 +83,6 @@
   background: #ffaa00;
 }
 .kevbadge-list {
-  list-style: none;
   padding: 0;
   margin: 0;
   transition: all 200ms ease;
@@ -96,6 +97,14 @@
 }
 .kevbadge-list li {
   margin-bottom: 1em;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.kevbadge-list a {
+  margin-bottom: 1em;
+  list-style-type: none;
+  text-decoration: none;
 }
 .kevbadge-list a {
   color: #212121;
