@@ -59,7 +59,6 @@
       "private"
     ],
     "repo_url": "https://github.com/kleutzinger/find-and-play-classic-videogames",
-    "demo_url": "https://roms.kevbot.xyz/",
     "web_description": "I have the world's largest video game collection! Allows me to browse, download, and emulate over 35,000 roms scraped from archive.org. Download any official game on demand from over 25 systems such as NES, Sega Genesis, all Gameboys, N64, PS1, PS2, Gamecube and more!",
     "date_created": "2020-05-01",
     "screenshot_url": "https://i.imgur.com/VaqnaSs.png",
@@ -1029,7 +1028,7 @@
     "_id": 43,
     "title": "Source Code Badges",
     "identifiers": [
-      "https://kevinleutzinger.com/site-generator"
+      "kevinleutzinger.com/site-generator"
     ],
     "star_rating": 5,
     "shine_rating": 4,
