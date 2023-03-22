@@ -39,6 +39,7 @@ function c1_in_c2(c1, c2) {
 var Key = {
   _pressed: {},
   A: 65,
+  Q: 81,
   UP: 38,
   Z: 90,
   DOWN: 40,
@@ -186,8 +187,8 @@ Game.update = function () {
   score += 1;
   if (Key.isDown(Key.DOWN)) this.end2.yVel = 6;
   if (Key.isDown(Key.UP)) this.end2.yVel = -6;
-  if (Key.isDown(Key.Z)) this.end1.yVel = 6;
-  if (Key.isDown(Key.A)) this.end1.yVel = -6;
+  if (Key.isDown(Key.A)) this.end1.yVel = 6;
+  if (Key.isDown(Key.Q)) this.end1.yVel = -6;
   this.end1.update();
   this.end2.update();
   this.angle = getAngle(this.end1, this.end2);
