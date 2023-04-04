@@ -135,6 +135,7 @@ if __name__ == "__main__":
 
     with doc.head:
         link(rel="stylesheet", href="site-generator/generated/card.css")
+        link(rel="stylesheet", href="site-generator/other-static/background.css")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width,initial-scale=1")
         # kevbadge
@@ -161,6 +162,8 @@ if __name__ == "__main__":
         with doc:
             raw(htm)
         even_idx = not even_idx
+    with doc:
+        div(id="bgimage")
 
     with open(os.path.join("..", "index.html"), "w") as f:
         pretty_html = html_prettify(str(doc))
