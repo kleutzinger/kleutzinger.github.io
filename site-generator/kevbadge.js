@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.8",
+  // "version": "0.0.9",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname
@@ -269,7 +269,7 @@
       links.push(
         make_link(
           project.repo_url,
-          "open source code for this page " + (year ? ` (${year})` : "") + " ℹ️"
+          "open source code for this page " + (year ? ` [${year}]` : "") + " ℹ️"
         )
       );
     }
