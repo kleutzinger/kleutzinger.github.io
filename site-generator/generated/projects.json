@@ -983,7 +983,8 @@
     "_id": 41,
     "title": "Torrent Downloader",
     "identifiers": [
-      "torrent-downloader"
+      "get-movie.kevbot.xyz",
+      "torrrent-downloader"
     ],
     "star_rating": 4,
     "shine_rating": 4,
