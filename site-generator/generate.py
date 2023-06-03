@@ -93,13 +93,13 @@ def gen_card_html(project, is_alt_card=False):
     description = gen_description(project)
     readme = youtube = demo_url = readme_url = repo_url = ""
     if "demo_url" in project:
-        demo_url = a("< Open >", href=project["demo_url"])
+        demo_url = a("| Open", href=project["demo_url"])
     if "repo_url" in project and project["repo_url"] not in project.get("demo_url", ""):
-        repo_url = a("Source Code", href=project["repo_url"])
+        repo_url = a("| Source Code", href=project["repo_url"])
     if project.get("readme_url"):
-        readme = a("readme", href=project["readme_url"])
+        readme = a("| Readme", href=project["readme_url"])
     if "youtube" in project:
-        youtube = a("Video Demo", href=project["youtube"])
+        youtube = a("| Video Demo", href=project["youtube"])
     alt_class = "alt" * is_alt_card
     hover_tags = gen_tags(project)
 
