@@ -188,7 +188,8 @@
     "title": "Smash Bros. Melee Gameplay Sharing",
     "identifiers": [
       "replay.kevbot.xyz",
-      "spectate.kevbot.xyz"
+      "spectate.kevbot.xyz",
+      "spectate-melee-kb.kevbot.xyz"
     ],
     "star_rating": 4,
     "shine_rating": 4,
@@ -1051,11 +1052,38 @@
     "shine_rating": 4,
     "medium": "Game",
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/og",
-    "demo_url": "http://kevinleutzinger.com/og/",
+    "demo_url": "https://kevinleutzinger.com/og/",
     "date_created": "2013-06-06",
     "screenshot_url": "https://i.imgur.com/30UcUyS.png",
     "omit_from": [
       "kl"
+    ]
+  },
+  {
+    "_id": 45,
+    "title": "Steam Tags",
+    "identifiers": [
+      "steam-tags.kevbot.xyz"
+    ],
+    "star_rating": 3,
+    "shine_rating": 4,
+    "medium": "Game",
+    "tags": [
+      "website",
+      "scraper"
+    ],
+    "repo_url": "https://github.com/kleutzinger/steam-tags",
+    "demo_url": "https://steam-tags.kevbot.xyz/",
+    "readme_url": "https://github.com/kleutzinger/steam-tags#readme",
+    "web_description": "Guess which Steam game tag is more popular to publish. Are there more FPS or strategy games?",
+    "date_created": "2023-06-03",
+    "screenshot_url": "https://i.imgur.com/5jq3Hld.png",
+    "libraries": "PyWebIO",
+    "technologies": [
+      "Python"
+    ],
+    "i_learned": [
+      "Pywebio is a pretty easy way to make basic interactive sites"
     ]
   }
 ]

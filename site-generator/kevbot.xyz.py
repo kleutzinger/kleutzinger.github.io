@@ -8,9 +8,9 @@ this page is mostly markdown
 
 import ingest
 
-CONTENTS_LR = "/home/kevin/lektor/content/contents.lr"
+CONTENTS_LR = "/home/kevin/lektor-blog/content/contents.lr"
 TEMPLATE = """
-title: 
+title: Kevin's Homepage
 ---
 body:
 # [back to my visual portfolio here](https://kevinleutzinger.com)
@@ -54,7 +54,6 @@ def main():
         title_link = title_link or "#"
         project["title/link"] = f"[{title}]({title_link})"
 
-
         return project
 
     for project in map(modify_project, projects):
@@ -70,4 +69,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
