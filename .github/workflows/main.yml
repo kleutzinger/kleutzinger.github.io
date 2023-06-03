@@ -1,6 +1,7 @@
 name: Nightly update from google sheet
 # TODO: run nightly
 on:
+  workflow_dispatch:
   schedule:
     # run every night at 2:42 am PST
     - cron:  '42 10 * * *'
@@ -19,6 +20,7 @@ jobs:
         . venv/bin/activate
         python -m pip install -r requirements.txt
         python3 site-generator/generate.py
+        python3 site-generator/kevbot.xyz.py
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update site

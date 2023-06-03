@@ -6,6 +6,7 @@ this page is mostly markdown
 """
 
 
+import os
 import ingest
 
 CONTENTS_LR = "/home/kevin/lektor-blog/content/contents.lr"
@@ -63,8 +64,11 @@ def main():
         vals = f"|{piped}|\n"
         output_string += vals
 
+    markdown_output = TEMPLATE.replace("MARKDOWN", output_string)
     with open(CONTENTS_LR, "w") as f:
-        f.write(TEMPLATE.replace("MARKDOWN", output_string))
+        f.write(markdown_output)
+    with open(os.path.join("generated", "kevbot.xyz.contents.lr"), "w") as f:
+        f.write(markdown_output)
 
 
 if __name__ == "__main__":
