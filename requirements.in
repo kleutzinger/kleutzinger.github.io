@@ -4,6 +4,7 @@ libsass
 markdown
 dominate
 iterfzf
-prettierfier 
+prettierfier
 loguru
+pip-tools
 
