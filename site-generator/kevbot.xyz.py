@@ -9,7 +9,9 @@ this page is mostly markdown
 import os
 import ingest
 
-CONTENTS_LR = "/home/kevin/lektor-blog/content/contents.lr"
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# make dump generated file here
+CONTENTS_LR = os.path.join("generated", "kevbot.xyz.contents.lr")
 TEMPLATE = """
 title: Kevin's Homepage
 ---
