@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.9",
+  // "version": "0.0.10",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname
@@ -89,6 +89,7 @@
   transform: translate(0, 90px) scale(0.5);
   transform-origin: bottom center;
   opacity: 0;
+  display: none;
 }
 .expanded .kevbadge-list {
   transform: translate(0px, 20px) scale(1);
@@ -287,7 +288,15 @@
     full_badge_html
       .querySelector(".kevbadge-button")
       .addEventListener("click", () => {
-        // toggle class on buttton
+        // toggle display of kevbadge-list
+        // todo: make the animation work again
+        const kevbadge_list = document.querySelector("ul.kevbadge-list");
+        if (kevbadge_list.style.display === "block") {
+          kevbadge_list.style.display = "none";
+        } else {
+          kevbadge_list.style.display = "block";
+        }
+        // toggle expanded class on kevbadge-button-wrapper
         document
           .querySelector(".kevbadge-button-wrapper")
           .classList.toggle("expanded");
