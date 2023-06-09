@@ -1019,6 +1019,9 @@
     "web_description": "I store all my portfolio projects in a [google sheet](https://docs.google.com/spreadsheets/d/1MVghM465zjbMGB89CwvH-GwfwyLXqHqfY1emM7Mp-uA/edit?usp=sharing). This automatically deploys the sheet to a few websites like this one and https://kevbot.xyz",
     "date_created": "2023-03-11",
     "screenshot_url": "https://i.imgur.com/zsNOiR7.png",
+    "omit_from": [
+      "random"
+    ],
     "technologies": [
       "github actions",
       "python"
@@ -1039,7 +1042,8 @@
     "date_created": "2023-03-12",
     "omit_from": [
       "kl",
-      "kb"
+      "kb",
+      "random"
     ]
   },
   {
