@@ -91,6 +91,9 @@
     "broken": "twitch changed its api, rip",
     "date_created": "2019-01-27",
     "screenshot_url": "https://i.imgur.com/5uhbBoC.png",
+    "omit_from": [
+      "random"
+    ],
     "technologies": [
       "Chrome Extension",
       "Javascript"
@@ -277,6 +280,9 @@
     "broken": "yeah this got taken down",
     "date_created": "2016-08-06",
     "screenshot_url": "https://i.imgur.com/21zhecs.png",
+    "omit_from": [
+      "random"
+    ],
     "technologies": [
       "Chrome Extension",
       "Javascript"
@@ -401,6 +407,9 @@
     "web_description": "A version of snake where you can pass through yourself.",
     "date_created": "2013-10-01",
     "screenshot_url": "https://i.imgur.com/CU2c5QN.png",
+    "omit_from": [
+      "random"
+    ],
     "technologies": [
       "Python",
       "Pygame"
@@ -557,7 +566,8 @@
     "web_description": "Make bets with your friends",
     "date_created": "2021-03-01",
     "omit_from": [
-      "kl"
+      "kl",
+      "random"
     ],
     "technologies": [
       "Node.js",
@@ -600,7 +610,7 @@
     "date_created": "2020-03-01",
     "omit_from": [
       "kl",
-      "kb"
+      "random"
     ]
   },
   {
@@ -958,6 +968,9 @@
     "web_description": "My list of custom made userscripts which can execute on your browser. They are like chrome extensions, but you can rapidly develop them.",
     "date_created": "2023-02-04",
     "screenshot_url": "https://i.imgur.com/6dV2Wfl.png",
+    "omit_from": [
+      "random"
+    ],
     "libraries": "violentmonkey",
     "technologies": [
       "Javascript"
@@ -978,7 +991,10 @@
     "readme_url": "https://docs.google.com/document/d/1ghh1K2DEtPpqfF3jOtAsY1XcohuA7enjkYF7_MLG39k/edit#heading=h.qkq85fhrrorr",
     "web_description": "Homemade controller to play Super Smash Bros Melee on PC and Gamecube/Wii",
     "date_created": "2022-05-01",
-    "screenshot_url": "https://i.imgur.com/eo0zqmi.png"
+    "screenshot_url": "https://i.imgur.com/eo0zqmi.png",
+    "omit_from": [
+      "random"
+    ]
   },
   {
     "_id": 41,
@@ -997,7 +1013,8 @@
     "date_created": "2022-05-10",
     "screenshot_url": "https://i.imgur.com/jqYN47q.png",
     "omit_from": [
-      "kl"
+      "kl",
+      "random"
     ],
     "technologies": [
       "js",
