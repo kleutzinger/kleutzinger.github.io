@@ -559,11 +559,11 @@
     "shine_rating": 2,
     "medium": "Bot",
     "tags": [
-      "bot",
-      "inprogress"
+      "bot"
     ],
     "repo_url": "https://github.com/kleutzinger/bet-bot",
     "web_description": "Make bets with your friends",
+    "broken": "yes, disabled manually",
     "date_created": "2021-03-01",
     "omit_from": [
       "kl",
