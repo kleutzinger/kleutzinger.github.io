@@ -1,29 +1,27 @@
 (function () {
-  // "version": "0.0.10",
+  // "version": "0.0.11",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname
   );
   const IS_DEBUG = location.search.includes("debug");
-  const IS_KEVINLEUTINGER_HOMEPAGE =
-    location.hostname === "kevinleutzinger.com" && location.pathname === "/";
-  const IS_KEVINLEUTINGER_SOMEWHERE =
-    location.hostname === "kevinleutzinger.com";
   async function get_json() {
-    console.time("getting sheet");
     let json_url =
       "https://kevinleutzinger.com/site-generator/generated/projects.json";
-    // "https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json";
     if (IS_LOCAL_DEV) {
-      // working on a different local project would require using the cdn instead
-      // but for now, just use the local file
+      // try loading json from local file
       json_url = "/site-generator/generated/projects.json";
+      // set background to red to indicate local dev
       document.body.style.background = "red";
     }
-    const response = await fetch(json_url);
-    const data = await response.json();
-    console.timeEnd("getting sheet");
-    return data;
+    try {
+      const response = await fetch(json_url);
+      const data = await response.json();
+      return data;
+    } catch (e) {
+      console.error(e);
+      return [];
+    }
   }
 
   const htmlstr = `
@@ -135,25 +133,7 @@
     // given we are on some webpage, find the relevant project, if it exists
     // stuff defined by page
     const url = new URL(window.location.href);
-    /*
-    > new URL("https://www.kevbot.xyz/a/b/page.html")
-    URL {
-      href: 'https://www.kevbot.xyz/a/b/page.html',
-      origin: 'https://www.kevbot.xyz',
-      protocol: 'https:',
-      username: '',
-      password: '',
-      host: 'www.kevbot.xyz',
-      hostname: 'www.kevbot.xyz',
-      port: '',
-      pathname: '/a/b/page.html',
-      search: '',
-      searchParams: URLSearchParams {},
-      hash: ''
-}
-    */
     // check for full url match against project.identifiers
-
     let { hostname, pathname, href } = url;
     // remove trailing slash from pathname
     if (pathname.endsWith("/")) {
@@ -215,15 +195,13 @@
       console.log(valid_links);
     }
     if (Math.random() < 0.005) {
-      // i didn't make this website
+      // send them to aaron santiago's website
       return "https://aaron.work?ref=kevbadge";
     }
     return valid_links[Math.floor(Math.random() * valid_links.length)];
   }
 
   function handle_js_response(projects) {
-    // populate kevbadge-list
-
     const kevbadge_list = document.querySelector(".kevbadge-list");
     const project = locate_relevant_project(projects);
     if (IS_DEBUG) {
@@ -309,7 +287,7 @@
     handle_js_response(projects);
   }
 
-  document.addEventListener("DOMContentLoaded", async function (event) {
+  document.addEventListener("DOMContentLoaded", async function () {
     if (loaded) {
       return;
     }
