@@ -6,7 +6,7 @@
     "shine_rating": 99,
     "medium": "Inventive websites and programming",
     "web_description": "I'm a software engineer. I've worked for [Rescale](https://rescale.com) and [Squid Cloud](https://squid.cloud).\n\nI specialize in python, javascript, shell scripting, automation, and linux. You can find a gallery of my work below. I usually make games and web-based utilities.\n\n<h3> Contact info </h3>\n\n[My Resume](https://docs.google.com/document/d/1-Sx9gcD6VsBZovPjbuFmXEhK-RTtE_BrvRMpE0Epq4I/edit) | [Linkedin](https://www.linkedin.com/in/kevin-leutzinger-556758114/) | [Github](https://github.com/kleutzinger/)\n\n\n[Youtube](https://www.youtube.com/channel/UCANztgzBKoVk1WnoVKz4UPg) | [Pro Gamer](https://www.ssbwiki.com/Smasher:Kevbot) | [My Blog](https://kevbot.xyz/blog)",
-    "screenshot_url": "https://i.imgur.com/Zdr1KZf.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/Zdr1KZf.png",
     "omit_from": [
       "kb"
     ],
@@ -30,7 +30,7 @@
     ],
     "web_description": "I just might have the world's largest video game collection! This personal tool allows me to browse, download, and emulate over 35,000 roms scraped from [archive.org](https://archive.org). I can get any official game on demand from over 25 systems such as Dreamcast, Gameboy, Sega, Playstation 1/2, Super Nintendo, Gamecube and more!",
     "date_created": "2020-05-01",
-    "screenshot_url": "https://i.imgur.com/VaqnaSs.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/VaqnaSs.png",
     "omit_from": [
       "kb"
     ],
@@ -61,7 +61,7 @@
     "repo_url": "https://github.com/kleutzinger/find-and-play-classic-videogames",
     "web_description": "I have the world's largest video game collection! Allows me to browse, download, and emulate over 35,000 roms scraped from archive.org. Download any official game on demand from over 25 systems such as NES, Sega Genesis, all Gameboys, N64, PS1, PS2, Gamecube and more!",
     "date_created": "2020-05-01",
-    "screenshot_url": "https://i.imgur.com/VaqnaSs.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/VaqnaSs.png",
     "omit_from": [
       "kl"
     ],
@@ -90,7 +90,7 @@
     "web_description": "[Twitch.tv](https://twitch.tv) is a video game live streaming platform. This extension allows viewers to store a bookmark during the middle of a live broadcast and resume watching later at their convenience.",
     "broken": "twitch changed its api, rip",
     "date_created": "2019-01-27",
-    "screenshot_url": "https://i.imgur.com/5uhbBoC.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/5uhbBoC.png",
     "omit_from": [
       "random"
     ],
@@ -121,7 +121,7 @@
     "demo_url": "https://lounge.kevbot.xyz/",
     "web_description": "Video chat with friends while navigating a 2d space with the arrow keys or touch. You can walk away from a conversation to stop hearing it. Featuring charades and live music.",
     "date_created": "2020-04-01",
-    "screenshot_url": "https://i.imgur.com/50ra8kv.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/50ra8kv.png",
     "technologies": [
       "Node.js",
       "socket.io",
@@ -152,7 +152,7 @@
     "demo_url": "https://movies.kevbot.xyz/",
     "web_description": "How long ago was that movie made? How old was Brad Pitt in it? Has Kevin seen this one? Just type a movie title to find out.",
     "date_created": "2020-10-01",
-    "screenshot_url": "https://i.imgur.com/q24jcGn.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/q24jcGn.png",
     "technologies": [
       "Node.js",
       "Redis",
@@ -179,7 +179,7 @@
     "demo_url": "https://kevinleutzinger.com/projects",
     "web_description": "My previous project page featuring a cool background. ",
     "date_created": "2017-04-10",
-    "screenshot_url": "https://i.imgur.com/SL4kqud.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/SL4kqud.png",
     "technologies": [
       "Javascript",
       "Github Pages"
@@ -205,7 +205,7 @@
     "demo_url": "https://replay.kevbot.xyz/",
     "web_description": "Melee is a fighting game with online tournaments. With this service, players can easily upload their recorded gameplay. The site organizes, labels, and stores the files for others to download. ",
     "date_created": "2020-09-02",
-    "screenshot_url": "https://i.imgur.com/QcD7Zr2.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/QcD7Zr2.png",
     "youtube": "https://youtu.be/F8j87ru7X5I",
     "technologies": [
       "Node.js",
@@ -229,7 +229,7 @@
     "demo_url": "https://www.kevinleutzinger.com/surviveSRC/",
     "web_description": "An HTML5 game where you try to survive the onslaught of students from Simon's Rock College. Use the arrow keys. Best played on a desktop browser.",
     "date_created": "2014-04-14",
-    "screenshot_url": "https://i.imgur.com/vqwhWcK.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/vqwhWcK.png",
     "technologies": [
       "Javascript"
     ]
@@ -251,7 +251,7 @@
     "demo_url": "https://chrome.google.com/webstore/detail/better-challonge-results/nlmopkefkemlpdpfkgllbeifljhkfeno",
     "web_description": "[Challonge.com](https://challonge.com) lets you organize double elimination tournament brackets. This plugin improves the results screen for a tournament with statistics on each competior's performance.  \n\n\"_Should honestly be integrated into the vanilla challonge website\"_  \n- 5 Star review",
     "date_created": "2017-05-15",
-    "screenshot_url": "https://i.imgur.com/dZhtUAf.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/dZhtUAf.png",
     "technologies": [
       "Chrome Extension",
       "Javascript"
@@ -279,7 +279,7 @@
     "web_description": "Instagram images on the web are not clickable or saveable. Use this plugin to right click to open the image directly at high quality.",
     "broken": "yeah this got taken down",
     "date_created": "2016-08-06",
-    "screenshot_url": "https://i.imgur.com/21zhecs.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/21zhecs.png",
     "omit_from": [
       "random"
     ],
@@ -307,7 +307,7 @@
     "demo_url": "https://github.com/kleutzinger/advent-of-code-2020#readme",
     "web_description": "My 50 solutions to a yearly [programming challenge.](https://adventofcode.com/2020/)",
     "date_created": "2020-12-01",
-    "screenshot_url": "https://i.imgur.com/c4cOaDV.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/c4cOaDV.png",
     "technologies": [
       "Python"
     ],
@@ -357,7 +357,7 @@
     "demo_url": "https://chrome.google.com/webstore/detail/youtube-now-playing-descr/cclaiidhllljekopicenflhhkdkckkbl",
     "web_description": "Longer youtube videos often have their sections laid out in the video description. As the video plays, this plugin displays the current section and allows skipping forward and back between sections.",
     "date_created": "2018-02-15",
-    "screenshot_url": "https://i.imgur.com/N7ZkAG0.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/N7ZkAG0.png",
     "technologies": [
       "Chrome Extension",
       "Javascript"
@@ -383,7 +383,7 @@
     "demo_url": "https://clipyt.kevbot.xyz/#VQBbHzypBro+71+79+VQBbHzypBro+140+146+pZwvLFhYUL0+129+133+hGY44DIQb-A+81+92+MdcuaeYV9oM+164+177+IydCCUfPDLE+11+34+Interesting_Videos",
     "web_description": "Combine subsections of youtube videos together for sharing. Supports combining multiple video sources.",
     "date_created": "2017-05-05",
-    "screenshot_url": "https://i.imgur.com/UJbu9dr.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/UJbu9dr.png",
     "technologies": [
       "Javascript"
     ],
@@ -406,7 +406,7 @@
     "demo_url": "https://repl.it/@thedookmaster/serpent2py",
     "web_description": "A version of snake where you can pass through yourself.",
     "date_created": "2013-10-01",
-    "screenshot_url": "https://i.imgur.com/CU2c5QN.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/CU2c5QN.png",
     "omit_from": [
       "random"
     ],
@@ -431,7 +431,8 @@
     ],
     "broken": "this is not currently running anywhere",
     "omit_from": [
-      "kl"
+      "kl",
+      "kb"
     ],
     "technologies": [
       "Node.js"
@@ -498,7 +499,7 @@
     "demo_url": "https://github.com/kleutzinger/dotfiles#readme",
     "web_description": "Explore all the files I use to configure my Arch Linux Laptop.\n",
     "date_created": "2021-01-12",
-    "screenshot_url": "https://i.imgur.com/OCqXrtl.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/OCqXrtl.png",
     "technologies": [
       "git",
       "yadm"
@@ -629,7 +630,7 @@
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/jetski",
     "demo_url": "https://kevinleutzinger.com/jetski/",
     "date_created": "2014-10-15",
-    "screenshot_url": "https://i.imgur.com/mqMq1C1.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/mqMq1C1.png",
     "omit_from": [
       "kl"
     ]
@@ -653,7 +654,7 @@
     "web_description": "See all the subtitles of a youtube video written out. Click one to jump to that point in the video.",
     "broken": "yes, 'cannot get /'",
     "date_created": "2021-01-21",
-    "screenshot_url": "https://i.imgur.com/mZgsjrW.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/mZgsjrW.png",
     "omit_from": [
       "kl"
     ],
@@ -678,7 +679,7 @@
     "readme_url": "https://www.ssbwiki.com/NorCal_Power_Rankings#Super_Smash_Bros_Melee",
     "broken": "i'm not on the pr :(",
     "date_created": "2018-04-06",
-    "screenshot_url": "https://i.imgur.com/FN7pSZ9.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/FN7pSZ9.png",
     "omit_from": [
       "kl"
     ],
@@ -704,7 +705,7 @@
     "demo_url": "https://kevbot.xyz/",
     "web_description": "My other site featuring a blog and even more projects of mine.",
     "date_created": "2020-10-22",
-    "screenshot_url": "https://i.imgur.com/5fUSUVJ.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/5fUSUVJ.png",
     "technologies": [
       "Python",
       "Lektor",
@@ -743,7 +744,7 @@
     "repo_url": "https://github.com/kleutzinger/invidious-redirect",
     "demo_url": "https://invidious.kevbot.xyz/",
     "date_created": "2020-12-14",
-    "screenshot_url": "https://i.imgur.com/JJi2dl0.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/JJi2dl0.png",
     "omit_from": [
       "kl"
     ],
@@ -767,7 +768,7 @@
     "demo_url": "https://kevinleutzinger.com/",
     "readme_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master#readme",
     "date_created": "2021-03-01",
-    "screenshot_url": "https://i.imgur.com/c8e9gmT.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/c8e9gmT.png",
     "omit_from": [
       "kl"
     ],
@@ -835,7 +836,7 @@
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/balance",
     "demo_url": "https://kevinleutzinger.com/balance",
     "date_created": "2014-04-13",
-    "screenshot_url": "https://i.imgur.com/9g9kwzy.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/9g9kwzy.png",
     "omit_from": [
       "kl"
     ],
@@ -859,7 +860,7 @@
     "repo_url": "https://github.com/kleutzinger/url-shorten-dokku",
     "demo_url": "https://u.kevbot.xyz/",
     "date_created": "2021-04-22",
-    "screenshot_url": "https://i.imgur.com/bxb0XVN.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/bxb0XVN.png",
     "omit_from": [
       "kl"
     ],
@@ -888,7 +889,7 @@
     "demo_url": "https://codepen.io/thedookmaster/project/full/DPQmqa",
     "web_description": "Generate gecko codes for custom nametags for slippi melee",
     "date_created": "2021-09-15",
-    "screenshot_url": "https://i.imgur.com/Holl04a.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/Holl04a.png",
     "omit_from": [
       "kl"
     ],
@@ -912,7 +913,7 @@
     "demo_url": "https://github.com/kleutzinger/advent-of-code-2021#readme",
     "web_description": "My next 50 solutions to the next yearly [programming challenge.](https://adventofcode.com/2021/)",
     "date_created": "2021-12-01",
-    "screenshot_url": "https://i.imgur.com/c4cOaDV.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/c4cOaDV.png",
     "omit_from": [
       "kl"
     ],
@@ -941,7 +942,7 @@
     "readme_url": "https://github.com/kleutzinger/CL-FW",
     "web_description": "My custom layout for my lbx controller forked from Crane's Firmware. I use this to play melee on my Junkfood Arcads LBX controller on wii + pc.",
     "date_created": "2022-07-20",
-    "screenshot_url": "https://i.imgur.com/7GCYUYA.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/7GCYUYA.png",
     "omit_from": [
       "random"
     ],
@@ -967,7 +968,7 @@
     "readme_url": "https://github.com/kleutzinger/userscripts#readme",
     "web_description": "My list of custom made userscripts which can execute on your browser. They are like chrome extensions, but you can rapidly develop them.",
     "date_created": "2023-02-04",
-    "screenshot_url": "https://i.imgur.com/6dV2Wfl.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/6dV2Wfl.png",
     "omit_from": [
       "random"
     ],
@@ -991,7 +992,7 @@
     "readme_url": "https://docs.google.com/document/d/1ghh1K2DEtPpqfF3jOtAsY1XcohuA7enjkYF7_MLG39k/edit#heading=h.qkq85fhrrorr",
     "web_description": "Homemade controller to play Super Smash Bros Melee on PC and Gamecube/Wii",
     "date_created": "2022-05-01",
-    "screenshot_url": "https://i.imgur.com/eo0zqmi.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/eo0zqmi.png",
     "omit_from": [
       "random"
     ]
@@ -1011,7 +1012,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/get-movie",
     "date_created": "2022-05-10",
-    "screenshot_url": "https://i.imgur.com/jqYN47q.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/jqYN47q.png",
     "omit_from": [
       "kl",
       "random"
@@ -1035,7 +1036,7 @@
     "readme_url": "https://github.com/kleutzinger/kleutzinger.github.io/blob/master/site-generator/README.md",
     "web_description": "I store all my portfolio projects in a [google sheet](https://docs.google.com/spreadsheets/d/1MVghM465zjbMGB89CwvH-GwfwyLXqHqfY1emM7Mp-uA/edit?usp=sharing). This automatically deploys the sheet to a few websites like this one and https://kevbot.xyz",
     "date_created": "2023-03-11",
-    "screenshot_url": "https://i.imgur.com/zsNOiR7.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/zsNOiR7.png",
     "omit_from": [
       "random"
     ],
@@ -1075,7 +1076,7 @@
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/og",
     "demo_url": "https://kevinleutzinger.com/og/",
     "date_created": "2013-06-06",
-    "screenshot_url": "https://i.imgur.com/30UcUyS.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/30UcUyS.png",
     "omit_from": [
       "kl"
     ]
@@ -1098,7 +1099,7 @@
     "readme_url": "https://github.com/kleutzinger/steam-tags#readme",
     "web_description": "Guess which Steam game tag is more popular to publish. Are there more FPS or strategy games?",
     "date_created": "2023-06-03",
-    "screenshot_url": "https://i.imgur.com/5jq3Hld.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/5jq3Hld.png",
     "libraries": "PyWebIO",
     "technologies": [
       "Python"
@@ -1122,6 +1123,6 @@
     "repo_url": "https://github.com/kleutzinger/norcal-ssbm-power-ranker-pgstats.com",
     "demo_url": "https://docs.google.com/spreadsheets/d/1-rj-k-gLWUize_fYmlGVH0zFkBLa14U6nMMonNEkraE/edit#gid=854185296",
     "date_created": "2023-06-20",
-    "screenshot_url": "https://i.imgur.com/NWkhULd.png"
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/NWkhULd.png"
   }
 ]
