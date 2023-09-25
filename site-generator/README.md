@@ -13,7 +13,7 @@ title star_rating presentation tags repo_url demo_url date_created screenshot_ur
 - [x] pull from google sheets
 - [x] add site-generator/ into kleutzinger.io repo
 - [x] re-order / sort projects by star_rating then shine_rating
-- [ ] Add floating badge to page
+- [x] Add floating badge to page
 - [x] add image of me / sidebar banner
       [x] with github
 - [x] add header / explain this is portfolio
@@ -22,12 +22,12 @@ title star_rating presentation tags repo_url demo_url date_created screenshot_ur
 - - [ ] show confirmation / diff?
 - [x] build https://blog.kevbot.xyz markdown
 - [x] prettify html output
-- [ ] move screenshots off imgur
+- [x] move screenshots off imgur
 
 ## useful links
 
 https://github.com/Naereen/badges
 https://codepen.io/thedookmaster/pen/mdGXdOG
 
-https://aaron.work/
+https://aaron.work/?ref=kevbadge
 if referrer is from kevin, add my button script

@@ -5,7 +5,7 @@
     "star_rating": 99,
     "shine_rating": 99,
     "medium": "Inventive websites and programming",
-    "web_description": "I'm a software engineer. I've worked for [Rescale](https://rescale.com) and [Squid Cloud](https://squid.cloud).\n\nI specialize in python, javascript, shell scripting, automation, and linux. You can find a gallery of my work below. I usually make games and web-based utilities.\n\n<h3> Contact info </h3>\n\n[My Resume](https://docs.google.com/document/d/1-Sx9gcD6VsBZovPjbuFmXEhK-RTtE_BrvRMpE0Epq4I/edit) | [Linkedin](https://www.linkedin.com/in/kevin-leutzinger-556758114/) | [Github](https://github.com/kleutzinger/)\n\n\n[Youtube](https://www.youtube.com/channel/UCANztgzBKoVk1WnoVKz4UPg) | [Pro Gamer](https://www.ssbwiki.com/Smasher:Kevbot) | [My Blog](https://kevbot.xyz/blog)",
+    "web_description": "I'm a backend-leaning software engineer. I've worked for [Rescale](https://rescale.com) and [Squid Cloud](https://squid.cloud).\n\nProfessionally, I specialize in  deployments, DevOps, automation, DevEx, and linux. I like python, javascript, and shell scripting. On my own time, I make games and web-based utilities. You can find a gallery of my personal projects below. They're all currently live and inculde a link to the source code (MIT licensed).\n\n<h3> Contact info </h3>\n\n[My Resume](https://docs.google.com/document/d/1-Sx9gcD6VsBZovPjbuFmXEhK-RTtE_BrvRMpE0Epq4I/export?format=pdf) | [Linkedin](https://www.linkedin.com/in/kevin-leutzinger-556758114/) | [Github](https://github.com/kleutzinger/) | [Email](mailto:kevbot.xyz@gmail.com)\n\n\n[Youtube](https://www.youtube.com/channel/UCANztgzBKoVk1WnoVKz4UPg) | [I'm a Pro Gamer](https://www.ssbwiki.com/Smasher:Kevbot) | [My Blog](https://kevbot.xyz/blog)",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/Zdr1KZf.png",
     "omit_from": [
       "kb"
@@ -990,7 +990,7 @@
       "melee"
     ],
     "readme_url": "https://docs.google.com/document/d/1ghh1K2DEtPpqfF3jOtAsY1XcohuA7enjkYF7_MLG39k/edit#heading=h.qkq85fhrrorr",
-    "web_description": "Homemade controller to play Super Smash Bros Melee on PC and Gamecube/Wii",
+    "web_description": "Homemade \"rectangle\"-style controller to play Super Smash Bros Melee on PC and Gamecube/Wii. This is an ergonomic alternative to the standardGamecube controller. It works on both pc and console.",
     "date_created": "2022-05-01",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/eo0zqmi.png",
     "omit_from": [

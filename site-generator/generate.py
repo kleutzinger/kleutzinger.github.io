@@ -46,7 +46,6 @@ def gen_tags(project):
     tag_list = project.get("technologies", [])
     if tag_list == "":
         return ""
-    tag_list
     LIS = "\n".join([f'<li><a href="#">{text}</a></li>' for text in tag_list])
     out = f"""
         <li class="tags">
@@ -91,7 +90,7 @@ def gen_card_html(project, is_alt_card=False):
     screenshot_url = project.get("screenshot_url", "")
     subtitle = gen_subtitle(project)
     description = gen_description(project)
-    readme = youtube = demo_url = readme_url = repo_url = ""
+    readme = youtube = demo_url = repo_url = ""
     if "demo_url" in project:
         demo_url = a("| Open", href=project["demo_url"])
     if "repo_url" in project and project["repo_url"] not in project.get("demo_url", ""):
@@ -108,7 +107,7 @@ def gen_card_html(project, is_alt_card=False):
     <div class="meta">
       <div class="photo" style="background-image: url({screenshot_url})"></div>
       <ul class="details">
-        <li class="author"><a href="https://github.com/kleutzinger">Kevin Leutzinger></a></li>
+        <li class="author"><a href="https://github.com/kleutzinger">Kevin Leutzinger</a></li>
         {hover_tags}
       </ul>
     </div>

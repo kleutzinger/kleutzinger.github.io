@@ -7,20 +7,19 @@ from io import StringIO
 import csv
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+PORTFOLIO_CSV_URL = "https://docs.google.com/spreadsheets/d/1MVghM465zjbMGB89CwvH-GwfwyLXqHqfY1emM7Mp-uA/export?format=csv"
 
 
 def get_csv() -> list:
-    with open("portfolio_url.txt", "r") as f:
-        url, csv_dl = [line.strip() for line in f.readlines()]
-        resp = requests.get(csv_dl)
-        scsv = resp.text
+    resp = requests.get(PORTFOLIO_CSV_URL)
+    scsv = resp.text
 
-        f = StringIO(scsv)
-        reader = csv.reader(f, delimiter=",")
-        rows = []
-        for row in reader:
-            rows.append(row)
-            print("\t".join(row))
+    f = StringIO(scsv)
+    reader = csv.reader(f, delimiter=",")
+    rows = []
+    for row in reader:
+        rows.append(row)
+        print("\t".join(row))
     return rows
 
 
