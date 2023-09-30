@@ -1125,5 +1125,34 @@
     "demo_url": "https://docs.google.com/spreadsheets/d/1-rj-k-gLWUize_fYmlGVH0zFkBLa14U6nMMonNEkraE/edit#gid=854185296",
     "date_created": "2023-06-20",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/NWkhULd.png"
+  },
+  {
+    "_id": 47,
+    "title": "Workout Tracker",
+    "identifiers": [
+      "tracker.kevbot.xyz"
+    ],
+    "star_rating": 4,
+    "shine_rating": 4,
+    "medium": "Website",
+    "tags": [
+      "website",
+      "inprogress"
+    ],
+    "repo_url": "https://github.com/kleutzinger/tracker.kevbot.xyz",
+    "demo_url": "https://tracker.kevbot.xyz/",
+    "readme_url": "https://github.com/kleutzinger/tracker.kevbot.xyz#readme",
+    "web_description": "Log your workouts with a mobile-friendly interface. Download the data later as a csv or as json",
+    "date_created": "2023-09-30",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/workout-scrot.png",
+    "technologies": [
+      "HTMX",
+      "handlebars",
+      "Nodejs",
+      "sqlite"
+    ],
+    "i_learned": [
+      "how great htmx is"
+    ]
   }
 ]
