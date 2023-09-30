@@ -1,8 +1,8 @@
 (function () {
-  // "version": "0.0.11",
+  // "version": "0.0.12",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
-    location.hostname
+    location.hostname,
   );
   const IS_DEBUG = location.search.includes("debug");
   async function get_json() {
@@ -115,7 +115,7 @@
     s = "",
     c,
     t = document.createElement("template"),
-    l = "length"
+    l = "length",
   ) {
     t.innerHTML = s.trim();
     c = [...t.content.childNodes];
@@ -171,6 +171,7 @@
       const tags = project.tags || [];
       const demo_url = project.demo_url || "";
       const omit_from = projects.omit_from || [];
+      const youtube = projects.youtube || "";
       // list of banned tags
       const banned_tags = ["private", "protected", "personal"];
       if (omit_from.includes("random")) {
@@ -222,22 +223,22 @@
     links.push(
       make_link(
         `javascript:var%20KICKASSVERSION='2.0';var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);`,
-        "minigame 🚀"
-      )
+        "minigame 🚀",
+      ),
     );
     links.push(
       make_link(
         `https://github.com/kleutzinger/kleutzinger.github.io/blob/master/site-generator/kevbadge.js`,
-        "open source code for this button 🟩"
-      )
+        "open source code for this button 🟩",
+      ),
     );
     links.push(make_link(`https://kevinleutzinger.com`, "Homepage 🏠"));
     links.push(make_link(`https://kevbot.xyz`, "kevbot.xyz 🏠"));
     links.push(
       make_link(
         `${find_random_valid_project_link(projects)}`,
-        "go to another random project by kevin 🔀"
-      )
+        "go to another random project by kevin 🔀",
+      ),
     );
     // dynamic links
     if (project.readme_url) {
@@ -248,8 +249,10 @@
       links.push(
         make_link(
           project.repo_url,
-          "open source code for this page " + (year ? ` [${year}]` : "") + " ℹ️"
-        )
+          "open source code for this page " +
+            (year ? ` [${year}]` : "") +
+            " ℹ️",
+        ),
       );
     }
     kevbadge_list.appendChild(make_list(links));
