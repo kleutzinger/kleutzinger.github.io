@@ -5,6 +5,7 @@
     location.hostname,
   );
   const IS_DEBUG = location.search.includes("debug");
+  let badge_color = "#72ab59";
   async function get_json() {
     let json_url =
       "https://kevinleutzinger.com/site-generator/generated/projects.json";
@@ -12,7 +13,7 @@
       // try loading json from local file
       json_url = "/site-generator/generated/projects.json";
       // set background to red to indicate local dev
-      document.body.style.background = "red";
+      badge_color = "red";
     }
     try {
       const response = await fetch(json_url);
@@ -51,7 +52,7 @@
   height: 6em;
   width: 6em;
   border: 0 none;
-  background: #72ab59;
+  background: ${badge_color};
   color: #fff;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
