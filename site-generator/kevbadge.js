@@ -1,20 +1,13 @@
 (function () {
-  // "version": "0.0.14",
+  // "version": "0.0.15",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname,
   );
   const IS_DEBUG = location.search.includes("debug");
-  let badge_color = "#72ab59";
   async function get_json() {
     let json_url =
       "https://kevinleutzinger.com/site-generator/generated/projects.json";
-    if (IS_LOCAL_DEV) {
-      // try loading json from local file
-      json_url = "/site-generator/generated/projects.json";
-      // set background to red to indicate local dev
-      badge_color = "red";
-    }
     try {
       const response = await fetch(json_url);
       const data = await response.json();
@@ -52,7 +45,7 @@
   height: 6em;
   width: 6em;
   border: 0 none;
-  background: ${badge_color};
+  background: ${IS_LOCAL_DEV ? "red" : "#72ab59"};
   color: #fff;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
