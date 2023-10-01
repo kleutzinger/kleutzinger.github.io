@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.12",
+  // "version": "0.0.14",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname,
