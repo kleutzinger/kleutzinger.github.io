@@ -1128,9 +1128,9 @@
   },
   {
     "_id": 47,
-    "title": "Workout Tracker",
+    "title": "Fitness Tracker",
     "identifiers": [
-      "tracker.kevbot.xyz"
+      "fit.kevbot.xyz"
     ],
     "star_rating": 4,
     "shine_rating": 4,
