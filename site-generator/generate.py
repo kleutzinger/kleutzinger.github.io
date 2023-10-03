@@ -24,6 +24,22 @@ KEVBADGE_EMBED_SCRIPT = """
 </script>
 """
 
+MATOMO_TRACKING = """
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.kevbot.xyz/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+"""
+
 
 def generate_css():
     with open("card.scss") as f:
@@ -138,6 +154,7 @@ if __name__ == "__main__":
         meta(name="viewport", content="width=device-width,initial-scale=1")
         # kevbadge
         raw(KEVBADGE_EMBED_SCRIPT)
+        raw(MATOMO_TRACKING)
         # script(type='text/javascript', src='script.js')
 
     print("getting all rows")
