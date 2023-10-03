@@ -1142,8 +1142,8 @@
     "repo_url": "https://github.com/kleutzinger/fit.kevbot.xyz",
     "demo_url": "https://fit.kevbot.xyz",
     "readme_url": "https://github.com/kleutzinger/fit.kevbot.xyz#readme",
-    "web_description": "Log your workouts with a mobile-friendly interface. Download the data later as a csv or as json",
-    "date_created": "2023-09-30",
+    "web_description": "This mobile-friendly website lets you easily log your workouts in the gym. You can customize the interface how you'd like and create custom workout sequences. Later, when you get home you can look at graphs of your progress or export the data as a csv or json.",
+    "date_created": "2023-09-29",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/workout-scrot.png",
     "technologies": [
       "HTMX",
