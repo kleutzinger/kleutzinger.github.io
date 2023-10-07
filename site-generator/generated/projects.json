@@ -944,7 +944,8 @@
     "date_created": "2022-07-20",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/7GCYUYA.png",
     "omit_from": [
-      "random"
+      "random",
+      "kl"
     ],
     "technologies": [
       "Firmware",
