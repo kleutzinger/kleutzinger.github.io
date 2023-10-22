@@ -148,7 +148,7 @@
       "website",
       "scraper"
     ],
-    "repo_url": "https://github.com/kleutzinger/age-of-actors-dokku-node",
+    "repo_url": "https://github.com/kleutzinger/movies.kevbot.xyz",
     "demo_url": "https://movies.kevbot.xyz/",
     "web_description": "How long ago was that movie made? How old was Brad Pitt in it? Has Kevin seen this one? Just type a movie title to find out.",
     "date_created": "2020-10-01",
