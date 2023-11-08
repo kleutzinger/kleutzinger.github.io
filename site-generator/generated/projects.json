@@ -1155,5 +1155,22 @@
     "i_learned": [
       "how great htmx is"
     ]
+  },
+  {
+    "_id": 48,
+    "title": "Modernized Video Games Sheet",
+    "identifiers": [
+      "modernized-video-games-sheet"
+    ],
+    "star_rating": 3,
+    "shine_rating": 2,
+    "medium": "Data",
+    "tags": [
+      "inprogress"
+    ],
+    "demo_url": "https://docs.google.com/spreadsheets/d/1lej6intvIrjFEqVxlerSIlFGjblJnv7nRYbs-fJ3FQU/edit?usp=sharing",
+    "web_description": "Discover revamped classics! This is a list of modernized video game projects, including decompilations, PC ports, and open-source engines. These projects take advantadge of modern hardware and provide experiences ranging from faithful recreations to complete overhauls. Most of these are meant to be played on PC/Mac/Linux or in a web browser.",
+    "date_created": "2023-11-06",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/modernized-games.png"
   }
 ]
