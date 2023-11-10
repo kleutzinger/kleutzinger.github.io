@@ -773,7 +773,6 @@
     "omit_from": [
       "kl"
     ],
-    "libraries": "dominate\ntidy\ngsheets",
     "technologies": [
       "Python",
       "Google Sheets"
@@ -865,7 +864,6 @@
     "omit_from": [
       "kl"
     ],
-    "libraries": "flask,flask_restful,redispy",
     "technologies": [
       "Python"
     ],
@@ -973,7 +971,6 @@
     "omit_from": [
       "random"
     ],
-    "libraries": "violentmonkey",
     "technologies": [
       "Javascript"
     ]
@@ -1101,7 +1098,6 @@
     "web_description": "Guess which Steam game tag is more popular to publish. Are there more FPS or strategy games?",
     "date_created": "2023-06-03",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/5jq3Hld.png",
-    "libraries": "PyWebIO",
     "technologies": [
       "Python"
     ],
@@ -1172,5 +1168,28 @@
     "web_description": "Discover revamped classics! This is a list of modernized video game projects, including decompilations, PC ports, and open-source engines. These projects provide fresh gaming experiences ranging from faithful recreations to complete overhauls. Most of these are meant to be played on PC/Mac/Linux or in a web browser.",
     "date_created": "2023-11-06",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/modernized-games.png"
+  },
+  {
+    "_id": 49,
+    "title": "Kevbot TV",
+    "identifiers": [
+      "tv.kevbot.xyz"
+    ],
+    "star_rating": 3,
+    "shine_rating": 2,
+    "medium": "Website",
+    "tags": [
+      "inprogress"
+    ],
+    "repo_url": "https://github.com/kleutzinger/tv.kevbot.xyz",
+    "demo_url": "https://tv.kevbot.xyz/",
+    "web_description": "Website with various entertainment channels to help you pass the time ",
+    "date_created": "2023-11-10",
+    "omit_from": [
+      "kl"
+    ],
+    "technologies": [
+      "HTMX"
+    ]
   }
 ]
