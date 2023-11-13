@@ -1191,5 +1191,23 @@
     "technologies": [
       "HTMX"
     ]
+  },
+  {
+    "_id": 50,
+    "title": "pad.kevbot.xyz",
+    "identifiers": [
+      "pad.kevbot.xyz"
+    ],
+    "star_rating": 3,
+    "shine_rating": 2,
+    "medium": "Website",
+    "demo_url": "https://pad.kevbot.xyz",
+    "date_created": "2023-11-05",
+    "omit_from": [
+      "kl"
+    ],
+    "technologies": [
+      "HTMX"
+    ]
   }
 ]
