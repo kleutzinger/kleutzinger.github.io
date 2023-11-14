@@ -78,7 +78,7 @@ urllib3==2.0.2
     # via requests
 watchdog==3.0.0
     # via lektor
-werkzeug==2.3.4
+werkzeug==2.3.8
     # via
     #   flask
     #   lektor
