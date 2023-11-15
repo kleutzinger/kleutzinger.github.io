@@ -119,7 +119,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/the-lounge",
     "demo_url": "https://lounge.kevbot.xyz/",
-    "web_description": "Video chat with friends while navigating a 2d space with the arrow keys or touch. You can walk away from a conversation to stop hearing it. Featuring charades and live music.",
+    "web_description": "Video chat with friends while navigating a 2d space with the arrow keys or touch. You can walk away from a conversation to stop hearing it. Featuring charades and live music. I made this during lockdown to have a covid-safe birthday party with my friends.",
     "date_created": "2020-04-01",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/50ra8kv.png",
     "technologies": [
@@ -657,7 +657,8 @@
     "date_created": "2021-01-21",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/mZgsjrW.png",
     "omit_from": [
-      "kl"
+      "kl",
+      "kb"
     ],
     "technologies": [
       "Vue.js",
