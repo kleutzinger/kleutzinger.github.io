@@ -180,6 +180,9 @@
     "web_description": "My previous project page featuring a cool background. ",
     "date_created": "2017-04-10",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/SL4kqud.png",
+    "omit_from": [
+      "kl"
+    ],
     "technologies": [
       "Javascript",
       "Github Pages"
@@ -1037,7 +1040,9 @@
     "date_created": "2023-03-11",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/zsNOiR7.png",
     "omit_from": [
-      "random"
+      "random",
+      "kl",
+      "kb"
     ],
     "technologies": [
       "github actions",
@@ -1209,6 +1214,29 @@
     ],
     "technologies": [
       "HTMX"
+    ]
+  },
+  {
+    "_id": 51,
+    "title": "Govcloud CNAF on AWS",
+    "identifiers": [
+      "govcloud-cnaf-on-aws"
+    ],
+    "star_rating": 5,
+    "shine_rating": 5,
+    "medium": "Infrastructure",
+    "tags": [
+      "rescale"
+    ],
+    "web_description": "A large aerospace company required a firewall with a strict allowlist around their cloud compute VPC in AWS Govcloud. Using CloudFormation templates and Cohesive Network's VNS3, I created a working solution to manage exactly what traffic could exit and enter the VPC without disrupting their workflows and security requirements. This closed a 6 figure deal with the company.",
+    "date_created": "2022-06-02",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/cnaf.jpg",
+    "omit_from": [
+      "kb"
+    ],
+    "technologies": [
+      "AWS",
+      "Cloudformation"
     ]
   }
 ]
