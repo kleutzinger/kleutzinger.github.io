@@ -115,6 +115,11 @@ def gen_card_html(project, is_alt_card=False):
         readme = a("| Readme", href=project["readme_url"])
     if "youtube" in project:
         youtube = a("| Video Demo", href=project["youtube"])
+    main_url = next(
+        (link for link in [project.get(p,"") for p in ["demo_url", "repo_url", "readme_url", "youtube"] if link != ""]), "#"
+    )
+    main_link = a(title, href=main_url)
+
     alt_class = "alt" * is_alt_card
     hover_tags = gen_tags(project)
 
@@ -128,7 +133,7 @@ def gen_card_html(project, is_alt_card=False):
       </ul>
     </div>
     <div class="description">
-      <h1>{title}</h1>
+      <h1>{main_link}</h1>
       {subtitle}
       {description}
       <p class="read-more">
