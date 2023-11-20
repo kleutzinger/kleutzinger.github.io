@@ -252,7 +252,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/better-challonge",
     "demo_url": "https://chrome.google.com/webstore/detail/better-challonge-results/nlmopkefkemlpdpfkgllbeifljhkfeno",
-    "web_description": "This is an extension to [Challonge.com](https://challonge.com). It improves the results screen for a given tournament with statistics on each individual's performance and head to heads.  \n\n\"_Should honestly be integrated into the vanilla challonge website\"_  \n- 5 Star review",
+    "web_description": "This is an extension to [Challonge.com](https://challonge.com). It improves the results screen for a given tournament with statistics on each individual's performance and head to heads.  \n\n_\"Should honestly be integrated into the vanilla challonge website\"_  \n- 5 Star review",
     "date_created": "2017-05-15",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/dZhtUAf.png",
     "technologies": [
@@ -487,7 +487,7 @@
   },
   {
     "_id": 19,
-    "title": "dotfiles",
+    "title": "Kevin's Arch Linux dotfiles",
     "identifiers": [
       "dotfiles"
     ],
