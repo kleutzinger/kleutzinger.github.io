@@ -1207,6 +1207,7 @@
     "star_rating": 3,
     "shine_rating": 2,
     "medium": "Website",
+    "repo_url": "https://github.com/kleutzinger/pad.kevbot.xyz",
     "demo_url": "https://pad.kevbot.xyz",
     "date_created": "2023-11-05",
     "omit_from": [
