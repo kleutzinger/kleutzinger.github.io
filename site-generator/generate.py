@@ -57,21 +57,12 @@ def generate_css():
                 w.truncate()
 
 
-def gen_tags(project):
+def gen_technologies(project):
     "display tags over picture when card is hovered"
     tag_list = project.get("technologies", [])
-    if tag_list == "":
+    if not tag_list:
         return ""
-    LIS = "\n".join([f'<li><a href="#">{text}</a></li>' for text in tag_list])
-    out = f"""
-        <li class="tags">
-          <ul>
-            {LIS}
-          </ul>
-        </li>
-    """
-    return out
-
+    return "<span>" + ", ".join(tag_list) + "</span>"
 
 def get_date(project):
     if "date_created" in project:
@@ -96,7 +87,10 @@ def gen_subtitle(project):
     sub_date = get_date(project)
     if sub_date:
         sub_date = "<br>" + sub_date
-    templ = f"<h2>{sub_text}{sub_date}</h2>"
+    technologies = gen_technologies(project)
+    if technologies:
+        technologies = "<br>" + technologies
+    templ = f"<h2>{sub_text}{sub_date}{technologies}</h2>"
     return templ
 
 
@@ -121,7 +115,6 @@ def gen_card_html(project, is_alt_card=False):
     main_link = a(title, href=main_url)
 
     alt_class = "alt" * is_alt_card
-    hover_tags = gen_tags(project)
 
     project_card = f"""\
     <div class="blog-card {alt_class}">
@@ -129,11 +122,10 @@ def gen_card_html(project, is_alt_card=False):
       <div class="photo" style="background-image: url({screenshot_url})"></div>
       <ul class="details">
         <li class="author"><a href="https://github.com/kleutzinger">Kevin Leutzinger</a></li>
-        {hover_tags}
       </ul>
     </div>
     <div class="description">
-      <h1>{main_link}</h1>
+      <h1>{main_link} </h1>
       {subtitle}
       {description}
       <p class="read-more">

@@ -37,8 +37,7 @@
     "youtube": "#",
     "technologies": [
       "Python",
-      "Node.js",
-      "eel"
+      "Eel"
     ],
     "special_story": "Made with aaron, coolest thing i've made thus far",
     "collaborators": "Aaron Santiago"
@@ -67,8 +66,7 @@
     ],
     "technologies": [
       "Python",
-      "Node.js",
-      "eel"
+      "Eel"
     ],
     "special_story": "Made with aaron, coolest thing i've made thus far",
     "collaborators": "Aaron Santiago"
@@ -95,7 +93,6 @@
       "random"
     ],
     "technologies": [
-      "Chrome Extension",
       "Javascript"
     ],
     "i_learned": [
@@ -156,7 +153,7 @@
     "technologies": [
       "Node.js",
       "Redis",
-      "express"
+      "Express"
     ],
     "i_learned": [
       "Redis"
@@ -256,7 +253,6 @@
     "date_created": "2017-05-15",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/dZhtUAf.png",
     "technologies": [
-      "Chrome Extension",
       "Javascript"
     ],
     "i_learned": [
@@ -271,8 +267,8 @@
     "identifiers": [
       "fullsize-instagram-right-click"
     ],
-    "star_rating": 3,
-    "shine_rating": 5,
+    "star_rating": 2,
+    "shine_rating": 2,
     "medium": "Chrome Extension",
     "tags": [
       "crx",
@@ -287,7 +283,6 @@
       "random"
     ],
     "technologies": [
-      "Chrome Extension",
       "Javascript"
     ],
     "i_learned": [
@@ -339,6 +334,9 @@
       "kl"
     ],
     "youtube": "https://youtu.be/1WCsfcQgjk8",
+    "technologies": [
+      "Openshot"
+    ],
     "i_learned": [
       "Openshot",
       "A/V syncing"
@@ -362,7 +360,6 @@
     "date_created": "2018-02-15",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/N7ZkAG0.png",
     "technologies": [
-      "Chrome Extension",
       "Javascript"
     ],
     "i_learned": [
@@ -616,6 +613,9 @@
     "omit_from": [
       "kl",
       "random"
+    ],
+    "technologies": [
+      "Gsheets"
     ]
   },
   {
@@ -637,6 +637,9 @@
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/mqMq1C1.png",
     "omit_from": [
       "kl"
+    ],
+    "technologies": [
+      "Javascript"
     ]
   },
   {
@@ -687,10 +690,6 @@
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/FN7pSZ9.png",
     "omit_from": [
       "kl"
-    ],
-    "technologies": [
-      "Practice",
-      "GC Controller"
     ]
   },
   {
@@ -714,8 +713,8 @@
     "technologies": [
       "Python",
       "Lektor",
-      "dokku",
-      "docker"
+      "Dokku",
+      "Docker"
     ]
   },
   {
@@ -797,10 +796,6 @@
     "omit_from": [
       "kl",
       "kb"
-    ],
-    "technologies": [
-      "Exercise",
-      "Eating Habits"
     ]
   },
   {
@@ -818,10 +813,6 @@
     "omit_from": [
       "kl",
       "kb"
-    ],
-    "technologies": [
-      "Pizza",
-      "Money"
     ]
   },
   {
@@ -897,7 +888,8 @@
       "kl"
     ],
     "technologies": [
-      "Web"
+      "HTML",
+      "Javascript"
     ]
   },
   {
@@ -950,7 +942,6 @@
       "kl"
     ],
     "technologies": [
-      "Firmware",
       "Arduino"
     ]
   },
@@ -992,11 +983,14 @@
       "melee"
     ],
     "readme_url": "https://docs.google.com/document/d/1ghh1K2DEtPpqfF3jOtAsY1XcohuA7enjkYF7_MLG39k/edit#heading=h.qkq85fhrrorr",
-    "web_description": "Homemade \"rectangle\"-style controller to play Super Smash Bros Melee on PC and Gamecube/Wii. This is an ergonomic alternative to the standardGamecube controller. It works on both pc and console.",
+    "web_description": "Homemade \"rectangle\"-style controller to play Super Smash Bros Melee on Gamecube/Wii. This is an ergonomic alternative to the standard Gamecube controller. It works on both PC and console.",
     "date_created": "2022-05-01",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/eo0zqmi.png",
     "omit_from": [
       "random"
+    ],
+    "technologies": [
+      "Raspberry Pi Pico"
     ]
   },
   {
@@ -1020,9 +1014,8 @@
       "random"
     ],
     "technologies": [
-      "js",
-      "express",
-      "node"
+      "Express",
+      "Node.js"
     ]
   },
   {
@@ -1045,8 +1038,8 @@
       "kb"
     ],
     "technologies": [
-      "github actions",
-      "python"
+      "Github Actions",
+      "Python"
     ],
     "special_story": "i had been working on github actions all week via squid cloud. so i made this on saturday"
   },
@@ -1083,6 +1076,9 @@
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/30UcUyS.png",
     "omit_from": [
       "kl"
+    ],
+    "technologies": [
+      "Haxe"
     ]
   },
   {
@@ -1105,7 +1101,8 @@
     "date_created": "2023-06-03",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/5jq3Hld.png",
     "technologies": [
-      "Python"
+      "Python",
+      "Streamlit"
     ],
     "i_learned": [
       "Pywebio is a pretty easy way to make basic interactive sites"
@@ -1127,7 +1124,11 @@
     "demo_url": "https://docs.google.com/spreadsheets/d/1-rj-k-gLWUize_fYmlGVH0zFkBLa14U6nMMonNEkraE/edit#gid=854185296",
     "web_description": "Norcal has a competitive Super Smash Bros. Melee scene. We play in person tournaments against each other and we calculate seasonal player rankings data within our region. This is an auto-updating scraper and google sheet that keeps track of our wins, losses, and head to heads in the curernt ranking period. I'm Kevbot on there :D.",
     "date_created": "2023-06-20",
-    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/NWkhULd.png"
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/NWkhULd.png",
+    "technologies": [
+      "Python",
+      "Gsheets"
+    ]
   },
   {
     "_id": 47,
@@ -1150,9 +1151,9 @@
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/workout-scrot.png",
     "technologies": [
       "HTMX",
-      "handlebars",
-      "Nodejs",
-      "sqlite"
+      "Node.js",
+      "SQLite",
+      "Handlebars"
     ],
     "i_learned": [
       "how great htmx is"
