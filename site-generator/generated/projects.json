@@ -1240,5 +1240,26 @@
       "AWS",
       "Cloudformation"
     ]
+  },
+  {
+    "_id": 52,
+    "title": "radio.kevbot.xyz",
+    "identifiers": [
+      "radio.kevbot.xyz"
+    ],
+    "star_rating": 3,
+    "shine_rating": 3,
+    "medium": "Website",
+    "demo_url": "https://radio.kevbot.xyz/",
+    "date_created": "2023-11-22",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/radio-scrot.png",
+    "omit_from": [
+      "kl"
+    ],
+    "technologies": [
+      "Node.js",
+      "HTMX"
+    ],
+    "blog_post": "https://kevbot.xyz/blog/i-made-an-internet-radio-station/"
   }
 ]
