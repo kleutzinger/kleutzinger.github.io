@@ -885,7 +885,8 @@
     "date_created": "2021-09-15",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/Holl04a.png",
     "omit_from": [
-      "kl"
+      "kl",
+      "random"
     ],
     "technologies": [
       "HTML",
