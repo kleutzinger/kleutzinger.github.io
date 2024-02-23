@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.15",
+  // "version": "0.0.16",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname,
@@ -228,6 +228,7 @@
     );
     links.push(make_link(`https://kevinleutzinger.com`, "Homepage 🏠"));
     links.push(make_link(`https://kevbot.xyz`, "kevbot.xyz 🏠"));
+    links.push(make_link(`https://status.kevbot.xyz/`, "Status Page ✅"));
     links.push(
       make_link(
         `${find_random_valid_project_link(projects)}`,
