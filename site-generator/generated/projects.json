@@ -5,7 +5,7 @@
     "star_rating": 99,
     "shine_rating": 99,
     "medium": "Inventive websites and programming",
-    "web_description": "Hi, I'm a backend-leaning software engineer. I've worked for [Rescale](https://rescale.com) and [Squid Cloud](https://squid.cloud).\n\nProfessionally, I specialize in  deployments, DevOps, cloud, automation, DevEx, and linux. I like python, javascript, and shell scripting. I've been using Arch Linux (btw) for about 10 years now and the colemak keyboard layout.\n\nOn my own time, I make games and web-based utilities. You can find a gallery of my personal projects below. Everything below is created and maintained by yours truly. Ech entry inculdes a link to both the deployed app and the source code (MIT licensed).\n\n<h3> Contact info </h3>\n\n[My Resume](https://docs.google.com/document/d/1-Sx9gcD6VsBZovPjbuFmXEhK-RTtE_BrvRMpE0Epq4I/export?format=pdf) | [Linkedin](https://www.linkedin.com/in/kevin-leutzinger-556758114/) | [Github](https://github.com/kleutzinger/) | [Email](mailto:kevbot.xyz@gmail.com)\n\n\n[Youtube](https://www.youtube.com/channel/UCANztgzBKoVk1WnoVKz4UPg) | [I'm a Pro Gamer (Super Smash Bros. Melee)](https://www.ssbwiki.com/Smasher:Kevbot) | [My Blog](https://kevbot.xyz/blog)",
+    "web_description": "Hi, I'm a backend-leaning software engineer. I've worked for [Rescale](https://rescale.com), [Squid Cloud](https://squid.cloud), and currently [Open Syllabus](https://galaxy.opensyllabus.org/)\n\nProfessionally, I specialize in  deployments, DevOps, cloud, automation, DevEx, and linux. I like python, javascript, and shell scripting. I've been using Arch Linux (btw) for about 10 years now and the colemak keyboard layout.\n\nOn my own time, I make games and web-based utilities. You can find a gallery of my personal projects below. Everything below is created and maintained by yours truly. Each entry inculdes a link to both the deployed app and the source code (MIT licensed, usually).\n<h3> Contact info </h3>\n\n[My Resume](https://docs.google.com/document/d/1-Sx9gcD6VsBZovPjbuFmXEhK-RTtE_BrvRMpE0Epq4I/export?format=pdf) | [Linkedin](https://www.linkedin.com/in/kevin-leutzinger-556758114/) | [Github](https://github.com/kleutzinger/) | [Email](mailto:kevbot.xyz@gmail.com)\n\n\n[Youtube](https://www.youtube.com/channel/UCANztgzBKoVk1WnoVKz4UPg) | [I'm a Pro Gamer (Super Smash Bros. Melee)](https://www.ssbwiki.com/Smasher:Kevbot) | [My Blog](https://kevbot.xyz/blog)",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/Zdr1KZf.png",
     "omit_from": [
       "kb"
@@ -983,6 +983,7 @@
     "tags": [
       "melee"
     ],
+    "not_mine_repo_url": "https://github.com/HTangl/BudgeTangl",
     "readme_url": "https://docs.google.com/document/d/1ghh1K2DEtPpqfF3jOtAsY1XcohuA7enjkYF7_MLG39k/edit#heading=h.qkq85fhrrorr",
     "web_description": "Homemade \"rectangle\"-style controller to play Super Smash Bros Melee on Gamecube/Wii. This is an ergonomic alternative to the standard Gamecube controller. It works on both PC and console.",
     "date_created": "2022-05-01",
@@ -1272,12 +1273,36 @@
     "star_rating": 6,
     "shine_rating": 5,
     "medium": "Website",
+    "not_mine_repo_url": "https://github.com/zadam/trilium",
     "demo_url": "https://tril.kevbot.xyz/share/",
-    "web_description": "Check out my published docs from my knowledgebase. It includes a cookbook of tasty recipes.",
+    "web_description": "Check out my published docs from my knowledgebase. It includes notes on my tasty recipes, computer tips, and many other fields of interest.",
     "date_created": "2023-12-18",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/public-notes.png",
     "technologies": [
       "Trilium"
+    ]
+  },
+  {
+    "_id": 54,
+    "title": "serve-gist.kevbot.xyz",
+    "identifiers": [
+      "serve-gist.kevbot.xyz"
+    ],
+    "star_rating": 2,
+    "shine_rating": 2,
+    "medium": "Website",
+    "repo_url": "https://github.com/kleutzinger/serve-gist",
+    "demo_url": "https://serve-gist.kevbot.xyz/?url=https://gist.githubusercontent.com/kleutzinger/2eff598f26f90aff2cc3e7d4ba5f5a42/raw/dd68e5ea8a2ffc37a3ee5962b13e6e3647f721ca/demo.json",
+    "web_description": "Serve any gist from gist.github.com as json.",
+    "date_created": "2024-04-26",
+    "omit_from": [
+      "random"
+    ],
+    "technologies": [
+      "Node.js"
+    ],
+    "i_learned": [
+      "quickly prototyping is easy. Made for slippi scoreboard (in theory)"
     ]
   }
 ]
