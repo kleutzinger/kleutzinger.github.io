@@ -32,7 +32,8 @@
     "date_created": "2020-05-01",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/VaqnaSs.png",
     "omit_from": [
-      "kb"
+      "kb",
+      "random"
     ],
     "youtube": "#",
     "technologies": [
@@ -62,7 +63,8 @@
     "date_created": "2020-05-01",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/VaqnaSs.png",
     "omit_from": [
-      "kl"
+      "kl",
+      "random"
     ],
     "technologies": [
       "Python",
@@ -1276,7 +1278,7 @@
     "not_mine_repo_url": "https://github.com/zadam/trilium",
     "demo_url": "https://tril.kevbot.xyz/share/",
     "web_description": "Check out my published docs from my knowledgebase. It includes notes on my tasty recipes, computer tips, and many other fields of interest.",
-    "date_created": "2023-12-18",
+    "date_created": "2023-12-17",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/public-notes.png",
     "technologies": [
       "Trilium"
