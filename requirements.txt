@@ -22,7 +22,7 @@ markdown==3.6
     # via -r requirements.in
 prettierfier==1.0.3
     # via -r requirements.in
-requests==2.31.0
+requests==2.32.0
     # via -r requirements.in
 soupsieve==2.5
     # via beautifulsoup4
