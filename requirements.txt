@@ -26,5 +26,5 @@ requests==2.31.0
     # via -r requirements.in
 soupsieve==2.5
     # via beautifulsoup4
-urllib3==2.2.1
+urllib3==2.2.2
     # via requests
