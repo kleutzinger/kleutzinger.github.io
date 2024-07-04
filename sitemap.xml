@@ -6,15 +6,15 @@
   </url>
   <url>
     <index>1</index>
-    <loc>https://kevinleutzinger.com/bus</loc>
+    <loc>https://kevinleutzinger.com/balance</loc>
   </url>
   <url>
     <index>2</index>
-    <loc>https://kevinleutzinger.com/og</loc>
+    <loc>https://kevinleutzinger.com/bus</loc>
   </url>
   <url>
     <index>3</index>
-    <loc>https://kevinleutzinger.com/stephentalking</loc>
+    <loc>https://kevinleutzinger.com/game</loc>
   </url>
   <url>
     <index>4</index>
@@ -22,38 +22,38 @@
   </url>
   <url>
     <index>5</index>
-    <loc>https://kevinleutzinger.com/projects</loc>
-  </url>
-  <url>
-    <index>6</index>
-    <loc>https://kevinleutzinger.com/projects/final</loc>
-  </url>
-  <url>
-    <index>7</index>
-    <loc>https://kevinleutzinger.com/projects/oldproj1</loc>
-  </url>
-  <url>
-    <index>8</index>
-    <loc>https://kevinleutzinger.com/game</loc>
-  </url>
-  <url>
-    <index>9</index>
-    <loc>https://kevinleutzinger.com/site-generator</loc>
-  </url>
-  <url>
-    <index>10</index>
     <loc>https://kevinleutzinger.com/jetski</loc>
   </url>
   <url>
-    <index>11</index>
+    <index>6</index>
     <loc>https://kevinleutzinger.com/jetski/old-version</loc>
   </url>
   <url>
+    <index>7</index>
+    <loc>https://kevinleutzinger.com/og</loc>
+  </url>
+  <url>
+    <index>8</index>
+    <loc>https://kevinleutzinger.com/projects</loc>
+  </url>
+  <url>
+    <index>9</index>
+    <loc>https://kevinleutzinger.com/projects/final</loc>
+  </url>
+  <url>
+    <index>10</index>
+    <loc>https://kevinleutzinger.com/projects/oldproj1</loc>
+  </url>
+  <url>
+    <index>11</index>
+    <loc>https://kevinleutzinger.com/site-generator</loc>
+  </url>
+  <url>
     <index>12</index>
-    <loc>https://kevinleutzinger.com/surviveSRC</loc>
+    <loc>https://kevinleutzinger.com/stephentalking</loc>
   </url>
   <url>
     <index>13</index>
-    <loc>https://kevinleutzinger.com/balance</loc>
+    <loc>https://kevinleutzinger.com/surviveSRC</loc>
   </url>
 </urlset>
