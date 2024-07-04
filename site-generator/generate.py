@@ -152,6 +152,7 @@ def generate_sitemap():
                 path = path.replace("../", "https://kevinleutzinger.com/")
                 path = path.replace("/index.html", "")
                 urls.append(path)
+    urls.sort()
     df = pd.DataFrame(urls, columns=["loc"])
     xml_data = df.to_xml(root_name="urlset", row_name="url", xml_declaration=True)
     with open(os.path.join("..", "sitemap.xml"), "w") as f:
