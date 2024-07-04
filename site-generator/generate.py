@@ -9,6 +9,7 @@ from dominate.util import raw
 from prettify import html_prettify
 import ingest
 import json
+import pandas as pd
 
 
 # this is in the style of google analytics
@@ -140,6 +141,23 @@ def gen_card_html(project, is_alt_card=False):
     return project_card
 
 
+def generate_sitemap():
+    # search from the root of the project for 'index.html' files
+    # and generate a sitemap
+    urls = []
+    for root, dirs, files in os.walk(".."):
+        for file in files:
+            if file == "index.html":
+                path = os.path.join(root, file)
+                path = path.replace("../", "https://kevinleutzinger.com/")
+                path = path.replace("/index.html", "")
+                urls.append(path)
+    df = pd.DataFrame(urls, columns=["loc"])
+    xml_data = df.to_xml(root_name="urlset", row_name="url", xml_declaration=True)
+    with open(os.path.join("..", "sitemap.xml"), "w") as f:
+        f.write(xml_data)
+
+
 if __name__ == "__main__":
     generate_css()
     doc = dominate.document(title="Portfolio - kevinleutzinger.com")
@@ -179,3 +197,4 @@ if __name__ == "__main__":
         pretty_html = html_prettify(str(doc))
         f.write(pretty_html)
     print("regenerated index at", time.asctime(time.localtime()))
+    generate_sitemap()
