@@ -1215,6 +1215,7 @@
     "repo_url": "https://github.com/kleutzinger/pad.kevbot.xyz",
     "demo_url": "https://pad.kevbot.xyz",
     "date_created": "2023-11-05",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/scrots_18-pad.png",
     "omit_from": [
       "kl"
     ],
@@ -1305,6 +1306,35 @@
     ],
     "i_learned": [
       "quickly prototyping is easy. Made for slippi scoreboard (in theory)"
+    ]
+  },
+  {
+    "_id": 55,
+    "title": "vods.kevbot.xyz",
+    "identifiers": [
+      "vods.kevbot.xyz",
+      "tril.kevbot.xyz/custom/brackets-html"
+    ],
+    "star_rating": 4,
+    "shine_rating": 3,
+    "medium": "Website",
+    "tags": [
+      "melee"
+    ],
+    "demo_url": "https://vods.kevbot.xyz",
+    "web_description": "See my organized, recorded gameplay for all my Super Smash Bros. Melee tournaments.",
+    "date_created": "2024-09-12",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/scrots_18-vods-kevbot-xyz.png",
+    "omit_from": [
+      "random",
+      "kl"
+    ],
+    "technologies": [
+      "Trilum",
+      "Javascript"
+    ],
+    "i_learned": [
+      "trilium custom endpoints"
     ]
   }
 ]
