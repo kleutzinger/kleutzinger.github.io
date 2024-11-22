@@ -705,7 +705,8 @@
     "medium": "Website",
     "tags": [
       "website",
-      "blog"
+      "blog",
+      "prose"
     ],
     "repo_url": "https://github.com/kleutzinger/lektor-blog",
     "demo_url": "https://kevbot.xyz/",
@@ -1269,16 +1270,19 @@
   },
   {
     "_id": 53,
-    "title": "Public Notes",
+    "title": "Kevin's Public Notes",
     "identifiers": [
       "tril.kevbot.xyz"
     ],
     "star_rating": 6,
     "shine_rating": 5,
     "medium": "Website",
+    "tags": [
+      "prose"
+    ],
     "not_mine_repo_url": "https://github.com/zadam/trilium",
     "demo_url": "https://tril.kevbot.xyz/share/",
-    "web_description": "Check out my published docs from my knowledgebase. It includes notes on my tasty recipes, computer tips, and many other fields of interest.",
+    "web_description": "Check out my published docs from my digital knowledgebase. You'll find posts on tasty recipes, computer tips, video games, and many other fields of interest.",
     "date_created": "2023-12-17",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/public-notes.png",
     "technologies": [
