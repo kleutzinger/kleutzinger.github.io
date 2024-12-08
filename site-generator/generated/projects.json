@@ -467,7 +467,7 @@
     "_id": 18,
     "title": "reddit actually bot",
     "identifiers": [
-      "reddit-actually-bot"
+      "youtube-now-playing"
     ],
     "star_rating": 2,
     "shine_rating": 0,
@@ -980,8 +980,8 @@
     "identifiers": [
       "diy-rectangle-controller"
     ],
-    "star_rating": 4,
-    "shine_rating": 4,
+    "star_rating": 6,
+    "shine_rating": 6,
     "medium": "Hardware",
     "tags": [
       "melee"
@@ -1274,8 +1274,8 @@
     "identifiers": [
       "tril.kevbot.xyz"
     ],
-    "star_rating": 6,
-    "shine_rating": 5,
+    "star_rating": 4,
+    "shine_rating": 4,
     "medium": "Website",
     "tags": [
       "prose"
