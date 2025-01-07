@@ -331,6 +331,7 @@
       "video"
     ],
     "demo_url": "https://youtu.be/1WCsfcQgjk8",
+    "web_description": "I edited an SSBM combo video while I was housesitting once.",
     "date_created": "2017-07-31",
     "omit_from": [
       "kl"
@@ -431,6 +432,7 @@
       "bot",
       "dead"
     ],
+    "web_description": "Defunct bot to find domains based on twitter trending topic. This was made right after a bunch of new TLDs were introduced.",
     "broken": "this is not currently running anywhere",
     "omit_from": [
       "kl",
@@ -454,6 +456,7 @@
       "personal"
     ],
     "demo_url": "https://cs.ucdavis.edu/",
+    "web_description": "BS in computer science From UC Davis.",
     "date_created": "2017-03-01",
     "omit_from": [
       "kl"
@@ -476,6 +479,7 @@
       "bot",
       "dead"
     ],
+    "web_description": "defunct bot to find obnoxious reddit posts",
     "date_created": "2019-05-20",
     "omit_from": [
       "kl"
@@ -499,7 +503,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/dotfiles",
     "demo_url": "https://github.com/kleutzinger/dotfiles",
-    "web_description": "Explore all the files I use to configure my Arch Linux Laptop.\n",
+    "web_description": "Explore all the files I use to configure my Arch Linux Laptop.",
     "date_created": "2021-01-12",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/OCqXrtl.png",
     "technologies": [
@@ -509,7 +513,7 @@
   },
   {
     "_id": 20,
-    "title": "Rus the desert bus",
+    "title": "Rus the Desert Bus",
     "identifiers": [
       "kevinleutzinger.com/bus"
     ],
@@ -521,6 +525,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/bus",
     "demo_url": "https://www.kevinleutzinger.com/bus/",
+    "web_description": "A silly game where you are a bus driver avoiding obstacles.",
     "date_created": "2014-10-24",
     "omit_from": [
       "kl"
@@ -543,6 +548,7 @@
       "desktop"
     ],
     "repo_url": "https://github.com/kleutzinger/slippi-melee-music-player",
+    "web_description": "A proof of concept project to play game music while in slippi. It sucks don't use it.",
     "date_created": "2020-07-01",
     "omit_from": [
       "kl"
@@ -593,6 +599,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/hearth",
     "demo_url": "https://www.kevinleutzinger.com/hearth/",
+    "web_description": "A site where you try to identify hearthstone cards by their sounds. Includes up to Blackrock Mountain cards.",
     "date_created": "2014-07-24",
     "omit_from": [
       "kl"
@@ -611,6 +618,7 @@
     "shine_rating": 0,
     "medium": "Website",
     "demo_url": "https://docs.google.com/spreadsheets/d/1MVghM465zjbMGB89CwvH-GwfwyLXqHqfY1emM7Mp-uA/edit?usp=sharing",
+    "web_description": "The sheet I use to generate all my project-related pages.",
     "date_created": "2020-03-01",
     "omit_from": [
       "kl",
@@ -635,6 +643,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/jetski",
     "demo_url": "https://kevinleutzinger.com/jetski/",
+    "web_description": "Unfinished game. It's supposed to be a jetski going left to right and you click to dive underwater. I could never get the bubbles to render correctly.",
     "date_created": "2014-10-15",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/mqMq1C1.png",
     "omit_from": [
@@ -687,6 +696,7 @@
       "melee"
     ],
     "readme_url": "https://www.ssbwiki.com/NorCal_Power_Rankings#Super_Smash_Bros_Melee",
+    "web_description": "Scripts to generate head to head data between Norcal's best SSBM players.",
     "broken": "i'm not on the pr :(",
     "date_created": "2018-04-06",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/FN7pSZ9.png",
@@ -730,6 +740,7 @@
     "shine_rating": 5,
     "medium": "Website",
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io",
+    "web_description": "My visual portfolio.",
     "date_created": "2013-06-01",
     "omit_from": [
       "kl",
@@ -750,6 +761,7 @@
     "medium": "Website",
     "repo_url": "https://github.com/kleutzinger/invidious-redirect",
     "demo_url": "https://invidious.kevbot.xyz/",
+    "web_description": "Redirect a youtube link to a known-working invidious instance.",
     "date_created": "2020-12-14",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/JJi2dl0.png",
     "omit_from": [
@@ -833,6 +845,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/balance",
     "demo_url": "https://kevinleutzinger.com/balance",
+    "web_description": "Another early game of mine.",
     "date_created": "2014-04-13",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/9g9kwzy.png",
     "omit_from": [
@@ -857,6 +870,7 @@
     ],
     "repo_url": "https://github.com/kleutzinger/url-shorten-dokku",
     "demo_url": "https://u.kevbot.xyz/",
+    "web_description": "Toy project to shorten urls. A classic interview question, though this implementation lacks sharding.",
     "date_created": "2021-04-22",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/bxb0XVN.png",
     "omit_from": [
@@ -988,7 +1002,7 @@
     ],
     "not_mine_repo_url": "https://github.com/HTangl/BudgeTangl",
     "readme_url": "https://docs.google.com/document/d/1ghh1K2DEtPpqfF3jOtAsY1XcohuA7enjkYF7_MLG39k/edit#heading=h.qkq85fhrrorr",
-    "web_description": "Homemade \"rectangle\"-style controller to play Super Smash Bros Melee on Gamecube/Wii. This is an ergonomic alternative to the standard Gamecube controller. It works on both PC and console.",
+    "web_description": "Homemade all-digital controller to play Super Smash Bros Melee on Gamecube/Wii. This is an ergonomic alternative to the standard Gamecube controller. It works on both PC and console. These controllers are referred to as  rectangles or boxes.",
     "date_created": "2022-05-01",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/eo0zqmi.png",
     "omit_from": [
@@ -1012,6 +1026,7 @@
       "protected"
     ],
     "repo_url": "https://github.com/kleutzinger/get-movie",
+    "web_description": "Web ui to kick of rtorrent downloads.",
     "date_created": "2022-05-10",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/jqYN47q.png",
     "omit_from": [
@@ -1077,6 +1092,7 @@
     "medium": "Game",
     "repo_url": "https://github.com/kleutzinger/kleutzinger.github.io/tree/master/og",
     "demo_url": "https://kevinleutzinger.com/og/",
+    "web_description": "The first substantial game I ever made. I made it in Haxe and exported it to flash.",
     "date_created": "2013-06-06",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/30UcUyS.png",
     "omit_from": [
@@ -1215,6 +1231,7 @@
     "medium": "Website",
     "repo_url": "https://github.com/kleutzinger/pad.kevbot.xyz",
     "demo_url": "https://pad.kevbot.xyz",
+    "web_description": "Temporary string storage.",
     "date_created": "2023-11-05",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/scrots_18-pad.png",
     "omit_from": [
@@ -1257,6 +1274,7 @@
     "shine_rating": 3,
     "medium": "Website",
     "demo_url": "https://radio.kevbot.xyz/",
+    "web_description": "A web radio I made with a 2023 playlist and a video game playlist on loop.",
     "date_created": "2023-11-22",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/radio-scrot.png",
     "omit_from": [
