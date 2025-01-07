@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.16",
+  // "version": "0.0.17",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname,
@@ -115,6 +115,14 @@
     c = [...t.content.childNodes];
     return c[l] > 1 ? c : c[0] || "";
   }
+
+  const toSimpleChars = (str) => str.replace(/[^a-zA-Z0-9\s.]/g, "");
+
+  const make_h3 = (text) => {
+    const h3 = document.createElement("h3");
+    h3.innerText = text;
+    return h3;
+  };
 
   const make_link = (url, text) => {
     const a = document.createElement("a");
@@ -241,7 +249,7 @@
     }
     if (project.repo_url) {
       const year = project?.date_created?.split("-")[0];
-      links.push(
+      links.unshift(
         make_link(
           project.repo_url,
           "open source code for this page " +
@@ -249,6 +257,13 @@
             " ℹ️",
         ),
       );
+    }
+    if (project.web_description) {
+      const simpleDescription = toSimpleChars(project.web_description);
+      links.unshift(make_h3(simpleDescription));
+      // also set title property of kevbadge-button to this text
+      document.querySelector(".kevbadge-button").title =
+        `${simpleDescription}\n\n Click for more info`;
     }
     kevbadge_list.appendChild(make_list(links));
   }
