@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.17",
+  // "version": "0.0.18",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname,
@@ -51,6 +51,7 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   transform: scale(1);
   transition: all 200ms ease;
+  padding: 0;
 }
 .kevbadge-button:hover,
 .kevbadge-button:focus,
