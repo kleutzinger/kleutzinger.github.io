@@ -94,6 +94,7 @@ hensley.src =
 var numberOfSprites = 9;
 var happyMode = false;
 var confusingMode = false;
+var hensleyMode = false;
 //prettier-ignore
 var actions = ["licked", "shot", "kicked", "smashed", "body slammed", "thrusted", "killed", "smoked", "got", "said Oscar's name to"
 ,"sassed", "fell on", "rammed", "max cut", "hugged", "slapped", "body checked", "falcon punched", "quickscoped", "juked",
@@ -383,18 +384,20 @@ Game.update = function () {
       hit = true;
       died = true;
       action = Math.floor(Math.random() * actions.length);
-      deadpic.src =
-        "./pictures/" + picNameLookup[Game.enemies[i].randPic] + ".jpg";
+      const killer_name = hensleyMode ? "Hensley" : names[Game.enemies[i].randPic]
+      const killer_picture = hensleyMode ? "./pictures/hensley2.png" : "./pictures/" + picNameLookup[Game.enemies[i].randPic] + ".jpg"
+      console.log(killer_picture)
+      console.log(killer_picture);
+      deadpic.src = killer_picture;
       deadpic2.src = Game.player.img.src;
       sharePic.src =
         "http://www.kevinleutzinger.com/surviveSRC/pictures/" +
         picNameLookup[Game.enemies[i].randPic] +
         ".jpg";
-      bigmessage =
-        names[Game.enemies[i].randPic] + " " + actions[action] + " you.";
+      bigmessage = `${killer_name} ${actions[action]} you.`
       if (confusingMode) {
         bigmessage =
-          names[Game.enemies[i].randPic] +
+          killer_name
           " " +
           actions[action] +
           " " +
@@ -405,7 +408,7 @@ Game.update = function () {
       }
       lastDeathMessage = bigmessage;
       deathPost =
-        names[Game.enemies[i].randPic] + " " + actions[action] + " me.";
+        killer_name + " " + actions[action] + " me.";
       deathPic = deadpic.src;
       temprand = Math.floor(Math.random() * names.length);
       console.log(temprand);
@@ -427,6 +430,7 @@ Game.update = function () {
   rotMode = document.getElementById("ROT_checkbox").checked;
   happyMode = document.getElementById("H_checkbox").checked;
   confusingMode = document.getElementById("Confusing_checkbox").checked;
+  hensleyMode = document.getElementById("Hensley_checkbox").checked;
   if (cTime >= 29) {
     wavy = true;
   }
@@ -558,6 +562,10 @@ function Enemy() {
   this.img = new Image();
   this.randPic = Math.floor(Math.random() * names.length);
   this.img.src = "./pictures/" + picNameLookup[this.randPic] + ".jpg";
+  if (hensleyMode){
+    this.img.src = "./pictures/hensley2.png"
+    this.name = "Hensley"
+  }
 
   //if (this.xVel > -7)
   //context.drawImage(this., this.x,this.y, this.width, this.height)
