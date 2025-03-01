@@ -46,7 +46,7 @@ function gotData(data) {
     quote = entry.quote;
     d = entry.date;
     $("#skill_list").append(
-      "<li>" + d + " <b>" + name + '</b>: "' + quote + '"</li>'
+      "<li>" + d + " <b>" + name + '</b>: "' + quote + '"</li>',
     );
   }
   return;
@@ -74,11 +74,7 @@ var win = false;
 var score = 0;
 var rotMode = false;
 var wavy = true;
-var evilHensley = new Image();
 var lastFilter = 0;
-evilHensley.src =
-  "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley3.png";
-var hensley = new Image();
 var dollymode = false;
 var bigmessage = "";
 var deadpic = new Image();
@@ -89,8 +85,6 @@ deadpic.src = "./pictures/nothing.png";
 deadpic2.src = "./pictures/nothing.png";
 var pulseMode = false;
 if (location.hash == "#dollymode") dollymode = true;
-hensley.src =
-  "https://dl.dropboxusercontent.com/u/1703360/Games/resources/hensley2.png";
 var numberOfSprites = 9;
 var happyMode = false;
 var confusingMode = false;
@@ -209,14 +203,14 @@ window.addEventListener(
   function (event) {
     Key.onKeyup(event);
   },
-  false
+  false,
 );
 window.addEventListener(
   "keydown",
   function (event) {
     Key.onKeydown(event);
   },
-  false
+  false,
 );
 
 window.addEventListener(
@@ -227,7 +221,7 @@ window.addEventListener(
       e.preventDefault();
     }
   },
-  false
+  false,
 );
 
 var Game = {
@@ -305,7 +299,7 @@ Game.draw = function () {
     Game.context.fillText(
       "You win! Also I fixed the glitches now, so it's legit. Tell Kevin.",
       Game.width / 2,
-      Game.height / 2
+      Game.height / 2,
     );
     if (won == false) {
       won = true;
@@ -365,7 +359,7 @@ function shareLastDeath() {
         } else {
           alert("Post was not published.");
         }
-      }
+      },
     );
   }
 }
@@ -384,9 +378,13 @@ Game.update = function () {
       hit = true;
       died = true;
       action = Math.floor(Math.random() * actions.length);
-      const killer_name = hensleyMode ? "Hensley" : names[Game.enemies[i].randPic]
-      const killer_picture = hensleyMode ? "./pictures/hensley2.png" : "./pictures/" + picNameLookup[Game.enemies[i].randPic] + ".jpg"
-      console.log(killer_picture)
+      const killer_name = hensleyMode
+        ? "Hensley"
+        : names[Game.enemies[i].randPic];
+      const killer_picture = hensleyMode
+        ? "./pictures/hensley2.png"
+        : "./pictures/" + picNameLookup[Game.enemies[i].randPic] + ".jpg";
+      console.log(killer_picture);
       console.log(killer_picture);
       deadpic.src = killer_picture;
       deadpic2.src = Game.player.img.src;
@@ -394,21 +392,16 @@ Game.update = function () {
         "http://www.kevinleutzinger.com/surviveSRC/pictures/" +
         picNameLookup[Game.enemies[i].randPic] +
         ".jpg";
-      bigmessage = `${killer_name} ${actions[action]} you.`
+      bigmessage = `${killer_name} ${actions[action]} you.`;
       if (confusingMode) {
-        bigmessage =
-          killer_name
-          " " +
-          actions[action] +
-          " " +
-          Game.player.name;
+        bigmessage = killer_name;
+        " " + actions[action] + " " + Game.player.name;
       }
       if (names[Game.enemies[i].randPic] == "Kevin") {
         bigmessage = "Kevin made this game";
       }
       lastDeathMessage = bigmessage;
-      deathPost =
-        killer_name + " " + actions[action] + " me.";
+      deathPost = killer_name + " " + actions[action] + " me.";
       deathPic = deadpic.src;
       temprand = Math.floor(Math.random() * names.length);
       console.log(temprand);
@@ -489,7 +482,7 @@ Player.prototype.draw = function (context) {
       -this.width / 2,
       -this.height / 2,
       this.height,
-      this.width
+      this.width,
     );
     if (confusingMode) {
       context.drawImage(
@@ -497,7 +490,7 @@ Player.prototype.draw = function (context) {
         -this.width / 2,
         -this.height / 2,
         this.height,
-        this.width
+        this.width,
       );
     }
     context.restore();
@@ -509,7 +502,7 @@ Player.prototype.draw = function (context) {
         -this.width / 2,
         -this.height / 2,
         this.height,
-        this.width
+        this.width,
       );
     }
   }
@@ -562,16 +555,20 @@ function Enemy() {
   this.img = new Image();
   this.randPic = Math.floor(Math.random() * names.length);
   this.img.src = "./pictures/" + picNameLookup[this.randPic] + ".jpg";
-  if (hensleyMode){
-    this.img.src = "./pictures/hensley2.png"
-    this.name = "Hensley"
-  }
 
   //if (this.xVel > -7)
   //context.drawImage(this., this.x,this.y, this.width, this.height)
   this.x = 1500;
   this.sinMag = 20 + Math.random() * 50;
   this.yOffset = this.y = Math.floor(Math.random() * (Game.height + 100) - 50);
+  if (hensleyMode) {
+    this.img.src = "./pictures/hensley2.png";
+    this.name = "Hensley";
+    // check if yOffset is in bottom third of canvas
+    if (this.yOffset > Game.height * 0.66) {
+      this.img.src = "./pictures/hensley3.png";
+    }
+  }
 
   if (document.getElementById("BE_checkbox").checked) {
     this.size = Math.random() * 200 + 60;
@@ -608,7 +605,7 @@ Enemy.prototype.draw = function (context) {
       -this.width / 2,
       -this.height / 2,
       this.width,
-      this.height
+      this.height,
     );
     context.restore();
   } else {
@@ -653,6 +650,6 @@ function saveImage() {
   w.document.write(
     "<body bgcolor=#D2D2D2> <img src='" +
       d +
-      "' alt='from canvas'/><br> Save by dragging image or with ctrl+s / cmd+s"
+      "' alt='from canvas'/><br> Save by dragging image or with ctrl+s / cmd+s",
   );
 }
