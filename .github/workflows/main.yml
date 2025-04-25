@@ -37,4 +37,4 @@ jobs:
         url: |
           https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/generated/projects.json
           https://cdn.jsdelivr.net/gh/kleutzinger/kleutzinger.github.io/site-generator/kevbadge.js
-    - uses: gautamkrishnar/keepalive-workflow@2.0.10 # runs every 50 days to keep the workflow alive
+    #- uses: gautamkrishnar/keepalive-workflow@2.0.10 # runs every 50 days to keep the workflow alive
