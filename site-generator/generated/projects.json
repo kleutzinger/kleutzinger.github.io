@@ -1004,7 +1004,7 @@
     "readme_url": "https://docs.google.com/document/d/1ghh1K2DEtPpqfF3jOtAsY1XcohuA7enjkYF7_MLG39k/edit#heading=h.qkq85fhrrorr",
     "web_description": "Homemade all-digital controller to play Super Smash Bros Melee on Gamecube/Wii. This is an ergonomic alternative to the standard Gamecube controller. It works on both PC and console. These controllers are referred to as  rectangles or boxes.",
     "date_created": "2022-05-01",
-    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/eo0zqmi.png",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/1745464969_box.jpg",
     "omit_from": [
       "random"
     ],
@@ -1213,6 +1213,7 @@
     "demo_url": "https://tv.kevbot.xyz/",
     "web_description": "Website with various entertainment channels to help you pass the time ",
     "date_created": "2023-11-10",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/1745464575.6616578_scrots_21.jpg",
     "omit_from": [
       "kl"
     ],
@@ -1247,8 +1248,8 @@
     "identifiers": [
       "govcloud-cnaf-on-aws"
     ],
-    "star_rating": 6,
-    "shine_rating": 6,
+    "star_rating": 2,
+    "shine_rating": 2,
     "medium": "Infrastructure",
     "tags": [
       "rescale"
@@ -1357,6 +1358,25 @@
     ],
     "i_learned": [
       "trilium custom endpoints"
+    ]
+  },
+  {
+    "_id": 56,
+    "title": "Screen Tearing Test Animation",
+    "identifiers": [
+      "screen-tearing-test-animation"
+    ],
+    "star_rating": 2,
+    "shine_rating": 3,
+    "medium": "Animation",
+    "repo_url": "https://github.com/kleutzinger/screen-tearing-test-animation",
+    "demo_url": "https://youtu.be/kHNN3TLDkDQ",
+    "web_description": "A 1080p 60fps animation that lets me test vertical and horizontal screen tearing at the same time.",
+    "date_created": "2025-04-22",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/1745464211.7265406_00009.jpg",
+    "omit_from": [
+      "kl",
+      "random"
     ]
   }
 ]
