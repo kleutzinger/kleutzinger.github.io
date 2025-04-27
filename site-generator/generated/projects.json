@@ -1254,7 +1254,7 @@
     "tags": [
       "rescale"
     ],
-    "web_description": "While I was at Rescale, a customer needed a new strict allowlist firewalling their cloud compute VPC in AWS Govcloud. Using CloudFormation templates and Cohesive Network's VNS3, I created a working solution to manage exactly what traffic could exit and enter the VPC without disrupting their workflows and security requirements. This closed a 6 figure deal with a large aerospae company.",
+    "web_description": "While I was at Rescale, a customer needed a new strict allowlist firewalling their cloud compute VPC in AWS Govcloud. Using CloudFormation templates and Cohesive Network's VNS3, I created a working solution to manage exactly what traffic could exit and enter the VPC without disrupting their workflows and security requirements. This closed a 6 figure deal with a large aerospace company.",
     "date_created": "2022-06-02",
     "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/cnaf.jpg",
     "omit_from": [
