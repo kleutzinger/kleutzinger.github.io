@@ -1378,5 +1378,31 @@
       "kl",
       "random"
     ]
+  },
+  {
+    "_id": 57,
+    "title": "qr.kevbot.xyz",
+    "identifiers": [
+      "qr.kevbot.xyz"
+    ],
+    "star_rating": 4,
+    "shine_rating": 4,
+    "medium": "Web Utility",
+    "repo_url": "https://github.com/kleutzinger/qr.kevbot.xyz",
+    "demo_url": "https://qr.kevbot.xyz/#%7B%22codes%22%3A%5B%7B%22text%22%3A%22https%3A%2F%2Fkevinleutzinger.com%2F%22%2C%22label%22%3A%22Homepage%22%2C%22radius%22%3A0%2C%22ecLevel%22%3A%22H%22%2C%22fill%22%3A%22black%22%2C%22background%22%3A%22white%22%2C%22size%22%3A256%7D%2C%7B%22text%22%3A%22https%3A%2F%2Fkevbot.xyz%2F%22%2C%22label%22%3A%22kevbot.xyz%22%2C%22radius%22%3A0%2C%22ecLevel%22%3A%22H%22%2C%22fill%22%3A%22black%22%2C%22background%22%3A%22white%22%2C%22size%22%3A256%7D%2C%7B%22text%22%3A%22https%3A%2F%2Fwww.youtube.com%2F%40KevbotSSBM%22%2C%22label%22%3A%22My%20Youtube%22%2C%22radius%22%3A0%2C%22ecLevel%22%3A%22H%22%2C%22fill%22%3A%22black%22%2C%22background%22%3A%22white%22%2C%22size%22%3A256%7D%5D%7D",
+    "readme_url": "https://github.com/kleutzinger/qr.kevbot.xyz#readme",
+    "web_description": "Generate and display multiple qr codes on one page. It's a single HTML file that works offline! ",
+    "date_created": "2025-05-08",
+    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/1746716673_2025-05-08_11-04.jpg",
+    "omit_from": [
+      "random"
+    ],
+    "technologies": [
+      "HTML",
+      "Javascript"
+    ],
+    "i_learned": [
+      "I used a lot of cursor to make this"
+    ]
   }
 ]
