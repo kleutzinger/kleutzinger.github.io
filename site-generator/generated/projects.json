@@ -6,7 +6,6 @@
     "shine_rating": 99,
     "medium": "Inventive websites and programming",
     "web_description": "Hi! I'm a backend-leaning generalist software engineer named Kevin. Computers and programming fascinate me.\n\nMy current employer is [Open Syllabus](https://opensyllabus.org/). Previously, I worked at [Rescale](https://rescale.com) and [Squid AI](https://getsquid.ai). My title is usually (Backend) Software Engineer.\n\nProfessionally, I'm particularly interested in deployments, DevOps, cloud, automation, DevEx, Django, infrastructure, databases, and Linux. I like Python, javascript, and shell scripting. I've been using Arch Linux (btw) for over 10 years now on my laptops, though my servers generally run Ubuntu. My keyboad layout is called [colemak](https://colemak.org/), kudos if you've ever heard of it!\n\nYou can find a gallery of my personal projects below. Most of them are games or web utilities. Everything you see is created and maintained by yours truly. Each entry inculdes a link to both the deployed app and the source code (MIT licensed, generally).\n<h3> Contact info </h3>\n\n[My Resume](https://docs.google.com/document/d/1-Sx9gcD6VsBZovPjbuFmXEhK-RTtE_BrvRMpE0Epq4I/export?format=pdf) | [Linkedin](https://www.linkedin.com/in/kevin-leutzinger-556758114/) | [Github](https://github.com/kleutzinger/) | [Email](mailto:kevbot.xyz@gmail.com)\n\n\n[Youtube](https://www.youtube.com/channel/UCANztgzBKoVk1WnoVKz4UPg) | [I'm a Pro Gamer (Super Smash Bros. Melee)](https://www.ssbwiki.com/Smasher:Kevbot) | [My Blog](https://kevbot.xyz/blog) | [technical articles by me](https://tril.kevbot.xyz/share/articles) | [sitemap.xml](https://kevinleutzinger.com/sitemap.xml)",
-    "screenshot_url": "https://cdn.kevbot.xyz/file/kevbot-cdn/screenshots/Zdr1KZf.png",
     "omit_from": [
       "kb"
     ],
@@ -351,8 +350,8 @@
     "identifiers": [
       "youtube-now-playing"
     ],
-    "star_rating": 4,
-    "shine_rating": 4,
+    "star_rating": 3,
+    "shine_rating": 3,
     "medium": "Chrome Extension",
     "tags": [
       "crx",
