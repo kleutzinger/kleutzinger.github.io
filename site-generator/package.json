@@ -1,6 +1,6 @@
 {
   "name": "kevbadge",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "badge featured on a few of my websites which provides info like source code, links, and other fun things",
   "main": "kevbadge.js",
   "scripts": {

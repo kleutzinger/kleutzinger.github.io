@@ -1,5 +1,5 @@
 (function () {
-  // "version": "0.0.18",
+  // "version": "0.0.19",
   const location = new URL(window.location);
   const IS_LOCAL_DEV = ["0.0.0.0", "localhost", "127.0.0.1"].includes(
     location.hostname,
@@ -24,39 +24,45 @@
     <!-- list will go here--!>
   </ul>
   <button class="kevbadge-button">
-  <p class="kevbadge-button-text">page</p><p class="kevbadge-button-text">info </p>
+  <p class="kevbadge-button-text">info</p>
   </button>
 </div>`;
 
   const styles = `
 .kevbadge-button-wrapper {
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 8px;
+  right: 8px;
   text-align: right;
   z-index: 999;
 }
 .kevbadge-button-text {
   font-family: monospace;
   margin: 0;
-  font-size: 30px;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  font-weight: 600;
 }
 .kevbadge-button {
-  height: 6em;
-  width: 6em;
-  border: 0 none;
+  height: 2em;
+  width: 4em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   background: ${IS_LOCAL_DEV ? "red" : "#72ab59"};
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  transform: scale(1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  transform: rotate(0deg);
   transition: all 200ms ease;
   padding: 0;
+  border-radius: 1em;
+  backdrop-filter: blur(4px);
 }
 .kevbadge-button:hover,
 .kevbadge-button:focus,
 .kevbadge-button:active {
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  background: ${IS_LOCAL_DEV ? "red" : "#72ab59"};
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 .kevbadge-button span {
@@ -65,43 +71,57 @@
   transform: scale(1);
   transition: transform 100ms ease;
 }
-.kevbadge-button:hover span,
-.expanded .kevbadge-button span,
-.expanded .kevbadge-button span {
-  transform: scale(1.25);
+.kevbadge-button:hover span {
+  transform: scale(1.1);
 }
 .expanded .kevbadge-button {
-  transform: scale(0.5);
-  color: rgba(255, 255, 255, 0.5);
-  background: #ffaa00;
+  transform: scale(0.8);
+  background: rgba(255, 170, 0, 0.85);
 }
 .kevbadge-list {
   padding: 0;
   margin: 0;
   transition: all 200ms ease;
-  transform: translate(0, 90px) scale(0.5);
-  transform-origin: bottom center;
+  transform: translate(0, 60px) scale(0.5);
+  transform-origin: bottom right;
   opacity: 0;
   display: none;
 }
 .expanded .kevbadge-list {
-  transform: translate(0px, 20px) scale(1);
+  transform: translate(0px, -10px) scale(1);
   opacity: 1;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .kevbadge-list li {
   margin-bottom: 1em;
   list-style-type: none;
   text-decoration: none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 300px;
 }
 
 .kevbadge-list a {
   margin-bottom: 1em;
   list-style-type: none;
   text-decoration: none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .kevbadge-list a {
   color: #212121;
+}
+.kevbadge-list h3 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 300px;
+  margin: 0 0 0.5em 0;
 }
 
 `;
@@ -279,7 +299,8 @@
     document.body.appendChild(full_badge_html);
     full_badge_html
       .querySelector(".kevbadge-button")
-      .addEventListener("click", () => {
+      .addEventListener("click", (e) => {
+        e.stopPropagation();
         // toggle display of kevbadge-list
         // todo: make the animation work again
         const kevbadge_list = document.querySelector("ul.kevbadge-list");
@@ -293,6 +314,16 @@
           .querySelector(".kevbadge-button-wrapper")
           .classList.toggle("expanded");
       });
+
+    // Close when clicking outside
+    document.addEventListener("click", (e) => {
+      const wrapper = document.querySelector(".kevbadge-button-wrapper");
+      const kevbadge_list = document.querySelector("ul.kevbadge-list");
+      if (wrapper && !wrapper.contains(e.target) && kevbadge_list.style.display === "block") {
+        kevbadge_list.style.display = "none";
+        wrapper.classList.remove("expanded");
+      }
+    });
 
     const projects = await get_json();
     if (IS_DEBUG) {
