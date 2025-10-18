@@ -56,4 +56,8 @@
     <index>13</index>
     <loc>https://kevinleutzinger.com/surviveSRC</loc>
   </url>
+  <url>
+    <index>14</index>
+    <loc>https://kevinleutzinger.com/venv/lib/python3.10/site-packages/setuptools/tests/indexes/test_links_priority/simple/foobar</loc>
+  </url>
 </urlset>
